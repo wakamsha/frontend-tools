@@ -2,7 +2,9 @@
   "name": "@wakamsha/eslint-config",
   "version": "0.0.1",
   "description": "wakamsha's ESLint rules as an extensible shared config.",
-  "scripts": {},
+  "scripts": {
+    "release": "semantic-release"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/wakamsha/eslint-config.git"
