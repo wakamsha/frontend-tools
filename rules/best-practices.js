@@ -1,3 +1,17 @@
+/*
+ * Copyright (c) 2012 Airbnb
+ *
+ * Licensed under the MIT License: https://github.com/airbnb/javascript/blob/master/LICENSE.md
+ *
+ * These rules are copies of https://github.com/airbnb/javascript/blob/master/packages/eslint-config-airbnb-base/rules/best-practices.js
+ * with the following modifications:
+ *
+ * - Turn off `consistent-return`
+ * - Turn off `default-case`
+ * - Add `constructors` to the allow list of `no-empty-function`
+ * - Turn `no-implicit-globals` to `error`
+ */
+
 export default {
   rules: {
     // enforces getter/setter pairs in objects
@@ -45,11 +59,6 @@ export default {
     // https://eslint.org/docs/rules/dot-notation
     'dot-notation': ['error', { allowKeywords: true }],
 
-    // Deprecated (prettier already handles this)
-    // enforces consistent newlines before or after dots
-    // https://eslint.org/docs/rules/dot-location
-    // 'dot-location': ['error', 'property'],
-
     // require the use of === and !==
     // https://eslint.org/docs/rules/eqeqeq
     eqeqeq: ['error', 'always', { null: 'ignore' }],
@@ -64,7 +73,7 @@ export default {
 
     // enforce a maximum number of classes per file
     // https://eslint.org/docs/rules/max-classes-per-file
-    'max-classes-per-file': ['off'],
+    'max-classes-per-file': ['off', 1],
 
     // disallow the use of alert, confirm, and prompt
     // https://eslint.org/docs/rules/no-alert
@@ -133,19 +142,9 @@ export default {
     // https://eslint.org/docs/rules/no-fallthrough
     'no-fallthrough': ['error'],
 
-    // Deprecated (prettier already handles this)
-    // disallow the use of leading or trailing decimal points in numeric literals
-    // https://eslint.org/docs/rules/no-floating-decimal
-    // 'no-floating-decimal': ['error'],
-
     // disallow reassignments of native objects or read-only globals
     // https://eslint.org/docs/rules/no-global-assign
     'no-global-assign': ['error', { exceptions: [] }],
-
-    // Deprecated
-    // deprecated in favor of no-global-assign
-    // https://eslint.org/docs/rules/no-native-reassign
-    'no-native-reassign': ['off'],
 
     // disallow implicit type conversions
     // https://eslint.org/docs/rules/no-implicit-coercion
@@ -198,16 +197,6 @@ export default {
         detectObjects: false,
       },
     ],
-
-    // Deprecated (prettier already handles this)
-    // disallow use of multiple spaces
-    // https://eslint.org/docs/rules/no-multi-spaces
-    // 'no-multi-spaces': [
-    //   'error',
-    //   {
-    //     ignoreEOLComments: false,
-    //   },
-    // ],
 
     // disallow use of multiline strings
     // https://eslint.org/docs/rules/no-multi-str
@@ -327,11 +316,6 @@ export default {
     // https://eslint.org/docs/rules/no-return-assign
     'no-return-assign': ['error', 'always'],
 
-    // Deprecated
-    // disallow redundant `return await`
-    // https://eslint.org/docs/rules/no-return-await
-    'no-return-await': ['error'],
-
     // disallow use of `javascript:` urls.
     // https://eslint.org/docs/rules/no-script-url
     'no-script-url': ['error'],
@@ -355,7 +339,7 @@ export default {
 
     // restrict what can be thrown as an exception
     // https://eslint.org/docs/rules/no-throw-literal
-    'no-throw-literal': ['off'],
+    'no-throw-literal': ['error'],
 
     // disallow unmodified conditions of loops
     // https://eslint.org/docs/rules/no-unmodified-loop-condition
@@ -402,7 +386,10 @@ export default {
 
     // disallow usage of configurable warning terms in comments: e.g. todo
     // https://eslint.org/docs/rules/no-warning-comments
-    'no-warning-comments': ['off', { terms: ['todo', 'fixme', 'xxx'], location: 'start' }],
+    'no-warning-comments': [
+      'off',
+      { terms: ['todo', 'fixme', 'xxx'], location: 'start' },
+    ],
 
     // disallow use of the with statement
     // https://eslint.org/docs/rules/no-with
@@ -443,11 +430,6 @@ export default {
     // requires to declare all vars on top of their containing scope
     // https://eslint.org/docs/rules/vars-on-top
     'vars-on-top': ['error'],
-
-    // Deprecated (prettier already handles this)
-    // require immediate function invocation to be wrapped in parentheses
-    // https://eslint.org/docs/rules/wrap-iife.html
-    // 'wrap-iife': ['error', 'outside', { functionPrototypeMethods: false }],
 
     // require or disallow Yoda conditions
     // https://eslint.org/docs/rules/yoda
