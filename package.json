@@ -21,6 +21,9 @@
     "url": "https://github.com/wakamsha/eslint-config/issues"
   },
   "homepage": "https://github.com/wakamsha/eslint-config#readme",
+  "dependencies": {
+    "eslint-plugin-import": "^2.29.1"
+  },
   "devDependencies": {
     "@semantic-release/changelog": "6.0.3",
     "@semantic-release/git": "10.0.1",
