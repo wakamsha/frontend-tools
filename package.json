@@ -2,6 +2,7 @@
   "name": "@wakamsha/eslint-config",
   "version": "0.0.1",
   "description": "wakamsha's ESLint rules as an extensible shared config.",
+  "type": "module",
   "scripts": {
     "release": "semantic-release"
   },
@@ -23,8 +24,13 @@
   "devDependencies": {
     "@semantic-release/changelog": "6.0.3",
     "@semantic-release/git": "10.0.1",
+    "eslint": "^8.56.0",
+    "eslint-define-config": "2.1.0",
     "prettier": "3.2.5",
     "prettier-plugin-organize-imports": "3.2.4",
     "semantic-release": "23.1.1"
+  },
+  "peerDependencies": {
+    "eslint": "^8.56.0"
   }
 }
