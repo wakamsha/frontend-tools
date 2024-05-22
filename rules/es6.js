@@ -1,3 +1,15 @@
+/**
+ * @file
+ * Copyright (c) 2012 Airbnb
+ *
+ * Licensed under the MIT License: https://github.com/airbnb/javascript/blob/master/LICENSE.md
+ *
+ * This file is a copy of https://github.com/airbnb/javascript/blob/master/packages/eslint-config-airbnb-base/rules/es6.js
+ * with the following modifications:
+ *
+ * - Specify `requireReturnForObjectLiteral` option for `arrow-body-style` rule to `true` because of readability.
+ */
+
 import { defineFlatConfig } from 'eslint-define-config';
 
 const config = defineFlatConfig({
