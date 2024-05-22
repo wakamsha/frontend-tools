@@ -1,4 +1,5 @@
-/*
+/**
+ * @file
  * Copyright (c) 2012 Airbnb
  *
  * Licensed under the MIT License: https://github.com/airbnb/javascript/blob/master/LICENSE.md
@@ -12,7 +13,9 @@
  * - Turn `no-implicit-globals` to `error`
  */
 
-export default {
+import { defineFlatConfig } from 'eslint-define-config';
+
+const config = defineFlatConfig({
   rules: {
     // enforces getter/setter pairs in objects
     // https://eslint.org/docs/rules/accessor-pairs
@@ -435,4 +438,6 @@ export default {
     // https://eslint.org/docs/rules/yoda
     yoda: ['error'],
   },
-};
+});
+
+export default config;
