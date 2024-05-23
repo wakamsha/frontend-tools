@@ -30,7 +30,7 @@ const config = defineFlatConfig({
     'import/core-modules': [],
     'import/ignore': [
       'node_modules',
-      '\\.(coffee|scss|css|less|hbs|svg|json)$',
+      '\\.(coffee|scss|css|less|hbs|svg|json|jpg|jpeg|png|webp)$',
     ],
   },
 
