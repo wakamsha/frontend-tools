@@ -2,6 +2,9 @@
   "name": "@wakamsha/eslint-config",
   "version": "0.0.1",
   "description": "wakamsha's ESLint rules as an extensible shared config.",
+  "exports": {
+    "./essentials": "./configs/essentials.js"
+  },
   "type": "module",
   "scripts": {
     "release": "semantic-release"
@@ -12,7 +15,11 @@
   },
   "keywords": [
     "eslint",
-    "config",
+    "eslint-config",
+    "flat-config",
+    "flatconfig",
+    "flatConfig",
+    "lint",
     "wakamsha"
   ],
   "author": "wakamsha <wakamsha@gmail.com>",
