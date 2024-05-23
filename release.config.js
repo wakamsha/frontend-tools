@@ -1,18 +1,18 @@
 /**
  * @type {import('semantic-release').GlobalConfig}
  */
-module.exports = {
+export default {
   plugins: [
-    "@semantic-release/commit-analyzer",
-    "@semantic-release/release-notes-generator",
-    "@semantic-release/changelog",
-    "@semantic-release/npm",
+    '@semantic-release/commit-analyzer',
+    '@semantic-release/release-notes-generator',
+    '@semantic-release/changelog',
+    '@semantic-release/npm',
     [
-      "@semantic-release/git",
+      '@semantic-release/git',
       {
-        assets: ["CHANGELOG.md", "package.json", "package-lock.json"],
+        assets: ['CHANGELOG.md', 'package.json', 'package-lock.json'],
       },
     ],
-    "@semantic-release/github",
+    '@semantic-release/github',
   ],
 };
