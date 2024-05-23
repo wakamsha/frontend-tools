@@ -77,6 +77,7 @@ const config = defineFlatConfig({
     // https://eslint.org/docs/rules/id-match
     'id-match': ['off'],
 
+    // deprecated in ESLint v9.3.0.
     // enforce position of line comments
     // https://eslint.org/docs/rules/line-comment-position
     // TODO: enable?

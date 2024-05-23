@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/wakamsha/eslint-config#readme",
   "dependencies": {
+    "confusing-browser-globals": "^1.0.11",
     "eslint-plugin-import": "^2.29.1",
     "eslint-plugin-promise": "^6.1.1"
   },
