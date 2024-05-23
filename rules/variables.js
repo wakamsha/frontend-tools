@@ -12,6 +12,7 @@
  * - Disable `no-use-before-define` rule to give priority to writing order that takes readability into account.
  */
 
+import confusingBrowserGlobals from 'confusing-browser-globals';
 import { defineFlatConfig } from 'eslint-define-config';
 
 const config = defineFlatConfig({
