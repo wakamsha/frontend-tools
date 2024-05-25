@@ -3,6 +3,15 @@ import { defineFlatConfig } from 'eslint-define-config';
 import bestPractices from './best-practices.js';
 import variables from './variables.js';
 
+/**
+ * @remarks
+ * The following rules are too strict and may reduce productivity, so they are specified as 'warn'.
+ *
+ * - no-unsafe-assignment
+ * - no-unsafe-call
+ * - no-unsafe-argument
+ * - no-unsafe-member-access
+ */
 export default defineFlatConfig({
   plugins: {
     '@typescript-eslint': typescriptEslint,
