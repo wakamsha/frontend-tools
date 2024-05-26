@@ -1,3 +1,11 @@
+# [1.2.0](https://github.com/wakamsha/eslint-config/compare/v1.1.0...v1.2.0) (2024-05-26)
+
+
+### Features
+
+* Implement the config "jsdoc" ([#34](https://github.com/wakamsha/eslint-config/issues/34)) ([b828c11](https://github.com/wakamsha/eslint-config/commit/b828c1198cbf5e5eda5c7cafae364adab9cc0bed))
+* Implement the rule "jsdoc" ([#32](https://github.com/wakamsha/eslint-config/issues/32)) ([69edaf0](https://github.com/wakamsha/eslint-config/commit/69edaf00e6eed3489aa407f7fe17defd53b1f1a9))
+
 # [1.1.0](https://github.com/wakamsha/eslint-config/compare/v1.0.1...v1.1.0) (2024-05-26)
 
 
