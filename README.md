@@ -24,7 +24,7 @@ npm install --save-dev @wakamsha/eslint-config eslint
 Within your ESLint config file (`eslint.config.js`):
 
 ```js
-import essentials from '@wakamsha/eslint-config/essentials';
+import essentials from '@wakamsha/eslint-config/essentials.js';
 
 export default [...essentials];
 ```
@@ -32,8 +32,8 @@ export default [...essentials];
 If you need TypeScript Support:
 
 ```diff
- import essentials from '@wakamsha/eslint-config/essentials';
-+import typescript from '@wakamsha/eslint-config/typescript';
+ import essentials from '@wakamsha/eslint-config/essentials.js';
++import typescript from '@wakamsha/eslint-config/typescript.js';
 
  export default [
    ...essentials,
@@ -63,9 +63,9 @@ npm install --save-dev eslint-config-prettier
 Within your ESLint config file:
 
 ```diff
- import essentials from '@wakamsha/eslint-config/essentials';
- import typescript from '@wakamsha/eslint-config/typescript';
- import prettier from 'eslint-config-prettier';
+ import essentials from '@wakamsha/eslint-config/essentials.js';
+ import typescript from '@wakamsha/eslint-config/typescript.js';
++import prettier from 'eslint-config-prettier';
 
 
  export default [
