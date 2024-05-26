@@ -43,10 +43,21 @@ If you need TypeScript Support:
 
 Must be added after `essentials`.
 
-|     Rule set | Summary                                               | Dependencies                                                                                                                                                                                                                                       |
-| -----------: | :---------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `essentials` | Contains basic, import, and promise recommended rules | [`eslint`](https://eslint.org/) <br> [`eslint-plugin-promise`](https://github.com/eslint-community/eslint-plugin-promise) <br> [`eslint-plugin-import`](https://github.com/import-js/eslint-plugin-import)                                         |
-| `typescript` | Contains TypeScript recommended rules                 | [`@eslint-typescript/eslint-plugin`](https://github.com/typescript-eslint/typescript-eslint/tree/main/packages/eslint-plugin) <br> [`@eslint-typescript/parser`](https://github.com/typescript-eslint/typescript-eslint/tree/main/packages/parser) |
+We also provide various other rule sets that you can configure to suit your project.
+
+```js
+import essentials from '@wakamsha/eslint-config/essentials.js';
+import react from '@wakamsha/eslint-config/react.js';
+import typescript from '@wakamsha/eslint-config/typescript.js';
+
+export default [...essentials, ...react, ...typescript];
+```
+
+|     Rule set | Summary                                               | Dependencies                                                                                                                                                                                                                                                                        |
+| -----------: | :---------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `essentials` | Contains basic, import, and promise recommended rules | [`eslint`](https://eslint.org/) <br> [`eslint-plugin-promise`](https://github.com/eslint-community/eslint-plugin-promise) <br> [`eslint-plugin-import`](https://github.com/import-js/eslint-plugin-import)                                                                          |
+|      `react` | Contains React and jsx-a11y recommended rules         | [`eslint-plugin-jsx-a11y`](https://github.com/jsx-eslint/eslint-plugin-jsx-a11y) <br> [`eslint-plugin-react-hooks`](https://github.com/facebook/react/tree/main/packages/eslint-plugin-react-hooks) <br> [`eslint-plugin-react`](https://github.com/jsx-eslint/eslint-plugin-react) |
+| `typescript` | Contains TypeScript recommended rules                 | [`@eslint-typescript/eslint-plugin`](https://github.com/typescript-eslint/typescript-eslint/tree/main/packages/eslint-plugin) <br> [`@eslint-typescript/parser`](https://github.com/typescript-eslint/typescript-eslint/tree/main/packages/parser)                                  |
 
 ## Using Prettier
 
@@ -83,6 +94,7 @@ By adding the `prettier` configuration to `extends` in the ESLint configuration,
 
 ```bash
 npm uninstall eslint-plugin-promise eslint-plugin-import \
+  eslint-plugin-jsx-a11y eslint-plugin-react eslint-plugin-react-hooks \
   @eslint-typescript/eslint-plugin @eslint-typescript/parser
 ```
 
