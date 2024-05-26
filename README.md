@@ -53,7 +53,7 @@ import {
   react,
   test,
   typescript,
-} from '@learn-react/eslint-config';
+} from '@wakamsha/eslint-config';
 
 export default [
   ...essentials,
