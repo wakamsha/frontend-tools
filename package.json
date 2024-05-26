@@ -3,7 +3,8 @@
   "version": "0.0.1",
   "description": "wakamsha's ESLint rules as an extensible shared config.",
   "exports": {
-    "./essentials": "./configs/essentials.js"
+    "./essentials": "./configs/essentials.js",
+    "./typescript": "./configs/typescript.js"
   },
   "type": "module",
   "scripts": {
