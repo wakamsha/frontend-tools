@@ -40,7 +40,6 @@ export default defineFlatConfig({
     // Disallow throwing literals as exceptions.
     // https://typescript-eslint.io/rules/no-throw-literal/
     // Replace 'no-throw-literal' rule with '@typescript-eslint' version
-    // React.Suspense で throw するため無効化する。
     '@typescript-eslint/no-throw-literal':
       bestPractices.rules['no-throw-literal'],
 
