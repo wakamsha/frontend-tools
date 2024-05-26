@@ -8,6 +8,9 @@
     "./typescript": "./configs/typescript.js"
   },
   "type": "module",
+  "engines": {
+    "node": ">= 18.18.0 || >= 20.0.0"
+  },
   "files": [
     "configs",
     "rules"
