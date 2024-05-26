@@ -7,6 +7,10 @@
     "./typescript": "./configs/typescript.js"
   },
   "type": "module",
+  "files": [
+    "configs",
+    "rules"
+  ],
   "scripts": {
     "release": "semantic-release"
   },
