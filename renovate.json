@@ -1,6 +1,24 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": [
-    "config:recommended"
+  "extends": ["config:js-app", ":semanticCommits"],
+  "timezone": "Asia/Tokyo",
+  "labels": ["dependencies"],
+  "schedule": ["every weekend"],
+  "minor": {
+    "automerge": true
+  },
+  "patch": {
+    "automerge": true
+  },
+
+  "packageRules": [
+    {
+      "groupName": "semantic-release family",
+      "matchPackageNames": ["semantic-release", "@semantic-release/*"]
+    },
+    {
+      "groupName": "Prettier families",
+      "matchPackagePatterns": ["^prettier"]
+    }
   ]
 }
