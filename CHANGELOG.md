@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/wakamsha/eslint-config/compare/v1.0.0...v1.0.1) (2024-05-26)
+
+
+### Bug Fixes
+
+* Include `eslint-define-config` in dependency list ([#18](https://github.com/wakamsha/eslint-config/issues/18)) ([a6048fd](https://github.com/wakamsha/eslint-config/commit/a6048fd582daec6765226587bf64992e7a85736a))
+
 # 1.0.0 (2024-05-26)
 
 
