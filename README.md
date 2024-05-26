@@ -25,7 +25,7 @@ npm install --save-dev @wakamsha/eslint-config eslint
 Within your ESLint config file (`eslint.config.js`):
 
 ```js
-import essentials from '@wakamsha/eslint-config/essentials.js';
+import { essentials } from '@wakamsha/eslint-config';
 
 export default [...essentials];
 ```
@@ -33,8 +33,8 @@ export default [...essentials];
 If you need TypeScript Support:
 
 ```diff
- import essentials from '@wakamsha/eslint-config/essentials.js';
-+import typescript from '@wakamsha/eslint-config/typescript.js';
+-import { essentials } from '@wakamsha/eslint-config';
++import { essentials, typescript } from '@wakamsha/eslint-config';
 
  export default [
    ...essentials,
@@ -47,13 +47,21 @@ Must be added after `essentials`.
 We also provide various other rule sets that you can configure to suit your project.
 
 ```js
-import essentials from '@wakamsha/eslint-config/essentials.js';
-import jsdoc from '@wakamsha/eslint-config/jsdoc.js';
-import react from '@wakamsha/eslint-config/react.js';
-import testReact from '@wakamsha/eslint-config/test/react.js';
-import typescript from '@wakamsha/eslint-config/typescript.js';
+import {
+  essentials,
+  jsdoc,
+  react,
+  test,
+  typescript,
+} from '@learn-react/eslint-config';
 
-export default [...essentials, ...jsdoc, ...react, ...testReact, ...typescript];
+export default [
+  ...essentials,
+  ...jsdoc,
+  ...react,
+  ...test.react,
+  ...typescript,
+];
 ```
 
 |     Rule set | Summary                                               | Dependencies                                                                                                                                                                                                                                                                        |
@@ -61,7 +69,7 @@ export default [...essentials, ...jsdoc, ...react, ...testReact, ...typescript];
 | `essentials` | Contains basic, import, and promise recommended rules | [`eslint`](https://eslint.org/) <br> [`eslint-plugin-promise`](https://github.com/eslint-community/eslint-plugin-promise) <br> [`eslint-plugin-import`](https://github.com/import-js/eslint-plugin-import)                                                                          |
 |      `jsdoc` | Contains JSDoc recommended rules                      | [`eslint-plugin-jsdoc`](https://github.com/gajus/eslint-plugin-jsdoc)                                                                                                                                                                                                               |
 |      `react` | Contains React and jsx-a11y recommended rules         | [`eslint-plugin-jsx-a11y`](https://github.com/jsx-eslint/eslint-plugin-jsx-a11y) <br> [`eslint-plugin-react-hooks`](https://github.com/facebook/react/tree/main/packages/eslint-plugin-react-hooks) <br> [`eslint-plugin-react`](https://github.com/jsx-eslint/eslint-plugin-react) |
-| `test/react` | Contains Vitest and React Testing Library rules       | [`eslint-plugin-vitest`](https://github.com/veritem/eslint-plugin-vitest) <br> [`eslint-plugin-jest-dom`](https://github.com/testing-library/eslint-plugin-jest-dom) <br> [`eslint-plugin-testing-library`](https://github.com/testing-library/eslint-plugin-testing-library)       |
+| `test.react` | Contains Vitest and React Testing Library rules       | [`eslint-plugin-vitest`](https://github.com/veritem/eslint-plugin-vitest) <br> [`eslint-plugin-jest-dom`](https://github.com/testing-library/eslint-plugin-jest-dom) <br> [`eslint-plugin-testing-library`](https://github.com/testing-library/eslint-plugin-testing-library)       |
 | `typescript` | Contains TypeScript recommended rules                 | [`@eslint-typescript/eslint-plugin`](https://github.com/typescript-eslint/typescript-eslint/tree/main/packages/eslint-plugin) <br> [`@eslint-typescript/parser`](https://github.com/typescript-eslint/typescript-eslint/tree/main/packages/parser)                                  |
 
 ## Using Prettier
@@ -79,8 +87,7 @@ npm install --save-dev eslint-config-prettier
 Within your ESLint config file:
 
 ```diff
- import essentials from '@wakamsha/eslint-config/essentials.js';
- import typescript from '@wakamsha/eslint-config/typescript.js';
+ import { essentials, typescript } from '@wakamsha/eslint-config';
 +import prettier from 'eslint-config-prettier';
 
 
