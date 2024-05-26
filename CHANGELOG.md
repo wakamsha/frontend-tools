@@ -1,3 +1,13 @@
+# [1.3.0](https://github.com/wakamsha/eslint-config/compare/v1.2.0...v1.3.0) (2024-05-26)
+
+
+### Features
+
+* Implement the config "test/react" ([#38](https://github.com/wakamsha/eslint-config/issues/38)) ([18db775](https://github.com/wakamsha/eslint-config/commit/18db77579ab0f2f639d9ee38eb7d9061ccfde49c))
+* Implement the rule "jest-dom" ([#35](https://github.com/wakamsha/eslint-config/issues/35)) ([fe0fa6b](https://github.com/wakamsha/eslint-config/commit/fe0fa6ba836c5f7192dd7ad7efa582a85e643931))
+* Implement the rule "testing-library" ([#37](https://github.com/wakamsha/eslint-config/issues/37)) ([bc0281f](https://github.com/wakamsha/eslint-config/commit/bc0281f5ada40a3cf9890749ab3df3826a1e5e2b))
+* Implement the rule "vitest" ([#36](https://github.com/wakamsha/eslint-config/issues/36)) ([a8dc539](https://github.com/wakamsha/eslint-config/commit/a8dc539fac8d46b604ad67347d7af0ce3f38ff94))
+
 # [1.2.0](https://github.com/wakamsha/eslint-config/compare/v1.1.0...v1.2.0) (2024-05-26)
 
 
