@@ -1,3 +1,27 @@
+/**
+ * @file
+ * Copyright (c) 2012 Airbnb
+ *
+ * Licensed under the MIT License: https://github.com/airbnb/javascript/blob/master/LICENSE.md
+ *
+ * This file is a copy of https://github.com/airbnb/javascript/blob/master/packages/eslint-config-airbnb/rules/react.js
+ * with the following modifications:
+ *
+ * - Enable `jsx-handler-names` rule
+ * - Enable `jsx-sort-props` rule
+ * - Disable `jsx-uses-react` rule as it's no longer needed from React 17.
+ * - Disable `jsx-uses-vars` rule as it's no longer needed from React 17.
+ * - Disable `react-in-jsx-scope` rule as it may not be necessary depending on the builder and transpiler settings.
+ * - Disable `no-array-index-key` rule as there're many situations where you have to use `index` as key.
+ * - Disable `require-default-props` rule as it's not needed in TypeScript.
+ * - Disable `forbid-foreign-prop-types` rule as it's not needed in TypeScript.
+ * - Disable `default-props-match-prop-types` rule as it's not needed in TypeScript.
+ * - Disable `no-redundant-should-component-update` rule
+ * - Disable `button-has-type` rule as it doesn't allow specification by variables containing Prop.
+ * - Change `namedComponents` and `unnamedComponents` to `arrow-function` in `function-component-definition` rule for TypeScript
+ * - Disable `prefer-exact-props` rule as it's not needed in TypeScript.
+ */
+
 import { defineFlatConfig } from 'eslint-define-config';
 import react from 'eslint-plugin-react';
 
@@ -31,7 +55,6 @@ export default defineFlatConfig({
 
     // Enforce event handler naming conventions in JSX
     // https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/jsx-handler-names.md
-    // `console` を使うためにこのプロジェクトでは無効化する。
     'react/jsx-handler-names': [
       'off',
       {
