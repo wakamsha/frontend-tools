@@ -4,6 +4,7 @@
   "description": "wakamsha's ESLint rules as an extensible shared config.",
   "exports": {
     "./essentials": "./configs/essentials.js",
+    "./jsdoc": "./configs/jsdoc.js",
     "./react": "./configs/react.js",
     "./typescript": "./configs/typescript.js"
   },
