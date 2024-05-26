@@ -1,3 +1,13 @@
+# [1.1.0](https://github.com/wakamsha/eslint-config/compare/v1.0.1...v1.1.0) (2024-05-26)
+
+
+### Features
+
+* Implement the config "react" ([#23](https://github.com/wakamsha/eslint-config/issues/23)) ([8e86f92](https://github.com/wakamsha/eslint-config/commit/8e86f92ef4af74a39b27bf47ce743691ea1afba4))
+* Implement the rule "jsx-a11y" ([#22](https://github.com/wakamsha/eslint-config/issues/22)) ([42b3ea7](https://github.com/wakamsha/eslint-config/commit/42b3ea7f5247343584a1a058a9e9c086a563c52c))
+* Implement the rule "react-hooks" ([#21](https://github.com/wakamsha/eslint-config/issues/21)) ([ab4849f](https://github.com/wakamsha/eslint-config/commit/ab4849f60768d7257722d700eba393d244221d5c))
+* Implement the rule "react" ([#20](https://github.com/wakamsha/eslint-config/issues/20)) ([c80ae97](https://github.com/wakamsha/eslint-config/commit/c80ae97b9bdffb0fc336823ca184b59d9862d170))
+
 ## [1.0.1](https://github.com/wakamsha/eslint-config/compare/v1.0.0...v1.0.1) (2024-05-26)
 
 
