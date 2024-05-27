@@ -1,8 +1,7 @@
 // @ts-check
-import { defineFlatConfig } from 'eslint-define-config';
 import jestDom from 'eslint-plugin-jest-dom';
 
-export default defineFlatConfig({
+export default {
   plugins: {
     'jest-dom': jestDom,
   },
@@ -10,4 +9,4 @@ export default defineFlatConfig({
   rules: {
     ...jestDom.configs.recommended.rules,
   },
-});
+};

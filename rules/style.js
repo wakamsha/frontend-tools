@@ -1,3 +1,4 @@
+// @ts-check
 /**
  * @file
  * Copyright (c) 2012 Airbnb
@@ -12,9 +13,7 @@
  * - Enable `no-plusplus` rule with `allowForLoopAfterthoughts` option
  */
 
-import { defineFlatConfig } from 'eslint-define-config';
-
-const config = defineFlatConfig({
+export default {
   rules: {
     // require camel case names
     // https://eslint.org/docs/rules/camelcase
@@ -275,6 +274,4 @@ const config = defineFlatConfig({
     // https://eslint.org/docs/rules/unicode-bom
     'unicode-bom': ['error', 'never'],
   },
-});
-
-export default config;
+};

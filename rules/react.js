@@ -1,3 +1,4 @@
+// @ts-check
 /**
  * @file
  * Copyright (c) 2012 Airbnb
@@ -22,10 +23,9 @@
  * - Disable `prefer-exact-props` rule as it's not needed in TypeScript.
  */
 
-import { defineFlatConfig } from 'eslint-define-config';
 import react from 'eslint-plugin-react';
 
-export default defineFlatConfig({
+export default {
   plugins: {
     react,
   },
@@ -536,4 +536,4 @@ export default defineFlatConfig({
     // https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/jsx-no-leaked-render.md
     'react/jsx-no-leaked-render': ['error'],
   },
-});
+};

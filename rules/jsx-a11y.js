@@ -1,3 +1,4 @@
+// @ts-check
 /**
  * @file
  * Copyright (c) 2012 Airbnb
@@ -17,10 +18,9 @@
  * - Disable `no-static-element-interactions` rule
  */
 
-import { defineFlatConfig } from 'eslint-define-config';
 import jsxA11y from 'eslint-plugin-jsx-a11y';
 
-export default defineFlatConfig({
+export default {
   plugins: {
     'jsx-a11y': jsxA11y,
   },
@@ -289,4 +289,4 @@ export default defineFlatConfig({
     // https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/master/docs/rules/tabindex-no-positive.md
     'jsx-a11y/tabindex-no-positive': 'error',
   },
-});
+};

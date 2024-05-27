@@ -1,11 +1,11 @@
-import { defineFlatConfig } from 'eslint-define-config';
+// @ts-check
 import jsdocConfig from '../rules/jsdoc.js';
 
-export default defineFlatConfig([
+export default [
   jsdocConfig.ts,
 
   {
     files: ['*.@(js|cjs|mjs)'],
     ...jsdocConfig.js,
   },
-]);
+];

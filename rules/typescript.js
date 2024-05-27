@@ -1,5 +1,5 @@
+// @ts-check
 import typescriptEslint from '@typescript-eslint/eslint-plugin';
-import { defineFlatConfig } from 'eslint-define-config';
 import bestPractices from './best-practices.js';
 import variables from './variables.js';
 
@@ -12,7 +12,7 @@ import variables from './variables.js';
  * - no-unsafe-argument
  * - no-unsafe-member-access
  */
-export default defineFlatConfig({
+export default {
   plugins: {
     '@typescript-eslint': typescriptEslint,
   },
@@ -158,4 +158,4 @@ export default defineFlatConfig({
     // https://typescript-eslint.io/rules/only-throw-error/
     '@typescript-eslint/only-throw-error': ['off'],
   },
-});
+};

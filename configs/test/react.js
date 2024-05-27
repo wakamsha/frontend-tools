@@ -1,10 +1,9 @@
 // @ts-check
-import { defineFlatConfig } from 'eslint-define-config';
 import jestDomConfig from '../../rules/jest-dom.js';
 import testingLibraryReactConfig from '../../rules/testing-library/react.js';
 import vitestConfig from '../../rules/vitest.js';
 
-export default defineFlatConfig([
+export default [
   {
     files: ['**/__tests__/**/*', '**/*.{spec,test}.*'],
     ...vitestConfig,
@@ -19,4 +18,4 @@ export default defineFlatConfig([
     files: ['**/__tests__/**/*', '**/*.{spec,test}.*'],
     ...testingLibraryReactConfig,
   },
-]);
+];

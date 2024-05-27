@@ -1,7 +1,7 @@
-import { defineFlatConfig } from 'eslint-define-config';
+// @ts-check
 import jsdoc from 'eslint-plugin-jsdoc';
 
-const ts = defineFlatConfig({
+const ts = {
   plugins: {
     jsdoc,
   },
@@ -113,9 +113,9 @@ const ts = defineFlatConfig({
     // TypeScript's completion function is sufficient.
     'jsdoc/require-returns': ['off'],
   },
-});
+};
 
-const js = defineFlatConfig({
+const js = {
   plugins: {
     jsdoc,
   },
@@ -137,7 +137,7 @@ const js = defineFlatConfig({
     // https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/no-types.md
     'jsdoc/no-types': ['off'],
   },
-});
+};
 
 export default {
   ts,
