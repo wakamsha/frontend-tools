@@ -20,8 +20,10 @@ export default [
   bestPracticesConfig,
   errorsConfig,
   es6Config,
-  importsConfig,
-  promiseConfig,
   styleConfig,
   variablesConfig,
+
+  importsConfig,
+
+  promiseConfig,
 ];
