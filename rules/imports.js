@@ -26,6 +26,9 @@ export default {
       node: {
         extensions: ['.mjs', '.js', '.json'],
       },
+      // Resolve the problem of incorrect recognition of alias paths by TypeScript compiler options.
+      // https://github.com/import-js/eslint-plugin-import/issues/1485#issuecomment-535351922
+      typescript: {},
     },
     'import/extensions': ['.js', '.mjs', '.jsx', 'ts', 'tsx'],
     'import/core-modules': [],
