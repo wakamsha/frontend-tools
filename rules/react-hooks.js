@@ -1,7 +1,7 @@
-import { defineFlatConfig } from 'eslint-define-config';
+// @ts-check
 import reactHooks from 'eslint-plugin-react-hooks';
 
-export default defineFlatConfig({
+export default {
   plugins: {
     'react-hooks': reactHooks,
   },
@@ -15,4 +15,4 @@ export default defineFlatConfig({
     // https://github.com/facebook/react/blob/main/packages/eslint-plugin-react-hooks/src/RulesOfHooks.js
     'react-hooks/rules-of-hooks': ['error'],
   },
-});
+};

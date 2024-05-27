@@ -1,7 +1,7 @@
-import { defineFlatConfig } from 'eslint-define-config';
+// @ts-check
 import promisePlugin from 'eslint-plugin-promise';
 
-const config = defineFlatConfig({
+const config = {
   plugins: {
     promise: promisePlugin,
   },
@@ -19,6 +19,6 @@ const config = defineFlatConfig({
     // Disallowing nesting may actually increase complexity.
     'promise/no-nesting': ['off'],
   },
-});
+};
 
 export default config;

@@ -1,3 +1,4 @@
+// @ts-check
 /**
  * @file
  * Copyright (c) 2012 Airbnb
@@ -10,9 +11,7 @@
  * - Specify `requireReturnForObjectLiteral` option for `arrow-body-style` rule to `true` because of readability.
  */
 
-import { defineFlatConfig } from 'eslint-define-config';
-
-const config = defineFlatConfig({
+const config = {
   rules: {
     // enforces no braces where they can be omitted
     // https://eslint.org/docs/rules/arrow-body-style
@@ -184,6 +183,6 @@ const config = defineFlatConfig({
     // https://eslint.org/docs/rules/symbol-description
     'symbol-description': ['error'],
   },
-});
+};
 
 export default config;

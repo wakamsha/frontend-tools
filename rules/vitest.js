@@ -1,8 +1,7 @@
 // @ts-check
-import { defineFlatConfig } from 'eslint-define-config';
 import vitest from 'eslint-plugin-vitest';
 
-export default defineFlatConfig({
+export default {
   plugins: {
     vitest,
   },
@@ -23,4 +22,4 @@ export default defineFlatConfig({
       },
     ],
   },
-});
+};

@@ -1,3 +1,4 @@
+// @ts-check
 /**
  * @file
  * Copyright (c) 2012 Airbnb
@@ -12,10 +13,10 @@
  * - Enable `import/no-default-export` rule to disallow default exports
  */
 
-import { defineFlatConfig } from 'eslint-define-config';
+// @ts-ignore
 import importPlugin from 'eslint-plugin-import';
 
-const config = defineFlatConfig({
+const config = {
   plugins: {
     import: importPlugin,
   },
@@ -307,6 +308,6 @@ const config = defineFlatConfig({
     // https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/no-empty-named-blocks.md
     'import/no-empty-named-blocks': ['error'],
   },
-});
+};
 
 export default config;

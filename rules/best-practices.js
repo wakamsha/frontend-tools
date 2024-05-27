@@ -1,3 +1,4 @@
+// @ts-check
 /**
  * @file
  * Copyright (c) 2012 Airbnb
@@ -13,9 +14,7 @@
  * - Turn `no-implicit-globals` to `error`
  */
 
-import { defineFlatConfig } from 'eslint-define-config';
-
-const config = defineFlatConfig({
+const config = {
   rules: {
     // enforces getter/setter pairs in objects
     // https://eslint.org/docs/rules/accessor-pairs
@@ -438,6 +437,6 @@ const config = defineFlatConfig({
     // https://eslint.org/docs/rules/yoda
     yoda: ['error'],
   },
-});
+};
 
 export default config;

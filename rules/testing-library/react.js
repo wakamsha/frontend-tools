@@ -1,8 +1,7 @@
 // @ts-check
-import { defineFlatConfig } from 'eslint-define-config';
 import testingLibrary from 'eslint-plugin-testing-library';
 
-export default defineFlatConfig({
+export default {
   plugins: {
     'testing-library': testingLibrary,
   },
@@ -10,4 +9,4 @@ export default defineFlatConfig({
   rules: {
     ...testingLibrary.configs.react.rules,
   },
-});
+};

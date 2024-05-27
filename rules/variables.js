@@ -1,3 +1,4 @@
+// @ts-check
 /**
  * @files
  * Copyright (c) 2012 Airbnb
@@ -13,9 +14,8 @@
  */
 
 import confusingBrowserGlobals from 'confusing-browser-globals';
-import { defineFlatConfig } from 'eslint-define-config';
 
-const config = defineFlatConfig({
+const config = {
   rules: {
     // enforce or disallow variable initializations at definition
     // https://eslint.org/docs/rules/init-declarations
@@ -82,6 +82,6 @@ const config = defineFlatConfig({
     // note: Disable in order to prioritize the order of description for readability.
     'no-use-before-define': ['off'],
   },
-});
+};
 
 export default config;
