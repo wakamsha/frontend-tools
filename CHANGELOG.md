@@ -1,3 +1,22 @@
+# [2.0.0](https://github.com/wakamsha/eslint-config/compare/v1.3.0...v2.0.0) (2024-05-27)
+
+
+### Bug Fixes
+
+* essentials config ([#40](https://github.com/wakamsha/eslint-config/issues/40)) ([fadbe88](https://github.com/wakamsha/eslint-config/commit/fadbe88c30c6e2a6027dd694e732252644c3629f))
+
+
+### Features
+
+* Aggregate modules to be exported into a single object ([#39](https://github.com/wakamsha/eslint-config/issues/39)) ([ac78d6a](https://github.com/wakamsha/eslint-config/commit/ac78d6a6851908ee51a65aa3660e42c25b3139b4))
+
+
+### BREAKING CHANGES
+
+* Aggregate and export configs into a single object.
+
+* update readme
+
 # [1.3.0](https://github.com/wakamsha/eslint-config/compare/v1.2.0...v1.3.0) (2024-05-26)
 
 
