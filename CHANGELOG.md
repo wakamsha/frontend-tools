@@ -1,3 +1,10 @@
+# [2.1.0](https://github.com/wakamsha/eslint-config/compare/v2.0.1...v2.1.0) (2024-05-27)
+
+
+### Features
+
+* Resolve the problem of incorrect refognition of alias path by TypeScript's Compiler Options ([#41](https://github.com/wakamsha/eslint-config/issues/41)) ([f7f9cb4](https://github.com/wakamsha/eslint-config/commit/f7f9cb42d2c664671b40969812e7ad93ccc82c32))
+
 # [2.0.1](https://github.com/wakamsha/eslint-config/compare/v2.0.0...v2.0.1) (2024-05-27)
 
 ### Bug Fixes
