@@ -15,7 +15,7 @@
 
 import confusingBrowserGlobals from 'confusing-browser-globals';
 
-const config = {
+export default {
   rules: {
     // enforce or disallow variable initializations at definition
     // https://eslint.org/docs/rules/init-declarations
@@ -83,5 +83,3 @@ const config = {
     'no-use-before-define': ['off'],
   },
 };
-
-export default config;

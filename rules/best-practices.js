@@ -14,7 +14,7 @@
  * - Turn `no-implicit-globals` to `error`
  */
 
-const config = {
+export default {
   rules: {
     // enforces getter/setter pairs in objects
     // https://eslint.org/docs/rules/accessor-pairs
@@ -438,5 +438,3 @@ const config = {
     yoda: ['error'],
   },
 };
-
-export default config;

@@ -13,7 +13,7 @@
  * - Enable `no-plusplus` rule with `allowForLoopAfterthoughts` option
  */
 
-const config = {
+export default {
   rules: {
     // require camel case names
     // https://eslint.org/docs/rules/camelcase
@@ -275,5 +275,3 @@ const config = {
     'unicode-bom': ['error', 'never'],
   },
 };
-
-export default config;

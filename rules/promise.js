@@ -1,7 +1,7 @@
 // @ts-check
 import promisePlugin from 'eslint-plugin-promise';
 
-const config = {
+export default {
   plugins: {
     promise: promisePlugin,
   },
@@ -20,5 +20,3 @@ const config = {
     'promise/no-nesting': ['off'],
   },
 };
-
-export default config;

@@ -16,7 +16,7 @@
 // @ts-ignore
 import importPlugin from 'eslint-plugin-import';
 
-const config = {
+export default {
   plugins: {
     import: importPlugin,
   },
@@ -309,5 +309,3 @@ const config = {
     'import/no-empty-named-blocks': ['error'],
   },
 };
-
-export default config;

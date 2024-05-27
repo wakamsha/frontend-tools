@@ -11,7 +11,7 @@
  * - Specify `requireReturnForObjectLiteral` option for `arrow-body-style` rule to `true` because of readability.
  */
 
-const config = {
+export default {
   rules: {
     // enforces no braces where they can be omitted
     // https://eslint.org/docs/rules/arrow-body-style
@@ -184,5 +184,3 @@ const config = {
     'symbol-description': ['error'],
   },
 };
-
-export default config;
