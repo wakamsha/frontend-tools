@@ -1,3 +1,9 @@
+# [2.0.1](https://github.com/wakamsha/eslint-config/compare/v2.0.0...v2.0.1) (2024-05-27)
+
+### Bug Fixes
+
+- essentials config ([#40](https://github.com/wakamsha/eslint-config/issues/40)) ([fadbe88](https://github.com/wakamsha/eslint-config/commit/fadbe88c30c6e2a6027dd694e732252644c3629f))
+
 # [2.0.0](https://github.com/wakamsha/eslint-config/compare/v1.3.0...v2.0.0) (2024-05-27)
 
 ### Features
