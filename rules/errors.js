@@ -11,7 +11,7 @@
  * - Add `info`, `warn`, `error`, `time` and `timeEnd` to the allow list of `no-console`
  */
 
-const config = {
+export default {
   rules: {
     // Enforce “for” loop update clause moving the counter in the right direction
     // https://eslint.org/docs/rules/for-direction
@@ -191,5 +191,3 @@ const config = {
     'valid-typeof': ['error', { requireStringLiterals: true }],
   },
 };
-
-export default config;
