@@ -15,13 +15,13 @@ export default [
         sourceType: 'module',
       },
     },
-
-    bestPracticesConfig,
-    errorsConfig,
-    es6Config,
-    importsConfig,
-    promiseConfig,
-    styleConfig,
-    variablesConfig,
   },
+
+  bestPracticesConfig,
+  errorsConfig,
+  es6Config,
+  importsConfig,
+  promiseConfig,
+  styleConfig,
+  variablesConfig,
 ];
