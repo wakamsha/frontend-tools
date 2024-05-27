@@ -1,3 +1,11 @@
+# [2.2.0](https://github.com/wakamsha/eslint-config/compare/v2.1.0...v2.2.0) (2024-05-27)
+
+
+### Features
+
+* Implement the config "node" ([#43](https://github.com/wakamsha/eslint-config/issues/43)) ([ed75c0f](https://github.com/wakamsha/eslint-config/commit/ed75c0fe0da0973d524af91530665e5568d111f5))
+* Implement the config "storybook" ([#42](https://github.com/wakamsha/eslint-config/issues/42)) ([8296c0c](https://github.com/wakamsha/eslint-config/commit/8296c0cd8ff47386afe17497f0c43ac3c904feb7))
+
 # [2.1.0](https://github.com/wakamsha/eslint-config/compare/v2.0.1...v2.1.0) (2024-05-27)
 
 
