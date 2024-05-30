@@ -16,6 +16,7 @@
     "rules"
   ],
   "scripts": {
+    "lint": "eslint './**/*.js'",
     "release": "semantic-release"
   },
   "repository": {
