@@ -1,6 +1,6 @@
 // @ts-check
 import typescriptEslintParser from '@typescript-eslint/parser';
-import typescriptConfig from '../rules/typescript.js';
+import typescriptRuleSet from '../rules/typescript.js';
 
 export default [
   {
@@ -13,6 +13,6 @@ export default [
       },
     },
 
-    ...typescriptConfig,
+    ...typescriptRuleSet,
   },
 ];

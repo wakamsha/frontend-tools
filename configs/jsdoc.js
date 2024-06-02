@@ -1,11 +1,11 @@
 // @ts-check
-import jsdocConfig from '../rules/jsdoc.js';
+import jsdocRuleSet from '../rules/jsdoc.js';
 
 export default [
-  jsdocConfig.ts,
+  jsdocRuleSet.ts,
 
   {
     files: ['*.@(js|cjs|mjs)'],
-    ...jsdocConfig.js,
+    ...jsdocRuleSet.js,
   },
 ];

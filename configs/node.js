@@ -1,3 +1,3 @@
-import nodeConfig from '../rules/node.js';
+import nodeRuleSet from '../rules/node.js';
 
-export default [nodeConfig];
+export default [nodeRuleSet];

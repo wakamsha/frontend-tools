@@ -1,11 +1,11 @@
 // @ts-check
-import bestPracticesConfig from '../rules/best-practices.js';
-import errorsConfig from '../rules/errors.js';
-import es6Config from '../rules/es6.js';
-import importsConfig from '../rules/imports.js';
-import promiseConfig from '../rules/promise.js';
-import styleConfig from '../rules/style.js';
-import variablesConfig from '../rules/variables.js';
+import bestPracticesRuleSet from '../rules/best-practices.js';
+import errorsRuleSet from '../rules/errors.js';
+import es6RuleSet from '../rules/es6.js';
+import importsRuleSet from '../rules/imports.js';
+import promiseRuleSet from '../rules/promise.js';
+import styleRuleSet from '../rules/style.js';
+import variablesRuleSet from '../rules/variables.js';
 
 export default [
   {
@@ -17,11 +17,11 @@ export default [
     },
   },
 
-  bestPracticesConfig,
-  errorsConfig,
-  es6Config,
-  styleConfig,
-  variablesConfig,
-  importsConfig,
-  promiseConfig,
+  bestPracticesRuleSet,
+  errorsRuleSet,
+  es6RuleSet,
+  styleRuleSet,
+  variablesRuleSet,
+  importsRuleSet,
+  promiseRuleSet,
 ];
