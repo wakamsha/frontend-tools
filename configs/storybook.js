@@ -8,7 +8,7 @@ export default [
   },
 
   {
-    files: ['**/.storybook/**/*.@(js|cjs|mjs|ts)'],
+    files: ['**/.storybook/**/*.@(js|jsx|cjs|mjs|ts|tsx)'],
     ...storybookRuleSet.config,
   },
 ];
