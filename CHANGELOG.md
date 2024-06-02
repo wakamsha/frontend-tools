@@ -1,3 +1,11 @@
+## [2.2.1](https://github.com/wakamsha/eslint-config/compare/v2.2.0...v2.2.1) (2024-06-02)
+
+
+### Bug Fixes
+
+* `import/namespace` error ([#44](https://github.com/wakamsha/eslint-config/issues/44)) ([2c5bfed](https://github.com/wakamsha/eslint-config/commit/2c5bfed4735697e493a5f79890e344d55963ac0c))
+* Storybook rules ([#49](https://github.com/wakamsha/eslint-config/issues/49)) ([d35257a](https://github.com/wakamsha/eslint-config/commit/d35257ae47b6596b52a54101753622ff442b52be))
+
 # [2.2.0](https://github.com/wakamsha/eslint-config/compare/v2.1.0...v2.2.0) (2024-05-27)
 
 
