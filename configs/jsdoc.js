@@ -5,7 +5,7 @@ export default [
   jsdocRuleSet.ts,
 
   {
-    files: ['*.@(js|cjs|mjs)'],
+    files: ['**/*.@(js|cjs|mjs)'],
     ...jsdocRuleSet.js,
   },
 ];
