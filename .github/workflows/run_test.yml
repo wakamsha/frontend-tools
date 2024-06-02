@@ -6,7 +6,7 @@ on:
       - '*'
 
 jobs:
-  test:
+  snapshot-test:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -15,4 +15,4 @@ jobs:
         uses: ./.github/actions/restore-node
 
       - name: Run Test
-        run: npm run test
+        run: npm run test:snapshot
