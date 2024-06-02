@@ -1,5 +1,5 @@
 // @ts-check
-import { essentials, node } from './configs/index.js';
+import { essentials, node, test } from './configs/index.js';
 
 export default [
   {
@@ -14,4 +14,6 @@ export default [
   },
 
   ...node,
+
+  ...test.react,
 ];
