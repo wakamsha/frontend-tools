@@ -19,10 +19,12 @@ const stories = {
 const config = {
   plugins: {
     storybook,
+    import: importPlugin,
   },
 
   rules: {
     ...storybook.configs.recommended.overrides[1].rules,
+    'import/no-default-export': ['off'],
   },
 };
 

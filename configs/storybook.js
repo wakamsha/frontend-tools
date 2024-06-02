@@ -3,12 +3,12 @@ import storybookRuleSet from '../rules/storybook.js';
 
 export default [
   {
-    files: ['*.@(stories|story).@(ts|tsx|js|jsx)'],
+    files: ['**/*.@(stories|story).@(ts|tsx|js|jsx)'],
     ...storybookRuleSet.stories,
   },
 
   {
-    files: ['.storybook/**/*.@(js|cjs|mjs|ts)'],
+    files: ['**/.storybook/**/*.@(js|cjs|mjs|ts)'],
     ...storybookRuleSet.config,
   },
 ];
