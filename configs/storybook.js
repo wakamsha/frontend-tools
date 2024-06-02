@@ -1,14 +1,14 @@
 // @ts-check
-import storybookConfig from '../rules/storybook.js';
+import storybookRuleSet from '../rules/storybook.js';
 
 export default [
-  storybookConfig.base,
+  {
+    files: ['*.@(stories|story).@(ts|tsx|js|jsx)'],
+    ...storybookRuleSet.stories,
+  },
 
   {
-    files: [
-      '*.stories.@(ts|tsx|js|jsx)',
-      '**/.storybook/**/*.@(ts|tsx|js|jsx)',
-    ],
-    ...storybookConfig.overrides,
+    files: ['.storybook/**/*.@(js|cjs|mjs|ts)'],
+    ...storybookRuleSet.config,
   },
 ];
