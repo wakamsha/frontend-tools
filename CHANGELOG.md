@@ -1,3 +1,10 @@
+## [2.2.3](https://github.com/wakamsha/eslint-config/compare/v2.2.2...v2.2.3) (2024-06-02)
+
+
+### Bug Fixes
+
+* Glob pattern in storybook config ([#52](https://github.com/wakamsha/eslint-config/issues/52)) ([b09f12d](https://github.com/wakamsha/eslint-config/commit/b09f12de9ded83f02a074a2467403d55540c2889))
+
 ## [2.2.2](https://github.com/wakamsha/eslint-config/compare/v2.2.1...v2.2.2) (2024-06-02)
 
 

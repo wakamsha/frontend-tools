@@ -1,6 +1,6 @@
 {
   "name": "@wakamsha/eslint-config",
-  "version": "2.2.2",
+  "version": "2.2.3",
   "description": "wakamsha's ESLint rules as an extensible shared config.",
   "exports": {
     ".": {
