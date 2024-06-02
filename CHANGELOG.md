@@ -1,3 +1,11 @@
+## [2.2.2](https://github.com/wakamsha/eslint-config/compare/v2.2.1...v2.2.2) (2024-06-02)
+
+
+### Bug Fixes
+
+* Glob pattern in jsdoc config ([#51](https://github.com/wakamsha/eslint-config/issues/51)) ([59f2bbd](https://github.com/wakamsha/eslint-config/commit/59f2bbd26064680886695143b73532a072e49961))
+* Glob patterns in Storybook rules ([#50](https://github.com/wakamsha/eslint-config/issues/50)) ([3e02fa6](https://github.com/wakamsha/eslint-config/commit/3e02fa69e85810b46a892bce5210e19f8f70ae43))
+
 ## [2.2.1](https://github.com/wakamsha/eslint-config/compare/v2.2.0...v2.2.1) (2024-06-02)
 
 
