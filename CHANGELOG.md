@@ -1,3 +1,10 @@
+## [2.2.4](https://github.com/wakamsha/eslint-config/compare/v2.2.3...v2.2.4) (2024-06-08)
+
+
+### Bug Fixes
+
+* Mute unnecessary rules for typescript users ([#54](https://github.com/wakamsha/eslint-config/issues/54)) ([6a6cbfe](https://github.com/wakamsha/eslint-config/commit/6a6cbfe8e87bdcbd36099dbf0ebcbeccc291c67f))
+
 ## [2.2.3](https://github.com/wakamsha/eslint-config/compare/v2.2.2...v2.2.3) (2024-06-02)
 
 
