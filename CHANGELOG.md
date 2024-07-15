@@ -1,3 +1,15 @@
+# [3.0.0](https://github.com/wakamsha/eslint-config/compare/v2.2.4...v3.0.0) (2024-07-15)
+
+
+### Features
+
+* Add a ruleset powered by `unicorn` plugin into `essentials` config ([#64](https://github.com/wakamsha/eslint-config/issues/64)) ([91e5491](https://github.com/wakamsha/eslint-config/commit/91e54919f82b629d4b23b78bdb365335819dc1b8))
+
+
+### BREAKING CHANGES
+
+* Add a ruleset powered by `unicorn` plugin into `essentials` config
+
 ## [2.2.4](https://github.com/wakamsha/eslint-config/compare/v2.2.3...v2.2.4) (2024-06-08)
 
 
