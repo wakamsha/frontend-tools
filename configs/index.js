@@ -1,14 +1,15 @@
 // @ts-check
-import essentials from './essentials.js';
-import jsdoc from './jsdoc.js';
-import node from './node.js';
-import react from './react.js';
-import storybook from './storybook.js';
+
 import testReact from './test/react.js';
-import typescript from './typescript.js';
 
 const test = {
   react: testReact,
 };
 
-export { essentials, jsdoc, node, react, storybook, test, typescript };
+export { default as essentials } from './essentials.js';
+export { default as jsdoc } from './jsdoc.js';
+export { default as node } from './node.js';
+export { default as react } from './react.js';
+export { default as storybook } from './storybook.js';
+export { default as typescript } from './typescript.js';
+export { test };
