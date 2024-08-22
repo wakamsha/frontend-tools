@@ -1,3 +1,12 @@
+## [3.0.1](https://github.com/wakamsha/eslint-config/compare/v3.0.0...v3.0.1) (2024-08-22)
+
+
+### Bug Fixes
+
+* **deps:** update dependency eslint-plugin-jsdoc to v50 ([#76](https://github.com/wakamsha/eslint-config/issues/76)) ([72c0bfb](https://github.com/wakamsha/eslint-config/commit/72c0bfb43d020854b648197d0f352ce43fc5b104))
+* **deps:** update dependency eslint-plugin-promise to v7 ([#72](https://github.com/wakamsha/eslint-config/issues/72)) ([3cb0ca3](https://github.com/wakamsha/eslint-config/commit/3cb0ca3abdf4bcf422f1994b452ddd59d203d547))
+* extensions list into `settings` field of `import` rules ([#78](https://github.com/wakamsha/eslint-config/issues/78)) ([65b4018](https://github.com/wakamsha/eslint-config/commit/65b40182430bf1a6b93759d4b3bc91f40a705763))
+
 # [3.0.0](https://github.com/wakamsha/eslint-config/compare/v2.2.4...v3.0.0) (2024-07-15)
 
 
