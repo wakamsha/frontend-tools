@@ -39,7 +39,7 @@ export default {
     // TODO: Remove this once eslint-plugin-import supports Flat Config completely.
     // https://github.com/import-js/eslint-plugin-import/issues/2556#issuecomment-1419518561
     'import/parsers': {
-      espree: ['.js', '.mjs', '.jsx', '.ts', '.mts', '.tsx'],
+      espree: ['.js', '.cjs', '.mjs', '.jsx'],
     },
   },
 
