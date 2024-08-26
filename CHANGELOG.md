@@ -1,3 +1,10 @@
+## [3.0.2](https://github.com/wakamsha/eslint-config/compare/v3.0.1...v3.0.2) (2024-08-26)
+
+
+### Bug Fixes
+
+* TypeScript import and export parsing ([#80](https://github.com/wakamsha/eslint-config/issues/80)) ([b03d84b](https://github.com/wakamsha/eslint-config/commit/b03d84bd95197b01b261aba61607a2c44ffb8111))
+
 ## [3.0.1](https://github.com/wakamsha/eslint-config/compare/v3.0.0...v3.0.1) (2024-08-22)
 
 
