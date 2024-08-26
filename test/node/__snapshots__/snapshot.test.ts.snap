@@ -1950,11 +1950,9 @@ exports[`should match ESLint Configuration snapshot: node 1`] = `
     "import/parsers": {
       "espree": [
         ".js",
+        ".cjs",
         ".mjs",
         ".jsx",
-        ".ts",
-        ".mts",
-        ".tsx",
       ],
     },
     "import/resolver": {

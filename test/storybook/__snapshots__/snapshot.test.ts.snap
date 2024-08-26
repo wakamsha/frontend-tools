@@ -2958,13 +2958,17 @@ exports[`should match ESLint Configuration snapshot: storybook 1`] = `
       "\\.(coffee|scss|css|less|hbs|svg|json|jpg|jpeg|png|webp)$",
     ],
     "import/parsers": {
+      "@typescript-eslint/parser": [
+        ".ts",
+        ".tsx",
+        ".cts",
+        ".mts",
+      ],
       "espree": [
         ".js",
+        ".cjs",
         ".mjs",
         ".jsx",
-        ".ts",
-        ".mts",
-        ".tsx",
       ],
     },
     "import/resolver": {
