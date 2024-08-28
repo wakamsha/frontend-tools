@@ -6,19 +6,13 @@ export default {
     [
       '@semantic-release/commit-analyzer',
       {
-        parserOpts: {
-          // see: https://github.com/semantic-release/commit-analyzer/issues/231#issuecomment-1242113093
-          breakingHeaderPattern: /^(\w*)(?:\((.*)\))?!: (.*)$/,
-        },
+        preset: 'conventionalcommits',
       },
     ],
     [
       '@semantic-release/release-notes-generator',
       {
-        parserOpts: {
-          // see: https://github.com/semantic-release/commit-analyzer/issues/231#issuecomment-1242113093
-          breakingHeaderPattern: /^(\w*)(?:\((.*)\))?!: (.*)$/,
-        },
+        preset: 'conventionalcommits',
       },
     ],
     '@semantic-release/changelog',
