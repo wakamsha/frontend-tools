@@ -15,6 +15,13 @@ jobs:
   release:
     runs-on: ubuntu-latest
     steps:
+      - name: Generate Token
+        id: app-token
+        uses: actions/create-github-app-token@v1
+        with:
+          app-id: ${{ secrets.BOT_APP_ID }}
+          private-key: ${{ secrets.BOT_PRIVATE_KEY }}
+
       - name: Checkout
         uses: actions/checkout@v4
         with:
@@ -35,5 +42,5 @@ jobs:
       - name: Release
         run: npm run release ${{ github.event.inputs.dry_run == 'true' && '-- --dry-run' || '' }}
         env:
-          GITHUB_TOKEN: ${{ secrets.PAT_SEMANTIC_RELEASE }}
+          GITHUB_TOKEN: ${{ steps.app-token.outputs.token }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
