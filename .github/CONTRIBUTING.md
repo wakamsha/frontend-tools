@@ -10,7 +10,7 @@ I appreciate your considering contributing `@wakamsha/eslint-config`. This docum
 
 ### Installation
 
-1. Folk this repository and clone it locally
+1. Fork this repository and clone it locally
 
    ```bash
    git clone https://github.com/your-username/eslint-config.git
@@ -40,7 +40,7 @@ The main scripts used during development are:
 ### Development
 
 1. Check [the Issue Tracker](https://github.com/wakamsha/eslint-config/issues), make sure if there is anything relevant to the problem you are trying to solve.
-2. Keep the repository you did folk up to date.
+2. Keep the repository you did fork up to date.
 
    ```bash
     git fetch upstream
