@@ -38,12 +38,6 @@ export default {
     '@typescript-eslint/prefer-promise-reject-errors':
       bestPractices.rules['prefer-promise-reject-errors'],
 
-    // Disallow throwing literals as exceptions.
-    // https://typescript-eslint.io/rules/no-throw-literal/
-    // Replace 'no-throw-literal' rule with '@typescript-eslint' version
-    '@typescript-eslint/no-throw-literal':
-      bestPractices.rules['no-throw-literal'],
-
     // Enforce naming conventions for everything across a codebase.
     // https://typescript-eslint.io/rules/naming-convention/
     // Replace 'camelcase' rule with '@typescript-eslint/naming-convention'
