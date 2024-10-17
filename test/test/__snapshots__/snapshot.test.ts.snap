@@ -66,10 +66,10 @@ exports[`should match ESLint Configuration snapshot: test 1`] = `
       "undefined": false,
       "unescape": false,
     },
-    "parser": "typescript-eslint/parser@7.10.0",
+    "parser": "typescript-eslint/parser@8.9.0",
     "parserOptions": {
       "ecmaVersion": 2023,
-      "project": true,
+      "projectService": true,
       "sourceType": "module",
     },
     "sourceType": "module",
@@ -82,7 +82,7 @@ exports[`should match ESLint Configuration snapshot: test 1`] = `
     "vitest:vitest@0.5.3",
     "jest-dom",
     "testing-library",
-    "@typescript-eslint:@typescript-eslint/eslint-plugin@7.10.0",
+    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.9.0",
   ],
   "processor": undefined,
   "rules": {
@@ -102,9 +102,6 @@ exports[`should match ESLint Configuration snapshot: test 1`] = `
       },
     ],
     "@typescript-eslint/ban-tslint-comment": [
-      2,
-    ],
-    "@typescript-eslint/ban-types": [
       2,
     ],
     "@typescript-eslint/class-literal-property-style": [
@@ -184,6 +181,9 @@ exports[`should match ESLint Configuration snapshot: test 1`] = `
     "@typescript-eslint/no-confusing-void-expression": [
       2,
     ],
+    "@typescript-eslint/no-deprecated": [
+      2,
+    ],
     "@typescript-eslint/no-duplicate-enum-values": [
       2,
     ],
@@ -196,7 +196,7 @@ exports[`should match ESLint Configuration snapshot: test 1`] = `
     "@typescript-eslint/no-empty-function": [
       2,
     ],
-    "@typescript-eslint/no-empty-interface": [
+    "@typescript-eslint/no-empty-object-type": [
       2,
     ],
     "@typescript-eslint/no-explicit-any": [
@@ -229,9 +229,6 @@ exports[`should match ESLint Configuration snapshot: test 1`] = `
     "@typescript-eslint/no-invalid-void-type": [
       2,
     ],
-    "@typescript-eslint/no-loss-of-precision": [
-      2,
-    ],
     "@typescript-eslint/no-meaningless-void-operator": [
       2,
     ],
@@ -262,16 +259,19 @@ exports[`should match ESLint Configuration snapshot: test 1`] = `
     "@typescript-eslint/no-redundant-type-constituents": [
       2,
     ],
-    "@typescript-eslint/no-this-alias": [
+    "@typescript-eslint/no-require-imports": [
       2,
     ],
-    "@typescript-eslint/no-throw-literal": [
+    "@typescript-eslint/no-this-alias": [
       2,
     ],
     "@typescript-eslint/no-unnecessary-boolean-literal-compare": [
       2,
     ],
     "@typescript-eslint/no-unnecessary-condition": [
+      2,
+    ],
+    "@typescript-eslint/no-unnecessary-template-expression": [
       2,
     ],
     "@typescript-eslint/no-unnecessary-type-arguments": [
@@ -281,6 +281,9 @@ exports[`should match ESLint Configuration snapshot: test 1`] = `
       2,
     ],
     "@typescript-eslint/no-unnecessary-type-constraint": [
+      2,
+    ],
+    "@typescript-eslint/no-unnecessary-type-parameters": [
       2,
     ],
     "@typescript-eslint/no-unsafe-argument": [
@@ -298,10 +301,16 @@ exports[`should match ESLint Configuration snapshot: test 1`] = `
     "@typescript-eslint/no-unsafe-enum-comparison": [
       2,
     ],
+    "@typescript-eslint/no-unsafe-function-type": [
+      2,
+    ],
     "@typescript-eslint/no-unsafe-member-access": [
       1,
     ],
     "@typescript-eslint/no-unsafe-return": [
+      2,
+    ],
+    "@typescript-eslint/no-unsafe-unary-minus": [
       2,
     ],
     "@typescript-eslint/no-unused-expressions": [
@@ -322,10 +331,7 @@ exports[`should match ESLint Configuration snapshot: test 1`] = `
     "@typescript-eslint/no-useless-constructor": [
       2,
     ],
-    "@typescript-eslint/no-useless-template-literals": [
-      2,
-    ],
-    "@typescript-eslint/no-var-requires": [
+    "@typescript-eslint/no-wrapper-object-types": [
       2,
     ],
     "@typescript-eslint/non-nullable-type-assertion-style": [
@@ -335,6 +341,9 @@ exports[`should match ESLint Configuration snapshot: test 1`] = `
       0,
     ],
     "@typescript-eslint/prefer-as-const": [
+      2,
+    ],
+    "@typescript-eslint/prefer-find": [
       2,
     ],
     "@typescript-eslint/prefer-for-of": [
@@ -367,13 +376,13 @@ exports[`should match ESLint Configuration snapshot: test 1`] = `
     "@typescript-eslint/prefer-reduce-type-parameter": [
       2,
     ],
+    "@typescript-eslint/prefer-regexp-exec": [
+      2,
+    ],
     "@typescript-eslint/prefer-return-this-type": [
       2,
     ],
     "@typescript-eslint/prefer-string-starts-ends-with": [
-      2,
-    ],
-    "@typescript-eslint/prefer-ts-expect-error": [
       2,
     ],
     "@typescript-eslint/require-await": [
@@ -394,6 +403,10 @@ exports[`should match ESLint Configuration snapshot: test 1`] = `
       {
         "allowBoolean": true,
       },
+    ],
+    "@typescript-eslint/return-await": [
+      2,
+      "error-handling-correctness-only",
     ],
     "@typescript-eslint/switch-exhaustiveness-check": [
       2,
@@ -1062,7 +1075,7 @@ exports[`should match ESLint Configuration snapshot: test 1`] = `
       2,
     ],
     "no-loss-of-precision": [
-      0,
+      2,
     ],
     "no-magic-numbers": [
       0,
@@ -1488,6 +1501,9 @@ exports[`should match ESLint Configuration snapshot: test 1`] = `
     "no-return-assign": [
       2,
       "always",
+    ],
+    "no-return-await": [
+      0,
     ],
     "no-script-url": [
       2,
