@@ -1,3 +1,14 @@
+## [4.0.0](https://github.com/wakamsha/eslint-config/compare/v3.0.3...v4.0.0) (2024-10-17)
+
+### ⚠ BREAKING CHANGES
+
+* Update Node.js and TypeScript version requirement (#104)
+
+### Features
+
+* Update Node.js and TypeScript version requirement ([#104](https://github.com/wakamsha/eslint-config/issues/104)) ([b9bb019](https://github.com/wakamsha/eslint-config/commit/b9bb019e4a457c683c5d969c429ffe7d6e57c031))
+* Update TypeScript Rules ([#103](https://github.com/wakamsha/eslint-config/issues/103)) ([c36b512](https://github.com/wakamsha/eslint-config/commit/c36b51242d3bb007c7da7c62340ed93991653a6c))
+
 ## [3.0.3](https://github.com/wakamsha/eslint-config/compare/v3.0.2...v3.0.3) (2024-09-21)
 
 ## [3.0.2](https://github.com/wakamsha/eslint-config/compare/v3.0.1...v3.0.2) (2024-08-26)
