@@ -1,24 +1,21 @@
-// @ts-check
-import typescriptEslintParser from '@typescript-eslint/parser';
+import tseslint from 'typescript-eslint';
 import typescriptRuleSet from '../rules/typescript.js';
 
-export default [
-  {
-    files: ['**/*.@(ts|tsx|cts|mts)'],
+export default tseslint.config({
+  files: ['**/*.@(ts|tsx|cts|mts)'],
 
-    languageOptions: {
-      parser: typescriptEslintParser,
-      parserOptions: {
-        project: true,
-      },
+  languageOptions: {
+    parser: tseslint.parser,
+    parserOptions: {
+      projectService: true,
     },
-
-    settings: {
-      'import/parsers': {
-        '@typescript-eslint/parser': ['.ts', '.tsx', '.cts', '.mts'],
-      },
-    },
-
-    ...typescriptRuleSet,
   },
-];
+
+  settings: {
+    'import/parsers': {
+      '@typescript-eslint/parser': ['.ts', '.tsx', '.cts', '.mts'],
+    },
+  },
+
+  ...typescriptRuleSet,
+});

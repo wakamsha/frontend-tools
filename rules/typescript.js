@@ -1,5 +1,5 @@
 // @ts-check
-import typescriptEslint from '@typescript-eslint/eslint-plugin';
+import tseslint from 'typescript-eslint';
 import bestPractices from './best-practices.js';
 import variables from './variables.js';
 
@@ -14,14 +14,15 @@ import variables from './variables.js';
  */
 export default {
   plugins: {
-    '@typescript-eslint': typescriptEslint,
+    '@typescript-eslint': tseslint.plugin,
   },
 
-  rules: {
-    ...typescriptEslint.configs['eslint-recommended'].overrides?.[0].rules,
-    ...typescriptEslint.configs['strict-type-checked'].rules,
-    ...typescriptEslint.configs['stylistic-type-checked'].rules,
+  extends: [
+    ...tseslint.configs.strictTypeChecked,
+    ...tseslint.configs.stylisticTypeChecked,
+  ],
 
+  rules: {
     // Enforce dot notation whenever possible.
     // https://typescript-eslint.io/rules/dot-notation/
     '@typescript-eslint/dot-notation': bestPractices.rules['dot-notation'],
