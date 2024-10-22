@@ -79,7 +79,7 @@ exports[`should match ESLint Configuration snapshot: test 1`] = `
     "import",
     "promise",
     "unicorn:eslint-plugin-unicorn@54.0.0",
-    "vitest:vitest@0.5.3",
+    "vitest:vitest@1.1.6",
     "jest-dom",
     "testing-library",
     "@typescript-eslint:@typescript-eslint/eslint-plugin@8.9.0",
