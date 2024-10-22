@@ -1,7 +1,7 @@
 // @ts-check
 // @ts-ignore
 import importPlugin from 'eslint-plugin-import';
-import * as storybook from 'eslint-plugin-storybook';
+import storybook from 'eslint-plugin-storybook';
 
 const stories = {
   plugins: {
@@ -10,8 +10,7 @@ const stories = {
   },
 
   rules: {
-    ...storybook.configs.recommended.overrides[0].rules,
-    ...storybook.configs['csf-strict'].rules,
+    ...storybook.configs['flat/csf-strict'].rules,
     'import/no-default-export': ['off'],
   },
 };
@@ -23,7 +22,7 @@ const config = {
   },
 
   rules: {
-    ...storybook.configs.recommended.overrides[1].rules,
+    'storybook/no-uninstalled-addons': 'error',
     'import/no-default-export': ['off'],
   },
 };
