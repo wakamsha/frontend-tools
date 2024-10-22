@@ -78,7 +78,7 @@ exports[`should match ESLint Configuration snapshot: storybook 1`] = `
     "@",
     "import",
     "promise",
-    "unicorn:eslint-plugin-unicorn@54.0.0",
+    "unicorn:eslint-plugin-unicorn@56.0.0",
     "react",
     "react-hooks",
     "jsx-a11y",
@@ -2028,7 +2028,7 @@ exports[`should match ESLint Configuration snapshot: storybook 1`] = `
       2,
     ],
     "react-hooks/rules-of-hooks": [
-      0,
+      2,
     ],
     "react/boolean-prop-naming": [
       0,
@@ -2511,39 +2511,6 @@ exports[`should match ESLint Configuration snapshot: storybook 1`] = `
     "sort-vars": [
       0,
     ],
-    "storybook/await-interactions": [
-      2,
-    ],
-    "storybook/context-in-play-function": [
-      2,
-    ],
-    "storybook/default-exports": [
-      2,
-    ],
-    "storybook/hierarchy-separator": [
-      1,
-    ],
-    "storybook/no-redundant-story-name": [
-      1,
-    ],
-    "storybook/no-stories-of": [
-      2,
-    ],
-    "storybook/no-title-property-in-meta": [
-      2,
-    ],
-    "storybook/prefer-pascal-case": [
-      1,
-    ],
-    "storybook/story-exports": [
-      2,
-    ],
-    "storybook/use-storybook-expect": [
-      2,
-    ],
-    "storybook/use-storybook-testing-library": [
-      2,
-    ],
     "symbol-description": [
       2,
     ],
@@ -2552,7 +2519,7 @@ exports[`should match ESLint Configuration snapshot: storybook 1`] = `
       "never",
     ],
     "unicorn/better-regex": [
-      2,
+      0,
     ],
     "unicorn/catch-error-name": [
       2,
@@ -2561,6 +2528,9 @@ exports[`should match ESLint Configuration snapshot: storybook 1`] = `
       0,
     ],
     "unicorn/consistent-empty-array-spread": [
+      2,
+    ],
+    "unicorn/consistent-existence-index-check": [
       2,
     ],
     "unicorn/consistent-function-scoping": [
@@ -2652,6 +2622,9 @@ exports[`should match ESLint Configuration snapshot: storybook 1`] = `
     ],
     "unicorn/no-keyword-prefix": [
       0,
+    ],
+    "unicorn/no-length-as-slice-end": [
+      2,
     ],
     "unicorn/no-lonely-if": [
       2,
@@ -2791,6 +2764,9 @@ exports[`should match ESLint Configuration snapshot: storybook 1`] = `
     "unicorn/prefer-export-from": [
       2,
     ],
+    "unicorn/prefer-global-this": [
+      2,
+    ],
     "unicorn/prefer-includes": [
       2,
     ],
@@ -2801,6 +2777,9 @@ exports[`should match ESLint Configuration snapshot: storybook 1`] = `
       2,
     ],
     "unicorn/prefer-logical-operator-over-ternary": [
+      2,
+    ],
+    "unicorn/prefer-math-min-max": [
       2,
     ],
     "unicorn/prefer-math-trunc": [

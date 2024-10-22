@@ -77,7 +77,7 @@ exports[`should match ESLint Configuration snapshot: node 1`] = `
     "@",
     "import",
     "promise",
-    "unicorn:eslint-plugin-unicorn@54.0.0",
+    "unicorn:eslint-plugin-unicorn@56.0.0",
     "n:eslint-plugin-n@17.7.0",
   ],
   "processor": undefined,
@@ -1526,7 +1526,7 @@ exports[`should match ESLint Configuration snapshot: node 1`] = `
       "never",
     ],
     "unicorn/better-regex": [
-      2,
+      0,
     ],
     "unicorn/catch-error-name": [
       2,
@@ -1535,6 +1535,9 @@ exports[`should match ESLint Configuration snapshot: node 1`] = `
       0,
     ],
     "unicorn/consistent-empty-array-spread": [
+      2,
+    ],
+    "unicorn/consistent-existence-index-check": [
       2,
     ],
     "unicorn/consistent-function-scoping": [
@@ -1626,6 +1629,9 @@ exports[`should match ESLint Configuration snapshot: node 1`] = `
     ],
     "unicorn/no-keyword-prefix": [
       0,
+    ],
+    "unicorn/no-length-as-slice-end": [
+      2,
     ],
     "unicorn/no-lonely-if": [
       2,
@@ -1765,6 +1771,9 @@ exports[`should match ESLint Configuration snapshot: node 1`] = `
     "unicorn/prefer-export-from": [
       2,
     ],
+    "unicorn/prefer-global-this": [
+      2,
+    ],
     "unicorn/prefer-includes": [
       2,
     ],
@@ -1775,6 +1784,9 @@ exports[`should match ESLint Configuration snapshot: node 1`] = `
       2,
     ],
     "unicorn/prefer-logical-operator-over-ternary": [
+      2,
+    ],
+    "unicorn/prefer-math-min-max": [
       2,
     ],
     "unicorn/prefer-math-trunc": [
