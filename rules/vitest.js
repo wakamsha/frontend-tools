@@ -1,5 +1,5 @@
 // @ts-check
-import vitest from 'eslint-plugin-vitest';
+import vitest from '@vitest/eslint-plugin';
 
 export default {
   plugins: {
