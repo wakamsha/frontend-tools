@@ -2,6 +2,7 @@
 
 exports[`should match ESLint Configuration snapshot: react 1`] = `
 {
+  "language": "@/js",
   "languageOptions": {
     "ecmaVersion": "latest",
     "globals": {
@@ -66,13 +67,16 @@ exports[`should match ESLint Configuration snapshot: react 1`] = `
       "undefined": false,
       "unescape": false,
     },
-    "parser": "typescript-eslint/parser@8.9.0",
+    "parser": "typescript-eslint/parser@8.11.0",
     "parserOptions": {
       "ecmaVersion": 2023,
       "projectService": true,
       "sourceType": "module",
     },
     "sourceType": "module",
+  },
+  "linterOptions": {
+    "reportUnusedDisableDirectives": 1,
   },
   "plugins": [
     "@",
@@ -82,8 +86,8 @@ exports[`should match ESLint Configuration snapshot: react 1`] = `
     "jsdoc",
     "react",
     "react-hooks",
-    "jsx-a11y",
-    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.9.0",
+    "jsx-a11y:eslint-plugin-jsx-a11y@6.10.1",
+    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.11.0",
   ],
   "processor": undefined,
   "rules": {
@@ -624,6 +628,7 @@ exports[`should match ESLint Configuration snapshot: react 1`] = `
       2,
       {
         "allowUnsafeDynamicCyclicDependency": false,
+        "disableScc": false,
         "ignoreExternal": false,
         "maxDepth": "∞",
       },
@@ -757,6 +762,7 @@ exports[`should match ESLint Configuration snapshot: react 1`] = `
             "internal",
           ],
         ],
+        "named": false,
         "newlines-between": "never",
         "warnOnUnassignedImports": false,
       },
