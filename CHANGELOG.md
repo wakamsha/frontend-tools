@@ -1,3 +1,5 @@
+## [5.0.1](https://github.com/wakamsha/eslint-config/compare/v5.0.0...v5.0.1) (2024-10-23)
+
 ## [5.0.0](https://github.com/wakamsha/eslint-config/compare/v4.0.0...v5.0.0) (2024-10-23)
 
 ### ⚠ BREAKING CHANGES
