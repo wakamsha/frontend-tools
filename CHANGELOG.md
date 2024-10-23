@@ -1,3 +1,21 @@
+## [5.0.0](https://github.com/wakamsha/eslint-config/compare/v4.0.0...v5.0.0) (2024-10-23)
+
+### ⚠ BREAKING CHANGES
+
+* **deps:** update dependency eslint to v9 (#33)
+
+### Features
+
+* **deps:** update dependency eslint to v9 ([#33](https://github.com/wakamsha/eslint-config/issues/33)) ([c4b0061](https://github.com/wakamsha/eslint-config/commit/c4b00610ab911bd49a74eab59a925db61790d11c))
+
+### Bug Fixes
+
+* **deps:** replace dependency eslint-plugin-vitest with @vitest/eslint-plugin ^1.0.1 ([#94](https://github.com/wakamsha/eslint-config/issues/94)) ([891c7de](https://github.com/wakamsha/eslint-config/commit/891c7de568973e6ed648d9da710520bca946661b))
+* **deps:** update dependency eslint-plugin-react-hooks to v5 ([#102](https://github.com/wakamsha/eslint-config/issues/102)) ([a6b781c](https://github.com/wakamsha/eslint-config/commit/a6b781c56c4301b0598a8c76db0b48e9aa3b7c10))
+* **deps:** update dependency eslint-plugin-storybook to ^0.10.0 ([#97](https://github.com/wakamsha/eslint-config/issues/97)) ([7c396e6](https://github.com/wakamsha/eslint-config/commit/7c396e63442e817a1f7e0d4a2299dedcaf6d657e))
+* **deps:** update dependency eslint-plugin-unicorn to v56 ([#100](https://github.com/wakamsha/eslint-config/issues/100)) ([7ade1fd](https://github.com/wakamsha/eslint-config/commit/7ade1fd56522ab910ca0a5572ad280ca56461614))
+* Vitest rules ([#106](https://github.com/wakamsha/eslint-config/issues/106)) ([a984e26](https://github.com/wakamsha/eslint-config/commit/a984e264852339c25d6eee7d6d48e6523262e9b3))
+
 ## [4.0.0](https://github.com/wakamsha/eslint-config/compare/v3.0.3...v4.0.0) (2024-10-17)
 
 ### ⚠ BREAKING CHANGES
