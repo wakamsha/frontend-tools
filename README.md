@@ -6,9 +6,6 @@
 
 wakamsha's ESLint rules as an extensible shared config.
 
-> [!WARNING]
-> As of now, it does not work with eslint 9 as most plugins haven't updated yet. Please stay with eslint 8.57.0!
-
 ## Usage
 
 > [!IMPORTANT]
