@@ -2,6 +2,7 @@
 
 exports[`should match ESLint Configuration snapshot: node 1`] = `
 {
+  "language": "@/js",
   "languageOptions": {
     "ecmaVersion": "latest",
     "globals": {
@@ -66,19 +67,22 @@ exports[`should match ESLint Configuration snapshot: node 1`] = `
       "undefined": false,
       "unescape": false,
     },
-    "parser": "espree@9.6.1",
+    "parser": "espree@10.2.0",
     "parserOptions": {
       "ecmaVersion": 2023,
       "sourceType": "module",
     },
     "sourceType": "module",
   },
+  "linterOptions": {
+    "reportUnusedDisableDirectives": 1,
+  },
   "plugins": [
     "@",
     "import",
     "promise",
     "unicorn:eslint-plugin-unicorn@56.0.0",
-    "n:eslint-plugin-n@17.7.0",
+    "n:eslint-plugin-n@17.11.1",
   ],
   "processor": undefined,
   "rules": {
@@ -285,6 +289,7 @@ exports[`should match ESLint Configuration snapshot: node 1`] = `
       2,
       {
         "allowUnsafeDynamicCyclicDependency": false,
+        "disableScc": false,
         "ignoreExternal": false,
         "maxDepth": "∞",
       },
@@ -418,6 +423,7 @@ exports[`should match ESLint Configuration snapshot: node 1`] = `
             "internal",
           ],
         ],
+        "named": false,
         "newlines-between": "never",
         "warnOnUnassignedImports": false,
       },
