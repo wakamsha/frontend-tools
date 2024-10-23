@@ -1,3 +1,9 @@
+## [5.0.2](https://github.com/wakamsha/eslint-config/compare/v5.0.1...v5.0.2) (2024-10-23)
+
+### Bug Fixes
+
+* **unicorn:** Disable `prefer-global-this` rule ([#108](https://github.com/wakamsha/eslint-config/issues/108)) ([82ac2c8](https://github.com/wakamsha/eslint-config/commit/82ac2c80a3f4c8b1e353b2500db0b3aa3153c7bd))
+
 ## [5.0.1](https://github.com/wakamsha/eslint-config/compare/v5.0.0...v5.0.1) (2024-10-23)
 
 ## [5.0.0](https://github.com/wakamsha/eslint-config/compare/v4.0.0...v5.0.0) (2024-10-23)
