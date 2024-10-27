@@ -2,6 +2,7 @@
  * @type {import('semantic-release').GlobalConfig}
  */
 export default {
+  extends: 'semantic-release-monorepo',
   plugins: [
     [
       '@semantic-release/commit-analyzer',
@@ -24,7 +25,7 @@ export default {
     [
       '@semantic-release/git',
       {
-        assets: ['CHANGELOG.md', 'package.json', 'package-lock.json'],
+        assets: ['CHANGELOG.md', 'package.json'],
       },
     ],
     '@semantic-release/github',
