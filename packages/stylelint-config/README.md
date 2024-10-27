@@ -2,7 +2,6 @@
 
 [![Version](https://img.shields.io/npm/v/@wakamsha/stylelint-config.svg?style=flat-square)](https://www.npmjs.com/package/@wakamsha/stylelint-config?activeTab=versions)
 [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-%23FE5196?logo=conventionalcommits&logoColor=white)](https://conventionalcommits.org)
-[![License](https://img.shields.io/github/license/wakamsha/stylelint-config.svg?style=flat-square)](https://github.com/wakamsha/frontend-tools/blob/main/packages/stylelint-config/LICENSE)
 
 wakamsha's Stylelint rules as an extensible shared config.
 
