@@ -1,0 +1,48 @@
+{
+  "name": "@wakamsha/stylelint-config",
+  "version": "0.0.1",
+  "description": "wakamsha's Stylelint rules as an extensible shared config.",
+  "type": "module",
+  "engines": {
+    "node": ">=18.12.0"
+  },
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "scripts": {
+    "release": "semantic-release"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wakamsha/frontend-tools.git",
+    "directory": "packages/stylelint-config"
+  },
+  "keywords": [
+    "stylelint",
+    "stylelint-config",
+    "style best practices"
+  ],
+  "author": "wakamsha <wakamsha@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wakamsha/frontend-tools/issues"
+  },
+  "homepage": "https://github.com/wakamsha/frontend-tools/tree/main/packages/stylelint-config#readme",
+  "dependencies": {
+    "stylelint-config-recess-order": "^5.1.1",
+    "stylelint-config-recommended": "^14.0.1",
+    "stylelint-config-standard": "^36.0.1"
+  },
+  "devDependencies": {
+    "@semantic-release/changelog": "6.0.3",
+    "@semantic-release/git": "10.0.1",
+    "conventional-changelog-conventionalcommits": "8.0.0",
+    "semantic-release": "24.2.0",
+    "semantic-release-monorepo": "8.0.2",
+    "stylelint": "16.10.0"
+  },
+  "peerDependencies": {
+    "stylelint": "^16.10.0"
+  }
+}
