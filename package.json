@@ -10,7 +10,8 @@
   },
   "packageManager": "pnpm@9.12.2",
   "scripts": {
-    "eslint-config": "pnpm -F '@wakamsha/eslint-config'"
+    "eslint-config": "   pnpm -F '@wakamsha/eslint-config'",
+    "stylelint-config": "pnpm -F '@wakamsha/stylelint-config'"
   },
   "repository": {
     "type": "git",
@@ -21,5 +22,9 @@
   "bugs": {
     "url": "https://github.com/wakamsha/frontend-tools/issues"
   },
-  "homepage": "https://github.com/wakamsha/frontend-tools#readme"
+  "homepage": "https://github.com/wakamsha/frontend-tools#readme",
+  "devDependencies": {
+    "prettier": "3.3.3",
+    "prettier-plugin-organize-imports": "4.1.0"
+  }
 }
