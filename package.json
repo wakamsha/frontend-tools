@@ -1,6 +1,5 @@
 {
   "name": "frontend-tools",
-  "version": "5.0.2",
   "description": "wakamsha's frontend tools as an extensible shared config.",
   "private": true,
   "type": "module",
