@@ -1,6 +1,6 @@
 # Contributing
 
-I appreciate your considering contributing `@wakamsha/eslint-config`. This document is a guide to help make your contribution easier.
+I appreciate your considering contributing `frontend-tools`. This document is a guide to help make your contribution easier.
 
 ## Getting Started
 
@@ -34,12 +34,12 @@ The main scripts used during development are:
 
 ### Reporting Issues
 
-1. Check [the Issue Tracker](https://github.com/wakamsha/eslint-config/issues) for existing issues.
-2. When requesting a new issue or feature, please use [the templates](https://github.com/wakamsha/eslint-config/issues/new/choose) and provide as much detail as possible.
+1. Check [the Issue Tracker](https://github.com/wakamsha/frontend-tools/issues) for existing issues.
+2. When requesting a new issue or feature, please use [the templates](https://github.com/wakamsha/frontend-tools/issues/new/choose) and provide as much detail as possible.
 
 ### Development
 
-1. Check [the Issue Tracker](https://github.com/wakamsha/eslint-config/issues), make sure if there is anything relevant to the problem you are trying to solve.
+1. Check [the Issue Tracker](https://github.com/wakamsha/frontend-tools/issues), make sure if there is anything relevant to the problem you are trying to solve.
 2. Keep the repository you did fork up to date.
 
    ```bash
