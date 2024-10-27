@@ -3,7 +3,7 @@ name: Check Syntax
 on:
   pull_request_target:
     branches:
-      - '*'
+      - "*"
 
 jobs:
   lint:
@@ -15,4 +15,4 @@ jobs:
         uses: ./.github/actions/restore-node
 
       - name: Run Lint
-        run: npm run lint
+        run: pnpm -r lint

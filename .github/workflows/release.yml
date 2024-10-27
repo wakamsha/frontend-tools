@@ -28,19 +28,11 @@ jobs:
           fetch-depth: 0
           persist-credentials: false
 
-      - name: Setup Node
-        uses: actions/setup-node@v4
-        with:
-          node-version-file: ./.node-version
-
-      - name: Install dependencies
-        run: npm install
-
-      - name: Verifying the signatures
-        run: npm audit signatures
+      - name: Initialize
+        uses: ./.github/actions/restore-node
 
       - name: Release
-        run: npm run release ${{ github.event.inputs.dry_run == 'true' && '-- --dry-run' || '' }}
+        run: pnpm -r --workspace-concurrency=1 release ${{ github.event.inputs.dry_run == 'true' && '--dry-run' || '' }}
         env:
           GITHUB_TOKEN: ${{ steps.app-token.outputs.token }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}

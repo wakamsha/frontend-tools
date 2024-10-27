@@ -7,9 +7,6 @@
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
 
-  // Use flat config for ESLint
-  "eslint.experimental.useFlatConfig": true,
-
   // Adjust the path to the TypeScript SDK
   // "typescript.tsdk": "node_modules/typescript/lib",
 
