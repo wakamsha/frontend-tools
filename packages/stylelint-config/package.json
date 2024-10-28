@@ -35,11 +35,8 @@
     "stylelint-config-standard": "^36.0.1"
   },
   "devDependencies": {
-    "@semantic-release/changelog": "6.0.3",
-    "@semantic-release/git": "10.0.1",
-    "conventional-changelog-conventionalcommits": "8.0.0",
+    "release-config": "workspace:*",
     "semantic-release": "24.2.0",
-    "semantic-release-monorepo": "8.0.2",
     "stylelint": "16.10.0"
   },
   "peerDependencies": {
