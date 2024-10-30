@@ -1,8 +1,9 @@
 // @ts-check
-
+import testEssentials from './test/essentials.js';
 import testReact from './test/react.js';
 
 const test = {
+  essentials: testEssentials,
   react: testReact,
 };
 
