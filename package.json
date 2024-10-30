@@ -11,7 +11,8 @@
   "packageManager": "pnpm@9.12.2",
   "scripts": {
     "eslint-config": "   pnpm -F '@wakamsha/eslint-config'",
-    "stylelint-config": "pnpm -F '@wakamsha/stylelint-config'"
+    "stylelint-config": "pnpm -F '@wakamsha/stylelint-config'",
+    "test:snapshot": "vitest"
   },
   "repository": {
     "type": "git",
@@ -25,6 +26,7 @@
   "homepage": "https://github.com/wakamsha/frontend-tools#readme",
   "devDependencies": {
     "prettier": "3.3.3",
-    "prettier-plugin-organize-imports": "4.1.0"
+    "prettier-plugin-organize-imports": "4.1.0",
+    "vitest": "2.1.3"
   }
 }
