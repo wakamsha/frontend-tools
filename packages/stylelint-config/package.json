@@ -1,6 +1,6 @@
 {
   "name": "@wakamsha/stylelint-config",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "wakamsha's Stylelint rules as an extensible shared config.",
   "type": "module",
   "engines": {
