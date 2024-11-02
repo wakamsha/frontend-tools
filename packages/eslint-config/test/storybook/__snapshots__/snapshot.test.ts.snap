@@ -1,6 +1,6 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`should match ESLint Configuration snapshot: storybook 1`] = `
+exports[`ESLint Configuration Snapshot Tests > should match ESLint Configuration snapshot: storybook 1`] = `
 {
   "language": "@/js",
   "languageOptions": {
@@ -72,7 +72,7 @@ exports[`should match ESLint Configuration snapshot: storybook 1`] = `
       "ecmaVersion": 2023,
       "projectService": true,
       "sourceType": "module",
-      "tsconfigRootDir": "/Users/yamada.naoki/Documents/oss/frontend-tools/packages/eslint-config/configs",
+      "tsconfigRootDir": "/dummy",
     },
     "sourceType": "module",
   },
