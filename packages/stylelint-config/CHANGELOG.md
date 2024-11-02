@@ -1,3 +1,13 @@
+## [@wakamsha/stylelint-config-v2.0.0](https://github.com/wakamsha/frontend-tools/compare/@wakamsha/stylelint-config-v1.0.1...@wakamsha/stylelint-config-v2.0.0) (2024-11-02)
+
+### ⚠ BREAKING CHANGES
+
+* **stylelint-config:** Support CSS-in-JS (#129)
+
+### Features
+
+* **stylelint-config:** Support CSS-in-JS ([#129](https://github.com/wakamsha/frontend-tools/issues/129)) ([d8db1f9](https://github.com/wakamsha/frontend-tools/commit/d8db1f9493e1299534bbeea569433322f0a2e16d))
+
 ## [@wakamsha/stylelint-config-v1.0.1](https://github.com/wakamsha/frontend-tools/compare/@wakamsha/stylelint-config-v1.0.0...@wakamsha/stylelint-config-v1.0.1) (2024-11-02)
 
 ## @wakamsha/stylelint-config-v1.0.0 (2024-10-27)
