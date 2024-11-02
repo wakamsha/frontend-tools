@@ -675,6 +675,8 @@ exports[`should match ESLint Configuration snapshot: react 1`] = `
           "**/eslint-rules/**",
           "**/.storybook/**",
           "**/*.{stories,story}.{js,jsx,ts,tsx}",
+          "**/vite.config.*.{js,ts}",
+          "**/vitest.*.{js,ts}",
         ],
         "optionalDependencies": false,
       },
