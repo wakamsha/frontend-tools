@@ -1,4 +1,4 @@
 // @ts-check
 export default {
-  extends: ['../../index.js'],
+  extends: ['../../configs/essentials.js'],
 };
