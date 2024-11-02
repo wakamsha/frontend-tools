@@ -2,13 +2,16 @@
   "name": "@wakamsha/stylelint-config",
   "version": "1.0.1",
   "description": "wakamsha's Stylelint rules as an extensible shared config.",
+  "exports": {
+    "./essentials": "./configs/essentials.js",
+    "./css-in-js": "./configs/css-in-js.js"
+  },
   "type": "module",
   "engines": {
     "node": ">=18.12.0"
   },
-  "main": "index.js",
   "files": [
-    "index.js"
+    "configs"
   ],
   "scripts": {
     "lint": "eslint './**/*.@(js|ts|tsx)'",
@@ -23,7 +26,8 @@
   "keywords": [
     "stylelint",
     "stylelint-config",
-    "style best practices"
+    "style best practices",
+    "css in js"
   ],
   "author": "wakamsha <wakamsha@gmail.com>",
   "license": "MIT",
@@ -32,6 +36,9 @@
   },
   "homepage": "https://github.com/wakamsha/frontend-tools/tree/main/packages/stylelint-config#readme",
   "dependencies": {
+    "@stylelint/postcss-css-in-js": "^0.38.0",
+    "postcss": "^8.4.47",
+    "postcss-syntax": "^0.36.2",
     "stylelint-config-recess-order": "^5.1.1",
     "stylelint-config-recommended": "^14.0.1",
     "stylelint-config-standard": "^36.0.1"

@@ -9,6 +9,7 @@ export default [
   {
     rules: {
       'import/no-default-export': ['off'],
+      'unicorn/filename-case': ['off'],
     },
   },
   {
