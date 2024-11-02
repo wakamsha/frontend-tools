@@ -69,6 +69,9 @@ exports[`ESLint Configuration Snapshot Tests > should match ESLint Configuration
     },
     "parser": "typescript-eslint/parser@8.11.0",
     "parserOptions": {
+      "ecmaFeatures": {
+        "jsx": true,
+      },
       "ecmaVersion": 2023,
       "projectService": true,
       "sourceType": "module",
