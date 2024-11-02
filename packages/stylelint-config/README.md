@@ -32,6 +32,10 @@ export default {
 };
 ```
 
+Must be added after `essentials`.
+
+We also provide various other rule sets that you can configure to suit your project.
+
 If the value of a rule does not suit you, specify that rule in the "rules" section with the value you want:
 
 ```diff
@@ -42,10 +46,6 @@ export default {
 + },
 };
 ```
-
-Must be added after `essentials`.
-
-We also provide various other rule sets that you can configure to suit your project.
 
 ## Migrate from an existing configuration
 
