@@ -7,7 +7,7 @@ import reactRuleSet from '../rules/react.js';
 export default [
   {
     languageOptions: {
-      ...react.configs.flat?.recommended.languageOptions,
+      ...react.configs.recommended.languageOptions,
     },
 
     settings: {
