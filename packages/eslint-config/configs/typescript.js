@@ -8,7 +8,7 @@ export default tseslint.config({
     parser: tseslint.parser,
     parserOptions: {
       projectService: true,
-      tsconfigRootDir: process.env.TSCONFIG_ROOT_DIR ?? process.cwd(),
+      tsconfigRootDir: process.env.TSCONFIG_ROOT_DIR ?? import.meta.dirname,
     },
   },
 
