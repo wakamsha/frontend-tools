@@ -19,7 +19,16 @@ Within your Stylelint config file (`stylelint.config.js`):
 
 ```js
 export default {
-  extends: ['@wakamsha/stylelint-config'],
+  extends: ['@wakamsha/stylelint-config/essentials'],
+};
+```
+
+If you need CSS-in-JS Support:
+
+```diff
+export default {
+- extends: ['@wakamsha/stylelint-config/essentials'],
++ extends: ['@wakamsha/stylelint-config/essentials', '@wakamsha/stylelint-config/css-in-js'],
 };
 ```
 
@@ -27,11 +36,26 @@ If the value of a rule does not suit you, specify that rule in the "rules" secti
 
 ```diff
 export default {
-  extends: ['@wakamsha/stylelint-config'],
+  extends: ['@wakamsha/stylelint-config/essentials'],
 + rules: {
 +   value-keyword-case': null,
 + },
 };
+```
+
+Must be added after `essentials`.
+
+We also provide various other rule sets that you can configure to suit your project.
+
+## Migrate from an existing configuration
+
+@wakamsha/stylelint-config contains various plugins related to different rule sets. Therefore, users don't need to install them separately. If you have installed them in your existing configuration, we recommend uninstalling them.
+
+```bash
+npm uninstall stylelint-config-recess-order \
+    stylelint-config-recommended \
+    stylelint-config-standard \
+    @stylelint/postcss-css-in-js
 ```
 
 ## Versioning
