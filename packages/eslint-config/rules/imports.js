@@ -116,6 +116,8 @@ export default {
           '**/eslint-rules/**',
           '**/.storybook/**', // storybook config
           '**/*.{stories,story}.{js,jsx,ts,tsx}', // storybook stories
+          '**/vite.config.*.{js,ts}', // vite config
+          '**/vitest.*.{js,ts}', // vitest config
         ],
         optionalDependencies: false,
       },
