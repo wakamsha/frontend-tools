@@ -72,6 +72,7 @@ exports[`should match ESLint Configuration snapshot: react 1`] = `
       "ecmaVersion": 2023,
       "projectService": true,
       "sourceType": "module",
+      "tsconfigRootDir": "/Users/yamada.naoki/Documents/oss/frontend-tools/packages/eslint-config/configs",
     },
     "sourceType": "module",
   },
