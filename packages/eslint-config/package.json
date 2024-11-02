@@ -16,7 +16,7 @@
     "rules"
   ],
   "scripts": {
-    "lint": "eslint './**/*.js'",
+    "lint": "eslint './**/*.@(js|ts|tsx)'",
     "test:snapshot": "vitest",
     "release": "semantic-release"
   },

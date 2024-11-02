@@ -1,4 +1,3 @@
-// @ts-ignore
 import { loadESLint } from 'eslint';
 
 /**
@@ -10,7 +9,7 @@ import { loadESLint } from 'eslint';
  *
  * @returns The path to the file whose configuration you would like to calculate. Directory paths are forbidden because ESLint cannot handle the overrides setting.
  */
-export async function getESLintConfig(filePath: string, cwd: string = './') {
+export async function getESLintConfig(filePath: string, cwd = './') {
   const DefaultESLint = await loadESLint({
     useFlatConfig: true,
   });
@@ -19,5 +18,6 @@ export async function getESLintConfig(filePath: string, cwd: string = './') {
     cwd,
   });
 
+  // eslint-disable-next-line @typescript-eslint/no-unsafe-return
   return eslint.calculateConfigForFile(filePath);
 }

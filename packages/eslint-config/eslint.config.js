@@ -1,13 +1,14 @@
 // @ts-check
-import { essentials, node, test } from './configs/index.js';
+import { essentials, node, test, typescript } from './configs/index.js';
 
 export default [
   {
-    files: ['**/*.js'],
+    files: ['**/*.@(js|ts)'],
   },
 
   ...essentials,
   {
+    files: ['**/*.@(js|ts)'],
     rules: {
       'import/no-default-export': ['off'],
       'unicorn/filename-case': ['off'],
@@ -16,5 +17,7 @@ export default [
 
   ...node,
 
-  ...test.react,
+  ...test.essentials,
+
+  ...typescript,
 ];
