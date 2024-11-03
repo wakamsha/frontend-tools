@@ -47,14 +47,19 @@ export default {
 };
 ```
 
+|     Rule set | Summary                                                  | Dependencies                                                                                                                                                                                                                              |
+| -----------: | :------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `essentials` | Contains recommended, standard, and recess-order configs | [`recommended`](https://github.com/stylelint/stylelint-config-recommended) <br> [`standard`](https://github.com/stylelint/stylelint-config-standard) <br> [`recess-order`](https://github.com/stormwarning/stylelint-config-recess-order) |
+|  `css-in-js` | Contains CSS-in-JS config                                | [`@stylelint/postcss-css-in-js`](https://github.com/stylelint/postcss-css-in-js) <br> [`postcss`](https://postcss.org/) <br> [`postcss-syntax`](https://github.com/gucong3000/postcss-syntax)                                             |
+
 ## Migrate from an existing configuration
 
 @wakamsha/stylelint-config contains various plugins related to different rule sets. Therefore, users don't need to install them separately. If you have installed them in your existing configuration, we recommend uninstalling them.
 
 ```bash
-npm uninstall stylelint-config-recess-order \
-    stylelint-config-recommended \
+npm uninstall stylelint-config-recommended \
     stylelint-config-standard \
+    stylelint-config-recess-order \
     @stylelint/postcss-css-in-js
 ```
 
