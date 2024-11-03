@@ -1,3 +1,5 @@
+## [@wakamsha/stylelint-config-v2.0.1](https://github.com/wakamsha/frontend-tools/compare/@wakamsha/stylelint-config-v2.0.0...@wakamsha/stylelint-config-v2.0.1) (2024-11-03)
+
 ## [@wakamsha/stylelint-config-v2.0.0](https://github.com/wakamsha/frontend-tools/compare/@wakamsha/stylelint-config-v1.0.1...@wakamsha/stylelint-config-v2.0.0) (2024-11-02)
 
 ### ⚠ BREAKING CHANGES
