@@ -52,7 +52,7 @@
     "eslint-plugin-promise": "^7.1.0",
     "eslint-plugin-react": "^7.37.1",
     "eslint-plugin-react-hooks": "^5.0.0",
-    "eslint-plugin-storybook": "^0.10.0",
+    "eslint-plugin-storybook": "^0.11.0",
     "eslint-plugin-testing-library": "^6.4.0",
     "eslint-plugin-unicorn": "^56.0.0",
     "globals": "^15.11.0",
