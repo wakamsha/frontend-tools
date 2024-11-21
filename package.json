@@ -5,10 +5,10 @@
   "type": "module",
   "engines": {
     "node": "20.18.0",
-    "pnpm": "9.12.3",
+    "pnpm": "9.14.2",
     "npm": "please use pnpm instead"
   },
-  "packageManager": "pnpm@9.12.3",
+  "packageManager": "pnpm@9.14.2",
   "scripts": {
     "eslint-config": "   pnpm -F '@wakamsha/eslint-config'",
     "stylelint-config": "pnpm -F '@wakamsha/stylelint-config'",
