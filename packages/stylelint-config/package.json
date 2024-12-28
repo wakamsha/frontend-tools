@@ -1,6 +1,6 @@
 {
   "name": "@wakamsha/stylelint-config",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "wakamsha's Stylelint rules as an extensible shared config.",
   "exports": {
     "./essentials": "./configs/essentials.js",
