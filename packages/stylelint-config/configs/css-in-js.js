@@ -1,5 +1,5 @@
 export default {
-  customSyntax: '@stylelint/postcss-css-in-js',
+  customSyntax: 'postcss-styled-syntax',
   rules: {
     'function-name-case': null,
     'function-no-unknown': null,
