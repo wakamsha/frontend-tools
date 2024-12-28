@@ -1,3 +1,9 @@
+## [@wakamsha/eslint-config-v6.0.2](https://github.com/wakamsha/frontend-tools/compare/@wakamsha/eslint-config-v6.0.1...@wakamsha/eslint-config-v6.0.2) (2024-12-28)
+
+### Bug Fixes
+
+* Update eslint-plugin-testing-library ([#145](https://github.com/wakamsha/frontend-tools/issues/145)) ([7d2e362](https://github.com/wakamsha/frontend-tools/commit/7d2e3621c9baefe8a3b78d65ac2af7aeee7057b0))
+
 ## [@wakamsha/eslint-config-v6.0.1](https://github.com/wakamsha/frontend-tools/compare/@wakamsha/eslint-config-v6.0.0...@wakamsha/eslint-config-v6.0.1) (2024-12-28)
 
 ### Bug Fixes
