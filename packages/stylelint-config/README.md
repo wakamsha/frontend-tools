@@ -47,10 +47,11 @@ export default {
 };
 ```
 
-|     Rule set | Summary                                                  | Dependencies                                                                                                                                              |
-| -----------: | :------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `essentials` | Contains recommended, standard, and recess-order configs | [`standard`](https://github.com/stylelint/stylelint-config-standard) <br> [`recess-order`](https://github.com/stormwarning/stylelint-config-recess-order) |
-|  `css-in-js` | Contains CSS-in-JS config                                | [`postcss`](https://postcss.org/) <br> [`postcss-styled-syntax`](https://github.com/hudochenkov/postcss-styled-syntax)                                    |
+|      Rule set | Summary                                     | Dependencies                                                                                                                                              |
+| ------------: | :------------------------------------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|  `essentials` | Contains standard, and recess-order configs | [`standard`](https://github.com/stylelint/stylelint-config-standard) <br> [`recess-order`](https://github.com/stormwarning/stylelint-config-recess-order) |
+| `css-modules` | Contains CSS Modules config                 | -                                                                                                                                                         |
+|   `css-in-js` | Contains CSS-in-JS config                   | [`postcss`](https://postcss.org/) <br> [`postcss-styled-syntax`](https://github.com/hudochenkov/postcss-styled-syntax)                                    |
 
 ## Migrate from an existing configuration
 
