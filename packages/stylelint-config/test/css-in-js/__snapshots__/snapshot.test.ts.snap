@@ -23,6 +23,12 @@ exports[`should match Stylelint Configuration snapshot: css-in-js 1`] = `
     "annotation-no-unknown": [
       true,
     ],
+    "at-rule-descriptor-no-unknown": [
+      true,
+    ],
+    "at-rule-descriptor-value-no-unknown": [
+      true,
+    ],
     "at-rule-empty-line-before": [
       "always",
       {
@@ -35,11 +41,22 @@ exports[`should match Stylelint Configuration snapshot: css-in-js 1`] = `
         ],
       },
     ],
+    "at-rule-no-deprecated": [
+      true,
+    ],
     "at-rule-no-unknown": [
       true,
     ],
     "at-rule-no-vendor-prefix": [
       true,
+    ],
+    "at-rule-prelude-no-invalid": [
+      true,
+      {
+        "ignoreAtRules": [
+          "media",
+        ],
+      },
     ],
     "block-no-empty": [
       true,
@@ -49,9 +66,6 @@ exports[`should match Stylelint Configuration snapshot: css-in-js 1`] = `
     ],
     "color-hex-length": [
       "short",
-    ],
-    "color-no-invalid-hex": [
-      true,
     ],
     "comment-empty-line-before": [
       "always",
@@ -136,6 +150,12 @@ exports[`should match Stylelint Configuration snapshot: css-in-js 1`] = `
         ],
       },
     ],
+    "declaration-property-value-keyword-no-deprecated": [
+      true,
+    ],
+    "declaration-property-value-no-unknown": [
+      true,
+    ],
     "font-family-name-quotes": [
       "always-where-recommended",
     ],
@@ -146,9 +166,6 @@ exports[`should match Stylelint Configuration snapshot: css-in-js 1`] = `
       true,
     ],
     "function-calc-no-unspaced-operator": [
-      true,
-    ],
-    "function-linear-gradient-no-nonstandard-direction": [
       true,
     ],
     "function-name-case": null,
@@ -192,6 +209,9 @@ exports[`should match Stylelint Configuration snapshot: css-in-js 1`] = `
       true,
     ],
     "media-feature-name-no-vendor-prefix": [
+      true,
+    ],
+    "media-feature-name-value-no-unknown": [
       true,
     ],
     "media-feature-range-notation": [
@@ -778,9 +798,12 @@ exports[`should match Stylelint Configuration snapshot: css-in-js 1`] = `
     ],
     "string-no-newline": [
       true,
-    ],
-    "unit-no-unknown": [
-      true,
+      {
+        "ignore": [
+          "at-rule-preludes",
+          "declaration-values",
+        ],
+      },
     ],
     "value-keyword-case": null,
     "value-no-vendor-prefix": [
