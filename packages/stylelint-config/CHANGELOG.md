@@ -1,3 +1,9 @@
+## [@wakamsha/stylelint-config-v3.1.0](https://github.com/wakamsha/frontend-tools/compare/@wakamsha/stylelint-config-v3.0.0...@wakamsha/stylelint-config-v3.1.0) (2025-02-09)
+
+### Features
+
+* **stylelint-config:** Add new config, `css-modules` ([#165](https://github.com/wakamsha/frontend-tools/issues/165)) ([4ae1724](https://github.com/wakamsha/frontend-tools/commit/4ae172479e486348b0d2064322b9f758d50adf68))
+
 ## [@wakamsha/stylelint-config-v3.0.0](https://github.com/wakamsha/frontend-tools/compare/@wakamsha/stylelint-config-v2.0.2...@wakamsha/stylelint-config-v3.0.0) (2025-02-09)
 
 ### ⚠ BREAKING CHANGES
