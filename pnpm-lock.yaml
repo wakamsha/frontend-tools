@@ -116,8 +116,8 @@ importers:
         specifier: ^0.7.0
         version: 0.7.0(postcss@8.4.49)
       stylelint-config-recess-order:
-        specifier: ^5.1.1
-        version: 5.1.1(stylelint@16.14.1(typescript@5.7.3))
+        specifier: ^6.0.0
+        version: 6.0.0(stylelint@16.14.1(typescript@5.7.3))
       stylelint-config-standard:
         specifier: ^37.0.0
         version: 37.0.0(stylelint@16.14.1(typescript@5.7.3))
@@ -3070,8 +3070,8 @@ packages:
     resolution: {integrity: sha512-6fPc+R4ihwqP6N/aIv2f1gMH8lOVtWQHoqC4yK6oSDVVocumAsfCqjkXnqiYMhmMwS/mEHLp7Vehlt3ql6lEig==}
     engines: {node: '>=8'}
 
-  stylelint-config-recess-order@5.1.1:
-    resolution: {integrity: sha512-eDAHWVBelzDbMbdMj15pSw0Ycykv5eLeriJdbGCp0zd44yvhgZLI+wyVHegzXp5NrstxTPSxl0fuOVKdMm0XLA==}
+  stylelint-config-recess-order@6.0.0:
+    resolution: {integrity: sha512-1KqrttqpIrCYFAVQ1/bbgXo7EvvcjmkxxmnzVr+U66Xr2OlrNZqQ5+44Tmct6grCWY6wGTIBh2tSANqcmwIM2g==}
     peerDependencies:
       stylelint: '>=16'
 
@@ -6179,9 +6179,9 @@ snapshots:
       cssesc: 3.0.0
       util-deprecate: 1.0.2
 
-  postcss-sorting@8.0.2(postcss@8.4.49):
+  postcss-sorting@8.0.2(postcss@8.5.1):
     dependencies:
-      postcss: 8.4.49
+      postcss: 8.5.1
 
   postcss-styled-syntax@0.7.0(postcss@8.4.49):
     dependencies:
@@ -6676,7 +6676,7 @@ snapshots:
 
   strip-json-comments@3.1.1: {}
 
-  stylelint-config-recess-order@5.1.1(stylelint@16.14.1(typescript@5.7.3)):
+  stylelint-config-recess-order@6.0.0(stylelint@16.14.1(typescript@5.7.3)):
     dependencies:
       stylelint: 16.14.1(typescript@5.7.3)
       stylelint-order: 6.0.4(stylelint@16.14.1(typescript@5.7.3))
@@ -6692,8 +6692,8 @@ snapshots:
 
   stylelint-order@6.0.4(stylelint@16.14.1(typescript@5.7.3)):
     dependencies:
-      postcss: 8.4.49
-      postcss-sorting: 8.0.2(postcss@8.4.49)
+      postcss: 8.5.1
+      postcss-sorting: 8.0.2(postcss@8.5.1)
       stylelint: 16.14.1(typescript@5.7.3)
 
   stylelint@16.14.1(typescript@5.7.3):
