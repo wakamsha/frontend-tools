@@ -1,6 +1,6 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`should match Stylelint Configuration snapshot: css 1`] = `
+exports[`should match Stylelint Configuration snapshot: css-modules 1`] = `
 {
   "pluginFunctions": {
     "order/order": [Function],
@@ -170,6 +170,14 @@ exports[`should match Stylelint Configuration snapshot: css 1`] = `
     ],
     "function-name-case": [
       "lower",
+    ],
+    "function-no-unknown": [
+      true,
+      {
+        "ignoreFunctions": [
+          "global",
+        ],
+      },
     ],
     "function-url-quotes": [
       "always",
@@ -792,6 +800,11 @@ exports[`should match Stylelint Configuration snapshot: css 1`] = `
     ],
     "property-no-unknown": [
       true,
+      {
+        "ignoreProperties": [
+          "composes",
+        ],
+      },
     ],
     "property-no-vendor-prefix": [
       true,
@@ -833,6 +846,12 @@ exports[`should match Stylelint Configuration snapshot: css 1`] = `
     ],
     "selector-pseudo-class-no-unknown": [
       true,
+      {
+        "ignorePseudoClasses": [
+          "global",
+          "local",
+        ],
+      },
     ],
     "selector-pseudo-element-colon-notation": [
       "double",

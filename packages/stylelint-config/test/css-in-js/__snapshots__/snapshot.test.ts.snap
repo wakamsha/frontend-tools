@@ -794,12 +794,6 @@ exports[`should match Stylelint Configuration snapshot: css-in-js 1`] = `
     ],
     "property-no-vendor-prefix": [
       true,
-      {
-        "ignoreProperties": [
-          "text-size-adjust",
-          "background-clip",
-        ],
-      },
     ],
     "rule-empty-line-before": [
       "always-multi-line",
@@ -838,11 +832,6 @@ exports[`should match Stylelint Configuration snapshot: css-in-js 1`] = `
     ],
     "selector-pseudo-class-no-unknown": [
       true,
-      {
-        "ignorePseudoClasses": [
-          "global",
-        ],
-      },
     ],
     "selector-pseudo-element-colon-notation": [
       "double",
