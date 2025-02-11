@@ -1,3 +1,9 @@
+## [@wakamsha/eslint-config-v6.0.3](https://github.com/wakamsha/frontend-tools/compare/@wakamsha/eslint-config-v6.0.2...@wakamsha/eslint-config-v6.0.3) (2025-02-11)
+
+### Bug Fixes
+
+* **eslint-config:** error from typescript-eslint ([#166](https://github.com/wakamsha/frontend-tools/issues/166)) ([6e7ae19](https://github.com/wakamsha/frontend-tools/commit/6e7ae1908ab12fabda8a004e74e0ec6749dc6e41))
+
 ## [@wakamsha/eslint-config-v6.0.2](https://github.com/wakamsha/frontend-tools/compare/@wakamsha/eslint-config-v6.0.1...@wakamsha/eslint-config-v6.0.2) (2024-12-28)
 
 ### Bug Fixes
