@@ -68,7 +68,7 @@ exports[`ESLint Configuration Snapshot Tests > should match ESLint Configuration
       "undefined": false,
       "unescape": false,
     },
-    "parser": "typescript-eslint/parser@8.18.2",
+    "parser": "typescript-eslint/parser@8.24.0",
     "parserOptions": {
       "ecmaFeatures": {
         "jsx": true,
@@ -92,7 +92,7 @@ exports[`ESLint Configuration Snapshot Tests > should match ESLint Configuration
     "react-hooks",
     "jsx-a11y:eslint-plugin-jsx-a11y@6.10.2",
     "storybook",
-    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.18.2",
+    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.24.0",
   ],
   "processor": undefined,
   "rules": {
@@ -253,6 +253,9 @@ exports[`ESLint Configuration Snapshot Tests > should match ESLint Configuration
       {
         "checksVoidReturn": false,
       },
+    ],
+    "@typescript-eslint/no-misused-spread": [
+      2,
     ],
     "@typescript-eslint/no-mixed-enums": [
       2,
