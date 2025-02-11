@@ -68,7 +68,7 @@ exports[`ESLint Configuration Snapshot Tests > should match ESLint Configuration
       "undefined": false,
       "unescape": false,
     },
-    "parser": "typescript-eslint/parser@8.18.2",
+    "parser": "typescript-eslint/parser@8.24.0",
     "parserOptions": {
       "ecmaVersion": 2023,
       "projectService": true,
@@ -88,7 +88,7 @@ exports[`ESLint Configuration Snapshot Tests > should match ESLint Configuration
     "vitest:vitest@1.1.20",
     "jest-dom",
     "testing-library:eslint-plugin-testing-library@7.1.1",
-    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.18.2",
+    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.24.0",
   ],
   "processor": undefined,
   "rules": {
@@ -249,6 +249,9 @@ exports[`ESLint Configuration Snapshot Tests > should match ESLint Configuration
       {
         "checksVoidReturn": false,
       },
+    ],
+    "@typescript-eslint/no-misused-spread": [
+      2,
     ],
     "@typescript-eslint/no-mixed-enums": [
       2,
