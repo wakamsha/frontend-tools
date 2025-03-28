@@ -1,3 +1,13 @@
+## [@wakamsha/stylelint-config-v4.0.0](https://github.com/wakamsha/frontend-tools/compare/@wakamsha/stylelint-config-v3.1.0...@wakamsha/stylelint-config-v4.0.0) (2025-03-28)
+
+### ⚠ BREAKING CHANGES
+
+* **stylelint-config:** change `selector-class-pattern` from kebab-case to camelCase (#185)
+
+### Features
+
+* **stylelint-config:** change `selector-class-pattern` from kebab-case to camelCase ([#185](https://github.com/wakamsha/frontend-tools/issues/185)) ([6b7ecc6](https://github.com/wakamsha/frontend-tools/commit/6b7ecc6743974a610b9fc18dafb3fade8539c55f))
+
 ## [@wakamsha/stylelint-config-v3.1.0](https://github.com/wakamsha/frontend-tools/compare/@wakamsha/stylelint-config-v3.0.0...@wakamsha/stylelint-config-v3.1.0) (2025-02-09)
 
 ### Features
