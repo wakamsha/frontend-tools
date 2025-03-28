@@ -117,10 +117,10 @@ importers:
         version: 0.7.0(postcss@8.4.49)
       stylelint-config-recess-order:
         specifier: ^6.0.0
-        version: 6.0.0(stylelint@16.16.0(typescript@5.8.2))
+        version: 6.0.0(stylelint@16.17.0(typescript@5.8.2))
       stylelint-config-standard:
         specifier: ^37.0.0
-        version: 37.0.0(stylelint@16.16.0(typescript@5.8.2))
+        version: 37.0.0(stylelint@16.17.0(typescript@5.8.2))
     devDependencies:
       '@types/node':
         specifier: 22.13.14
@@ -138,8 +138,8 @@ importers:
         specifier: 24.2.3
         version: 24.2.3(typescript@5.8.2)
       stylelint:
-        specifier: 16.16.0
-        version: 16.16.0(typescript@5.8.2)
+        specifier: 16.17.0
+        version: 16.17.0(typescript@5.8.2)
       typescript:
         specifier: 5.8.2
         version: 5.8.2
@@ -2823,10 +2823,6 @@ packages:
     resolution: {integrity: sha512-OCVPnIObs4N29kxTjzLfUryOkvZEq+pf8jTF0lg8E7uETuWHA+v7j3c/xJmiqpX450191LlmZfUKkXxkTry7nA==}
     engines: {node: ^10 || ^12 || >=14}
 
-  postcss@8.5.1:
-    resolution: {integrity: sha512-6oz2beyjc5VMn/KV1pPw8fliQkhBXrVn1Z3TVyqZxU8kZpzEKhBdmCFqI6ZbmGtamQvQGuU1sgPTk8ZrXDD7jQ==}
-    engines: {node: ^10 || ^12 || >=14}
-
   postcss@8.5.3:
     resolution: {integrity: sha512-dle9A3yYxlBSrt8Fu+IpjGT8SY8hN0mlaA6GY8t0P5PjIOZemULz/E2Bnm/2dcUOena75OTNkHI76uZBNUUq3A==}
     engines: {node: ^10 || ^12 || >=14}
@@ -3227,8 +3223,8 @@ packages:
     peerDependencies:
       stylelint: ^14.0.0 || ^15.0.0 || ^16.0.1
 
-  stylelint@16.16.0:
-    resolution: {integrity: sha512-40X5UOb/0CEFnZVEHyN260HlSSUxPES+arrUphOumGWgXERHfwCD0kNBVILgQSij8iliYVwlc0V7M5bcLP9vPg==}
+  stylelint@16.17.0:
+    resolution: {integrity: sha512-I9OwVIWRMqVm2Br5iTbrfSqGRPWQUlvm6oXO1xZuYYu0Gpduy67N8wXOZv15p6E/JdlZiAtQaIoLKZEWk5hrjw==}
     engines: {node: '>=18.12.0'}
     hasBin: true
 
@@ -6436,9 +6432,9 @@ snapshots:
       cssesc: 3.0.0
       util-deprecate: 1.0.2
 
-  postcss-sorting@8.0.2(postcss@8.5.1):
+  postcss-sorting@8.0.2(postcss@8.5.3):
     dependencies:
-      postcss: 8.5.1
+      postcss: 8.5.3
 
   postcss-styled-syntax@0.7.0(postcss@8.4.49):
     dependencies:
@@ -6448,12 +6444,6 @@ snapshots:
   postcss-value-parser@4.2.0: {}
 
   postcss@8.4.49:
-    dependencies:
-      nanoid: 3.3.8
-      picocolors: 1.1.1
-      source-map-js: 1.2.1
-
-  postcss@8.5.1:
     dependencies:
       nanoid: 3.3.8
       picocolors: 1.1.1
@@ -6941,27 +6931,27 @@ snapshots:
 
   strip-json-comments@3.1.1: {}
 
-  stylelint-config-recess-order@6.0.0(stylelint@16.16.0(typescript@5.8.2)):
+  stylelint-config-recess-order@6.0.0(stylelint@16.17.0(typescript@5.8.2)):
     dependencies:
-      stylelint: 16.16.0(typescript@5.8.2)
-      stylelint-order: 6.0.4(stylelint@16.16.0(typescript@5.8.2))
+      stylelint: 16.17.0(typescript@5.8.2)
+      stylelint-order: 6.0.4(stylelint@16.17.0(typescript@5.8.2))
 
-  stylelint-config-recommended@15.0.0(stylelint@16.16.0(typescript@5.8.2)):
+  stylelint-config-recommended@15.0.0(stylelint@16.17.0(typescript@5.8.2)):
     dependencies:
-      stylelint: 16.16.0(typescript@5.8.2)
+      stylelint: 16.17.0(typescript@5.8.2)
 
-  stylelint-config-standard@37.0.0(stylelint@16.16.0(typescript@5.8.2)):
+  stylelint-config-standard@37.0.0(stylelint@16.17.0(typescript@5.8.2)):
     dependencies:
-      stylelint: 16.16.0(typescript@5.8.2)
-      stylelint-config-recommended: 15.0.0(stylelint@16.16.0(typescript@5.8.2))
+      stylelint: 16.17.0(typescript@5.8.2)
+      stylelint-config-recommended: 15.0.0(stylelint@16.17.0(typescript@5.8.2))
 
-  stylelint-order@6.0.4(stylelint@16.16.0(typescript@5.8.2)):
+  stylelint-order@6.0.4(stylelint@16.17.0(typescript@5.8.2)):
     dependencies:
-      postcss: 8.5.1
-      postcss-sorting: 8.0.2(postcss@8.5.1)
-      stylelint: 16.16.0(typescript@5.8.2)
+      postcss: 8.5.3
+      postcss-sorting: 8.0.2(postcss@8.5.3)
+      stylelint: 16.17.0(typescript@5.8.2)
 
-  stylelint@16.16.0(typescript@5.8.2):
+  stylelint@16.17.0(typescript@5.8.2):
     dependencies:
       '@csstools/css-parser-algorithms': 3.0.4(@csstools/css-tokenizer@3.0.3)
       '@csstools/css-tokenizer': 3.0.3
