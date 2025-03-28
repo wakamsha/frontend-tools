@@ -1,3 +1,10 @@
+## [@wakamsha/eslint-config-v6.0.4](https://github.com/wakamsha/frontend-tools/compare/@wakamsha/eslint-config-v6.0.3...@wakamsha/eslint-config-v6.0.4) (2025-03-28)
+
+### Bug Fixes
+
+* **deps:** update dependency eslint-import-resolver-typescript to v4 ([#184](https://github.com/wakamsha/frontend-tools/issues/184)) ([09ca7c7](https://github.com/wakamsha/frontend-tools/commit/09ca7c7a2f8a9a6c1720b7058c24ef9bfdff914e))
+* **deps:** update dependency globals to v16 ([#174](https://github.com/wakamsha/frontend-tools/issues/174)) ([2f98151](https://github.com/wakamsha/frontend-tools/commit/2f981516aff560c7f4be5328da10160bc7a5168e))
+
 ## [@wakamsha/eslint-config-v6.0.3](https://github.com/wakamsha/frontend-tools/compare/@wakamsha/eslint-config-v6.0.2...@wakamsha/eslint-config-v6.0.3) (2025-02-11)
 
 ### Bug Fixes
