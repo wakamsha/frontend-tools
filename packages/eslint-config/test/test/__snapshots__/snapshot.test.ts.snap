@@ -84,7 +84,7 @@ exports[`ESLint Configuration Snapshot Tests > should match ESLint Configuration
     "@",
     "import",
     "promise",
-    "unicorn:eslint-plugin-unicorn@56.0.1",
+    "unicorn:eslint-plugin-unicorn@58.0.0",
     "vitest:vitest@1.1.20",
     "jest-dom",
     "testing-library:eslint-plugin-testing-library@7.1.1",
@@ -2070,8 +2070,18 @@ exports[`ESLint Configuration Snapshot Tests > should match ESLint Configuration
     ],
     "unicorn/better-regex": [
       0,
+      {
+        "sortCharacterClasses": true,
+      },
     ],
     "unicorn/catch-error-name": [
+      2,
+      {},
+    ],
+    "unicorn/consistent-assert": [
+      2,
+    ],
+    "unicorn/consistent-date-clone": [
       2,
     ],
     "unicorn/consistent-destructuring": [
@@ -2085,6 +2095,9 @@ exports[`ESLint Configuration Snapshot Tests > should match ESLint Configuration
     ],
     "unicorn/consistent-function-scoping": [
       0,
+      {
+        "checkArrowFunctions": true,
+      },
     ],
     "unicorn/custom-error-definition": [
       0,
@@ -2097,6 +2110,7 @@ exports[`ESLint Configuration Snapshot Tests > should match ESLint Configuration
     ],
     "unicorn/escape-case": [
       2,
+      "uppercase",
     ],
     "unicorn/expiring-todo-comments": [
       2,
@@ -2125,11 +2139,15 @@ exports[`ESLint Configuration Snapshot Tests > should match ESLint Configuration
     ],
     "unicorn/import-style": [
       2,
+      {},
     ],
     "unicorn/new-for-builtins": [
       0,
     ],
     "unicorn/no-abusive-eslint-disable": [
+      2,
+    ],
+    "unicorn/no-accessor-recursion": [
       2,
     ],
     "unicorn/no-anonymous-default-export": [
@@ -2146,9 +2164,13 @@ exports[`ESLint Configuration Snapshot Tests > should match ESLint Configuration
     ],
     "unicorn/no-array-push-push": [
       2,
+      {},
     ],
     "unicorn/no-array-reduce": [
       0,
+      {
+        "allowSimpleOperations": true,
+      },
     ],
     "unicorn/no-await-expression-member": [
       2,
@@ -2171,8 +2193,14 @@ exports[`ESLint Configuration Snapshot Tests > should match ESLint Configuration
     "unicorn/no-hex-escape": [
       2,
     ],
-    "unicorn/no-instanceof-array": [
+    "unicorn/no-instanceof-builtins": [
       2,
+      {
+        "exclude": [],
+        "include": [],
+        "strategy": "loose",
+        "useErrorIsError": false,
+      },
     ],
     "unicorn/no-invalid-fetch-options": [
       2,
@@ -2182,6 +2210,7 @@ exports[`ESLint Configuration Snapshot Tests > should match ESLint Configuration
     ],
     "unicorn/no-keyword-prefix": [
       0,
+      {},
     ],
     "unicorn/no-length-as-slice-end": [
       2,
@@ -2190,6 +2219,9 @@ exports[`ESLint Configuration Snapshot Tests > should match ESLint Configuration
       2,
     ],
     "unicorn/no-magic-array-flat-depth": [
+      2,
+    ],
+    "unicorn/no-named-default": [
       2,
     ],
     "unicorn/no-negated-condition": [
@@ -2209,6 +2241,9 @@ exports[`ESLint Configuration Snapshot Tests > should match ESLint Configuration
     ],
     "unicorn/no-null": [
       0,
+      {
+        "checkStrictEquality": false,
+      },
     ],
     "unicorn/no-object-as-default-parameter": [
       2,
@@ -2230,6 +2265,9 @@ exports[`ESLint Configuration Snapshot Tests > should match ESLint Configuration
     ],
     "unicorn/no-typeof-undefined": [
       2,
+      {
+        "checkGlobalVariables": false,
+      },
     ],
     "unicorn/no-unnecessary-await": [
       2,
@@ -2263,24 +2301,52 @@ exports[`ESLint Configuration Snapshot Tests > should match ESLint Configuration
     ],
     "unicorn/no-useless-undefined": [
       2,
+      {},
     ],
     "unicorn/no-zero-fractions": [
       2,
     ],
     "unicorn/number-literal-case": [
       2,
+      {
+        "hexadecimalValue": "uppercase",
+      },
     ],
     "unicorn/numeric-separators-style": [
       2,
+      {
+        "binary": {
+          "groupLength": 4,
+          "minimumDigits": 0,
+        },
+        "hexadecimal": {
+          "groupLength": 2,
+          "minimumDigits": 0,
+        },
+        "number": {
+          "groupLength": 3,
+          "minimumDigits": 5,
+        },
+        "octal": {
+          "groupLength": 4,
+          "minimumDigits": 0,
+        },
+        "onlyIfContainsSeparator": false,
+      },
     ],
     "unicorn/prefer-add-event-listener": [
       2,
+      {},
     ],
     "unicorn/prefer-array-find": [
       2,
+      {
+        "checkFromLast": true,
+      },
     ],
     "unicorn/prefer-array-flat": [
       2,
+      {},
     ],
     "unicorn/prefer-array-flat-map": [
       2,
@@ -2293,6 +2359,10 @@ exports[`ESLint Configuration Snapshot Tests > should match ESLint Configuration
     ],
     "unicorn/prefer-at": [
       2,
+      {
+        "checkAllIndexAccess": false,
+        "getLastElementFunctions": [],
+      },
     ],
     "unicorn/prefer-blob-reading-methods": [
       2,
@@ -2323,6 +2393,9 @@ exports[`ESLint Configuration Snapshot Tests > should match ESLint Configuration
     ],
     "unicorn/prefer-export-from": [
       2,
+      {
+        "ignoreUsedVariables": false,
+      },
     ],
     "unicorn/prefer-global-this": [
       0,
@@ -2365,9 +2438,14 @@ exports[`ESLint Configuration Snapshot Tests > should match ESLint Configuration
     ],
     "unicorn/prefer-number-properties": [
       2,
+      {
+        "checkInfinity": false,
+        "checkNaN": true,
+      },
     ],
     "unicorn/prefer-object-from-entries": [
       2,
+      {},
     ],
     "unicorn/prefer-optional-catch-binding": [
       2,
@@ -2410,12 +2488,18 @@ exports[`ESLint Configuration Snapshot Tests > should match ESLint Configuration
     ],
     "unicorn/prefer-structured-clone": [
       2,
+      {},
     ],
     "unicorn/prefer-switch": [
       2,
+      {
+        "emptyDefaultCase": "no-default-comment",
+        "minimumCases": 3,
+      },
     ],
     "unicorn/prefer-ternary": [
       2,
+      "always",
     ],
     "unicorn/prefer-top-level-await": [
       2,
@@ -2456,6 +2540,7 @@ exports[`ESLint Configuration Snapshot Tests > should match ESLint Configuration
     ],
     "unicorn/relative-url-style": [
       2,
+      "never",
     ],
     "unicorn/require-array-join-separator": [
       2,
@@ -2468,6 +2553,7 @@ exports[`ESLint Configuration Snapshot Tests > should match ESLint Configuration
     ],
     "unicorn/string-content": [
       0,
+      {},
     ],
     "unicorn/switch-case-braces": [
       2,
@@ -2475,6 +2561,7 @@ exports[`ESLint Configuration Snapshot Tests > should match ESLint Configuration
     ],
     "unicorn/template-indent": [
       2,
+      {},
     ],
     "unicorn/text-encoding-identifier-case": [
       2,
