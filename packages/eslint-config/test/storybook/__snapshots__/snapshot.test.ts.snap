@@ -505,6 +505,7 @@ exports[`ESLint Configuration Snapshot Tests > should match ESLint Configuration
       {
         "enforceForClassFields": true,
         "exceptMethods": [],
+        "ignoreOverrideMethods": false,
       },
     ],
     "complexity": [
