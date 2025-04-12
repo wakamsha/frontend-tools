@@ -61,6 +61,7 @@ exports[`should match Stylelint Configuration snapshot: css 1`] = `
     "block-no-empty": [
       true,
     ],
+    "color-function-alias-notation": [],
     "color-function-notation": [
       "modern",
     ],
@@ -84,6 +85,7 @@ exports[`should match Stylelint Configuration snapshot: css 1`] = `
     "comment-whitespace-inside": [
       "always",
     ],
+    "container-name-pattern": [],
     "custom-media-pattern": [
       "^([a-z][a-z0-9]*)(-[a-z0-9]+)*$",
       {
@@ -190,6 +192,12 @@ exports[`should match Stylelint Configuration snapshot: css 1`] = `
       "percentage-unless-within-keyword-only-block",
     ],
     "keyframes-name-pattern": [
+      "^([a-z][a-z0-9]*)(-[a-z0-9]+)*$",
+      {
+        "message": [Function],
+      },
+    ],
+    "layer-name-pattern": [
       "^([a-z][a-z0-9]*)(-[a-z0-9]+)*$",
       {
         "message": [Function],
@@ -862,6 +870,9 @@ exports[`should match Stylelint Configuration snapshot: css 1`] = `
           "declaration-values",
         ],
       },
+    ],
+    "syntax-string-no-invalid": [
+      true,
     ],
     "value-keyword-case": [
       "lower",
