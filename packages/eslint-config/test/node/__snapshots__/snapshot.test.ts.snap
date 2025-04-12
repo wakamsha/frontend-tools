@@ -151,6 +151,7 @@ exports[`should match ESLint Configuration snapshot: node 1`] = `
       {
         "enforceForClassFields": true,
         "exceptMethods": [],
+        "ignoreOverrideMethods": false,
       },
     ],
     "complexity": [
