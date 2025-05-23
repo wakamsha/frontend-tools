@@ -1316,6 +1316,9 @@ exports[`should match ESLint Configuration snapshot: node 1`] = `
     ],
     "no-shadow-restricted-names": [
       2,
+      {
+        "reportGlobalThis": false,
+      },
     ],
     "no-sparse-arrays": [
       2,
@@ -1401,6 +1404,7 @@ exports[`should match ESLint Configuration snapshot: node 1`] = `
         "allowTaggedTemplates": true,
         "allowTernary": true,
         "enforceForJSX": false,
+        "ignoreDirectives": false,
       },
     ],
     "no-unused-labels": [
@@ -1449,6 +1453,9 @@ exports[`should match ESLint Configuration snapshot: node 1`] = `
     ],
     "no-useless-escape": [
       2,
+      {
+        "allowRegexCharacters": [],
+      },
     ],
     "no-useless-rename": [
       2,
