@@ -23,5 +23,5 @@ export default {
   // embeddedLanguageFormatting: 'auto',
   // singleAttributePerLine: false,
 
-  plugins: ["prettier-plugin-organize-imports"],
+  plugins: ['prettier-plugin-organize-imports'],
 };
