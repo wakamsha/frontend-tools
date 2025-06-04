@@ -574,6 +574,7 @@ exports[`ESLint Configuration Snapshot Tests > should match ESLint Configuration
       "expression",
       {
         "allowArrowFunctions": false,
+        "allowTypeAnnotation": false,
         "overrides": {},
       },
     ],
@@ -2113,7 +2114,9 @@ exports[`ESLint Configuration Snapshot Tests > should match ESLint Configuration
         "allow": [],
         "builtinGlobals": false,
         "hoist": "functions",
+        "ignoreFunctionTypeParameterNameValueShadow": true,
         "ignoreOnInitialization": false,
+        "ignoreTypeValueShadow": true,
       },
     ],
     "no-shadow-restricted-names": [
@@ -2228,7 +2231,10 @@ exports[`ESLint Configuration Snapshot Tests > should match ESLint Configuration
       {
         "allowNamedExports": false,
         "classes": true,
+        "enums": true,
         "functions": true,
+        "ignoreTypeReferences": true,
+        "typedefs": true,
         "variables": true,
       },
     ],
