@@ -1,3 +1,9 @@
+## [@wakamsha/eslint-config-v7.1.0](https://github.com/wakamsha/frontend-tools/compare/@wakamsha/eslint-config-v7.0.1...@wakamsha/eslint-config-v7.1.0) (2025-06-04)
+
+### Features
+
+* **eslint-config:** enable storybook configs ([#213](https://github.com/wakamsha/frontend-tools/issues/213)) ([7750b79](https://github.com/wakamsha/frontend-tools/commit/7750b7932cd0bd47a62f3649934411fd9800b0d5))
+
 ## [@wakamsha/eslint-config-v7.0.1](https://github.com/wakamsha/frontend-tools/compare/@wakamsha/eslint-config-v7.0.0...@wakamsha/eslint-config-v7.0.1) (2025-06-04)
 
 ### Bug Fixes
