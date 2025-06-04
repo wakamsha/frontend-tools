@@ -1,3 +1,10 @@
+## [@wakamsha/eslint-config-v7.0.1](https://github.com/wakamsha/frontend-tools/compare/@wakamsha/eslint-config-v7.0.0...@wakamsha/eslint-config-v7.0.1) (2025-06-04)
+
+### Bug Fixes
+
+* **deps:** update dependency eslint-plugin-storybook to v9 ([#211](https://github.com/wakamsha/frontend-tools/issues/211)) ([89b80ac](https://github.com/wakamsha/frontend-tools/commit/89b80ac70e0c9a0eedc9e6abf375e9904444e0c6))
+* **deps:** update dependency eslint-plugin-unicorn to v59 ([#203](https://github.com/wakamsha/frontend-tools/issues/203)) ([20fff84](https://github.com/wakamsha/frontend-tools/commit/20fff84ce48a2c8dff3270b29ebf27170367172c))
+
 ## [@wakamsha/eslint-config-v7.0.0](https://github.com/wakamsha/frontend-tools/compare/@wakamsha/eslint-config-v6.0.4...@wakamsha/eslint-config-v7.0.0) (2025-04-12)
 
 ### ⚠ BREAKING CHANGES
