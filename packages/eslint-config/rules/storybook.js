@@ -10,7 +10,20 @@ const stories = {
   },
 
   rules: {
-    ...storybook.configs['flat/csf-strict'].rules,
+    ...storybook.configs['flat/recommended'].reduce(
+      (acc, { rules }) => ({
+        ...acc,
+        ...rules,
+      }),
+      {},
+    ),
+    ...storybook.configs['flat/csf-strict'].reduce(
+      (acc, { rules }) => ({
+        ...acc,
+        ...rules,
+      }),
+      {},
+    ),
     'import/no-default-export': ['off'],
   },
 };
@@ -22,7 +35,7 @@ const config = {
   },
 
   rules: {
-    'storybook/no-uninstalled-addons': 'error',
+    'storybook/no-uninstalled-addons': ['error'],
     'import/no-default-export': ['off'],
   },
 };
