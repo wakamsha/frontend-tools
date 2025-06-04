@@ -220,6 +220,7 @@ exports[`should match ESLint Configuration snapshot: node 1`] = `
       "expression",
       {
         "allowArrowFunctions": false,
+        "allowTypeAnnotation": false,
         "overrides": {},
       },
     ],
@@ -1311,7 +1312,9 @@ exports[`should match ESLint Configuration snapshot: node 1`] = `
         "allow": [],
         "builtinGlobals": false,
         "hoist": "functions",
+        "ignoreFunctionTypeParameterNameValueShadow": true,
         "ignoreOnInitialization": false,
+        "ignoreTypeValueShadow": true,
       },
     ],
     "no-shadow-restricted-names": [
@@ -1426,7 +1429,10 @@ exports[`should match ESLint Configuration snapshot: node 1`] = `
       {
         "allowNamedExports": false,
         "classes": true,
+        "enums": true,
         "functions": true,
+        "ignoreTypeReferences": true,
+        "typedefs": true,
         "variables": true,
       },
     ],
