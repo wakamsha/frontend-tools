@@ -1,3 +1,9 @@
+## [@wakamsha/eslint-config-v7.1.1](https://github.com/wakamsha/frontend-tools/compare/@wakamsha/eslint-config-v7.1.0...@wakamsha/eslint-config-v7.1.1) (2025-06-04)
+
+### Bug Fixes
+
+* **eslint-config:** mute `storybook/no-renderer-packages` rule ([#214](https://github.com/wakamsha/frontend-tools/issues/214)) ([36485be](https://github.com/wakamsha/frontend-tools/commit/36485be05b7aa2c89bc5d8d05d44fa27a17c012b))
+
 ## [@wakamsha/eslint-config-v7.1.0](https://github.com/wakamsha/frontend-tools/compare/@wakamsha/eslint-config-v7.0.1...@wakamsha/eslint-config-v7.1.0) (2025-06-04)
 
 ### Features
