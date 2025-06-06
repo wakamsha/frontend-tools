@@ -41,7 +41,7 @@
     "stylelint-config-standard": "^38.0.0"
   },
   "devDependencies": {
-    "@types/node": "22.15.29",
+    "@types/node": "22.15.30",
     "@wakamsha/eslint-config": "workspace:^",
     "eslint": "9.28.0",
     "release-config": "workspace:*",
