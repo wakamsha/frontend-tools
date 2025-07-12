@@ -370,6 +370,11 @@ exports[`should match Stylelint Configuration snapshot: css-in-js 1`] = `
             "min-height",
             "max-height",
             "aspect-ratio",
+            "contain-intrinsic-inline-size",
+            "contain-intrinsic-block-size",
+            "contain-intrinsic-size",
+            "contain-intrinsic-width",
+            "contain-intrinsic-height",
           ],
         },
         {
@@ -396,6 +401,15 @@ exports[`should match Stylelint Configuration snapshot: css-in-js 1`] = `
             "margin-right",
             "margin-bottom",
             "margin-left",
+          ],
+        },
+        {
+          "properties": [
+            "contain",
+            "container",
+            "container-name",
+            "container-type",
+            "content-visibility",
           ],
         },
         {
@@ -497,6 +511,7 @@ exports[`should match Stylelint Configuration snapshot: css-in-js 1`] = `
             "text-decoration-thickness",
             "text-decoration-style",
             "text-decoration-color",
+            "text-decoration-skip-ink",
             "text-underline-position",
             "text-underline-offset",
             "text-shadow",
@@ -706,6 +721,7 @@ exports[`should match Stylelint Configuration snapshot: css-in-js 1`] = `
           "properties": [
             "clip",
             "clip-path",
+            "clip-rule",
             "mask-border",
             "mask-border-source",
             "mask-border-slice",
@@ -722,11 +738,23 @@ exports[`should match Stylelint Configuration snapshot: css-in-js 1`] = `
             "mask-origin",
             "mask-size",
             "mask-composite",
+            "mask-type",
           ],
         },
         {
           "properties": [
+            "shape-outside",
+            "shape-image-threshold",
+            "shape-margin",
+          ],
+        },
+        {
+          "properties": [
+            "direction",
+            "unicode-bidi",
             "writing-mode",
+            "text-orientation",
+            "text-combine-upright",
           ],
         },
         {
@@ -760,11 +788,14 @@ exports[`should match Stylelint Configuration snapshot: css-in-js 1`] = `
           "properties": [
             "transform",
             "transform-origin",
+            "transform-box",
+            "transform-style",
             "rotate",
             "scale",
             "translate",
             "perspective",
             "perspective-origin",
+            "backface-visibility",
           ],
         },
         {
