@@ -1,3 +1,9 @@
+## [@wakamsha/stylelint-config-v4.0.2](https://github.com/wakamsha/frontend-tools/compare/@wakamsha/stylelint-config-v4.0.1...@wakamsha/stylelint-config-v4.0.2) (2025-07-12)
+
+### Bug Fixes
+
+* **deps:** update dependency stylelint-config-recess-order to v7 ([#223](https://github.com/wakamsha/frontend-tools/issues/223)) ([697e3b1](https://github.com/wakamsha/frontend-tools/commit/697e3b14437161d54bfe83a92f47aed2dbdd7a09))
+
 ## [@wakamsha/stylelint-config-v4.0.1](https://github.com/wakamsha/frontend-tools/compare/@wakamsha/stylelint-config-v4.0.0...@wakamsha/stylelint-config-v4.0.1) (2025-04-12)
 
 ### Bug Fixes
