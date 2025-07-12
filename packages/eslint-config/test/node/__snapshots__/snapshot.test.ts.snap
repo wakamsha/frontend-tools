@@ -4,7 +4,7 @@ exports[`should match ESLint Configuration snapshot: node 1`] = `
 {
   "language": "@/js",
   "languageOptions": {
-    "ecmaVersion": 2025,
+    "ecmaVersion": 2026,
     "globals": {
       "AggregateError": false,
       "Array": false,
@@ -68,7 +68,7 @@ exports[`should match ESLint Configuration snapshot: node 1`] = `
       "undefined": false,
       "unescape": false,
     },
-    "parser": "espree@10.3.0",
+    "parser": "espree@10.4.0",
     "parserOptions": {
       "ecmaVersion": 2023,
       "sourceType": "module",
@@ -697,6 +697,7 @@ exports[`should match ESLint Configuration snapshot: node 1`] = `
     "no-duplicate-imports": [
       0,
       {
+        "allowSeparateTypeImports": false,
         "includeExports": false,
       },
     ],
