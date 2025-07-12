@@ -4,7 +4,7 @@ exports[`ESLint Configuration Snapshot Tests > should match ESLint Configuration
 {
   "language": "@/js",
   "languageOptions": {
-    "ecmaVersion": 2025,
+    "ecmaVersion": 2026,
     "globals": {
       "AggregateError": false,
       "Array": false,
@@ -1490,6 +1490,7 @@ exports[`ESLint Configuration Snapshot Tests > should match ESLint Configuration
     "no-duplicate-imports": [
       0,
       {
+        "allowSeparateTypeImports": false,
         "includeExports": false,
       },
     ],
