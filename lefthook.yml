@@ -1,0 +1,16 @@
+commit-msg:
+  jobs:
+    - name: commitlint
+      run: pnpm commitlint --edit "$1"
+
+pre-commit:
+  parallel: true
+  jobs:
+    # General checks
+    - name: spellcheck
+      glob: '*.*'
+      run: pnpm cspell {staged_files}
+
+    - name: prettier
+      glob: '*.*'
+      run: pnpm prettier -c {staged_files}

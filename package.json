@@ -10,9 +10,10 @@
   },
   "packageManager": "pnpm@10.24.0",
   "scripts": {
+    "prepare": "lefthook install",
+    "format": "pnpm prettier -w './**/*.{js,ts,json,md,css,html}'",
     "eslint-config": "   pnpm -F '@wakamsha/eslint-config'",
-    "stylelint-config": "pnpm -F '@wakamsha/stylelint-config'",
-    "format": "pnpm prettier -w './**/*.@(js|ts|json|md|css|html)'"
+    "stylelint-config": "pnpm -F '@wakamsha/stylelint-config'"
   },
   "repository": {
     "type": "git",
@@ -25,6 +26,10 @@
   },
   "homepage": "https://github.com/wakamsha/frontend-tools#readme",
   "devDependencies": {
+    "@commitlint/cli": "20.1.0",
+    "@commitlint/config-conventional": "20.0.0",
+    "cspell": "9.3.2",
+    "lefthook": "2.0.4",
     "prettier": "3.7.2",
     "prettier-plugin-organize-imports": "4.3.0"
   }
