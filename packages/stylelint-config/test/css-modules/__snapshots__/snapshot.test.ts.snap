@@ -61,6 +61,9 @@ exports[`should match Stylelint Configuration snapshot: css-modules 1`] = `
     "block-no-empty": [
       true,
     ],
+    "block-no-redundant-nested-style-rules": [
+      true,
+    ],
     "color-function-alias-notation": [
       "without-alpha",
     ],
@@ -213,7 +216,7 @@ exports[`should match Stylelint Configuration snapshot: css-modules 1`] = `
       },
     ],
     "layer-name-pattern": [
-      "^([a-z][a-z0-9]*)(-[a-z0-9]+)*$",
+      "^([a-z][a-z0-9]*)([.-][a-z0-9]+)*$",
       {
         "message": [Function],
       },
@@ -244,7 +247,13 @@ exports[`should match Stylelint Configuration snapshot: css-modules 1`] = `
     "media-query-no-invalid": [
       true,
     ],
+    "media-type-no-deprecated": [
+      true,
+    ],
     "named-grid-areas-no-invalid": [
+      true,
+    ],
+    "nesting-selector-no-missing-scoping-root": [
       true,
     ],
     "no-descending-specificity": [
@@ -263,6 +272,9 @@ exports[`should match Stylelint Configuration snapshot: css-modules 1`] = `
       true,
     ],
     "no-invalid-position-at-import-rule": [
+      true,
+    ],
+    "no-invalid-position-declaration": [
       true,
     ],
     "no-irregular-whitespace": [
@@ -843,6 +855,9 @@ exports[`should match Stylelint Configuration snapshot: css-modules 1`] = `
           ],
         },
       ],
+    ],
+    "property-no-deprecated": [
+      true,
     ],
     "property-no-unknown": [
       true,
