@@ -41,12 +41,12 @@
     "stylelint-config-standard": "^38.0.0"
   },
   "devDependencies": {
-    "@types/node": "22.16.3",
+    "@types/node": "22.19.1",
     "@wakamsha/eslint-config": "workspace:^",
-    "eslint": "9.31.0",
+    "eslint": "9.39.1",
     "release-config": "workspace:*",
     "semantic-release": "24.2.7",
-    "stylelint": "16.21.1",
+    "stylelint": "16.26.1",
     "typescript": "5.8.3",
     "vitest": "3.2.4"
   },
