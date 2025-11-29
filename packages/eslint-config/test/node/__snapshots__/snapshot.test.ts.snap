@@ -91,6 +91,7 @@ exports[`should match ESLint Configuration snapshot: node 1`] = `
       0,
       {
         "enforceForClassMembers": true,
+        "enforceForTSTypes": false,
         "getWithoutSet": false,
         "setWithoutGet": true,
       },
@@ -233,6 +234,9 @@ exports[`should match ESLint Configuration snapshot: node 1`] = `
     "grouped-accessor-pairs": [
       2,
       "anyOrder",
+      {
+        "enforceForTSTypes": false,
+      },
     ],
     "guard-for-in": [
       2,
@@ -869,6 +873,9 @@ exports[`should match ESLint Configuration snapshot: node 1`] = `
     ],
     "no-misleading-character-class": [
       2,
+      {
+        "allowEscape": false,
+      },
     ],
     "no-multi-assign": [
       2,
@@ -1634,6 +1641,7 @@ exports[`should match ESLint Configuration snapshot: node 1`] = `
     ],
     "require-unicode-regexp": [
       0,
+      {},
     ],
     "sort-imports": [
       0,
