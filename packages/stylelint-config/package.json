@@ -1,6 +1,6 @@
 {
   "name": "@wakamsha/stylelint-config",
-  "version": "4.0.2",
+  "version": "4.0.3",
   "description": "wakamsha's Stylelint rules as an extensible shared config.",
   "exports": {
     "./*": "./configs/*"
