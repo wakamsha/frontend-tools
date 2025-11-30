@@ -20,7 +20,7 @@ export default defineConfig({
   ignorePaths: ['./pnpm-lock.yaml', './.vscode/**', '**/__snapshots__/**'],
   words: [
     // OSS-related terms
-    ...['oxc', 'oxlint', 'tsgolint', 'stylelint'],
+    ...['oxc', 'oxlint', 'oxlintrc', 'tsgolint', 'stylelint'],
     // Lint Rules terms
     ...['defaultstatus', 'nonconstructor', 'nonoctal', 'textnodes'],
     // Other terms
