@@ -1,0 +1,98 @@
+{
+  "$schema": "../node_modules/oxlint/configuration_schema.json",
+  "plugins": ["react"],
+  "rules": {
+    "react/jsx-key": ["error"],
+    "react/jsx-no-comment-textnodes": ["error"],
+    "react/jsx-no-duplicate-props": [
+      "error",
+      {
+        "ignoreCase": true
+      }
+    ],
+    "react/jsx-no-target-blank": [
+      "error",
+      {
+        "enforceDynamicLinks": "always"
+      }
+    ],
+    "react/jsx-no-undef": ["error"],
+    "react/no-children-prop": ["error"],
+    "react/no-danger-with-children": ["error"],
+    "react/no-direct-mutation-state": ["error"],
+    "react/no-find-dom-node": ["error"],
+    "react/no-is-mounted": ["error"],
+    "react/no-render-return-value": ["error"],
+    "react/no-string-refs": ["error"],
+    "react/no-unescaped-entities": ["error"],
+    "react/no-unknown-property": ["error"],
+    "react/react-in-jsx-scope": ["off"],
+    "react/jsx-boolean-value": [
+      "error",
+      "never",
+      {
+        "always": []
+      }
+    ],
+    "react/jsx-handler-names": [
+      "off",
+      {
+        "eventHandlerPrefix": "handle",
+        "eventHandlerPropPrefix": "on"
+      }
+    ],
+    "react/jsx-pascal-case": [
+      "error",
+      {
+        "allowAllCaps": true
+      }
+    ],
+    "react/no-danger": ["warn"],
+    "react/prefer-es6-class": ["error", "always"],
+    "react/self-closing-comp": ["error"],
+    "react/jsx-filename-extension": [
+      "error",
+      {
+        "extensions": [".jsx", ".tsx"]
+      }
+    ],
+    "react/forbid-elements": [
+      "off",
+      {
+        "forbid": [
+          {
+            "element": "ForbidElement",
+            "message": "Use `AnotherElement` instead."
+          }
+        ]
+      }
+    ],
+    "react/style-prop-object": ["error"],
+    "react/no-array-index-key": ["off"],
+    "react/void-dom-elements-no-children": ["error"],
+    "react/jsx-curly-brace-presence": [
+      "error",
+      {
+        "props": "never",
+        "children": "never"
+      }
+    ],
+    "react/button-has-type": ["off"],
+    "react/jsx-fragments": ["error", "syntax"],
+    "react/jsx-no-script-url": [
+      "error",
+      [
+        {
+          "name": "Link",
+          "props": ["to"]
+        }
+      ]
+    ],
+    "react/jsx-no-useless-fragment": ["error"],
+    "react/no-namespace": ["error"],
+    "react/iframe-missing-sandbox": ["error"],
+
+    "react/exhaustive-deps": ["error"],
+    "react/rules-of-hooks": ["error"]
+  }
+}

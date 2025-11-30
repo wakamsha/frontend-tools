@@ -1,0 +1,19 @@
+{
+  "$schema": "./node_modules/oxlint/configuration_schema.json",
+  "plugins": ["import", "promise", "unicorn"],
+  "extends": [
+    "./rules/best-practices.json",
+    "./rules/errors.json",
+    "./rules/es6.json",
+    "./rules/style.json",
+    "./rules/variables.json",
+    "./rules/import.json",
+    "./rules/promise.json",
+    "./rules/unicorn.json"
+  ],
+  "env": {
+    "builtin": true,
+    "es2024": true
+  },
+  "ignorePatterns": ["**/bin/*", "**/build/*", "**/dist/*", "**/node_modules/*"]
+}

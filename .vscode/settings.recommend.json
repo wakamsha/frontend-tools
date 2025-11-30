@@ -2,13 +2,11 @@
   // Configurattions for Linter and Formatter
   "editor.tabSize": 2,
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": "explicit"
+    "source.fixAll.eslint": "explicit",
+    "source.fixAll.oxc": "explicit"
   },
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
-
-  // Adjust the path to the TypeScript SDK
-  // "typescript.tsdk": "node_modules/typescript/lib",
 
   "files.associations": {
     // Recognize this file as JSON with Comments
