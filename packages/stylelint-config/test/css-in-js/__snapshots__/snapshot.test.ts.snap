@@ -244,9 +244,7 @@ exports[`should match Stylelint Configuration snapshot: css-in-js 1`] = `
     "named-grid-areas-no-invalid": [
       true,
     ],
-    "nesting-selector-no-missing-scoping-root": [
-      true,
-    ],
+    "nesting-selector-no-missing-scoping-root": null,
     "no-descending-specificity": [
       true,
     ],

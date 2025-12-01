@@ -17,10 +17,10 @@ export default defineConfig({
     'softwareTerms',
     'typescript',
   ],
-  ignorePaths: ['./pnpm-lock.yaml'],
+  ignorePaths: ['./pnpm-lock.yaml', '**/__snapshots__/**'],
   words: [
     // OSS-related terms
-    ...['stylelint'],
+    ...['stylelint', 'oxlint'],
     // Other terms
     ...['conventionalcommits', 'flatconfig'],
   ],
