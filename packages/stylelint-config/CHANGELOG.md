@@ -1,3 +1,9 @@
+## [@wakamsha/stylelint-config-v4.0.4](https://github.com/wakamsha/frontend-tools/compare/@wakamsha/stylelint-config-v4.0.3...@wakamsha/stylelint-config-v4.0.4) (2025-12-01)
+
+### Bug Fixes
+
+* **stylelint-config:** disable nesting-selector-no-missing-scoping-root rule for CSS-in-JS support ([#254](https://github.com/wakamsha/frontend-tools/issues/254)) ([da4d9ad](https://github.com/wakamsha/frontend-tools/commit/da4d9ad7d38e1a684ce91344f246382e590d23ac))
+
 ## [@wakamsha/stylelint-config-v4.0.3](https://github.com/wakamsha/frontend-tools/compare/@wakamsha/stylelint-config-v4.0.2...@wakamsha/stylelint-config-v4.0.3) (2025-11-29)
 
 ### Bug Fixes
