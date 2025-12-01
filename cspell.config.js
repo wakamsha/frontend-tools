@@ -22,6 +22,6 @@ export default defineConfig({
     // OSS-related terms
     ...['stylelint', 'oxlint'],
     // Other terms
-    ...['conventionalcommits', 'flatconfig'],
+    ...['conventionalcommits', 'flatconfig', 'wakamsha'],
   ],
 });
