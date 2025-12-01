@@ -28,7 +28,6 @@ If you need TypeScript Support:
 
 ```diff
 {
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
   "extends": [
     "./node_modules/@wakamsha/oxlint-config/essentials.json",
 +   "./node_modules/@wakamsha/oxlint-config/typescript.json",
@@ -42,7 +41,6 @@ We also provide various other rule sets that you can configure to suit your proj
 
 ```json
 {
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
   "extends": [
     "./node_modules/@wakamsha/oxlint-config/essentials.json",
     "./node_modules/@wakamsha/oxlint-config/jsdoc.json",
@@ -65,7 +63,7 @@ We also provide various other rule sets that you can configure to suit your proj
 
 ## Integration with ESLint
 
-You can integrate oxlint with ESLint using the [oxlint-eslint-plugin](https://www.npmjs.com/package/oxlint-eslint-plugin) if you still need ESLint that oxlint does not cover yet.
+You can integrate oxlint with ESLint using the [eslint-plugin-oxlint](https://www.npmjs.com/package/eslint-plugin-oxlint) if you still need ESLint that oxlint does not cover yet. This plugin turns off all rules that are already covered by oxlint to avoid conflicts.
 
 ```js
 import oxlint from 'eslint-plugin-oxlint';
