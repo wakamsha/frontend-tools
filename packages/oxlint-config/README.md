@@ -20,7 +20,7 @@ Within your oxlint config file (`.oxlintrc.json`):
 ```json
 {
   "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "extends": ["./node_modules/@wakamsha/oxlint-config/essentials.json"]
+  "extends": ["./node_modules/@wakamsha/oxlint-config/configs/essentials.json"]
 }
 ```
 
@@ -29,8 +29,8 @@ If you need TypeScript Support:
 ```diff
 {
   "extends": [
-    "./node_modules/@wakamsha/oxlint-config/essentials.json",
-+   "./node_modules/@wakamsha/oxlint-config/typescript.json",
+    "./node_modules/@wakamsha/oxlint-config/configs/essentials.json",
++   "./node_modules/@wakamsha/oxlint-config/configs/typescript.json",
   ]
 }
 ```
@@ -42,12 +42,12 @@ We also provide various other rule sets that you can configure to suit your proj
 ```json
 {
   "extends": [
-    "./node_modules/@wakamsha/oxlint-config/essentials.json",
-    "./node_modules/@wakamsha/oxlint-config/jsdoc.json",
-    "./node_modules/@wakamsha/oxlint-config/node.json",
-    "./node_modules/@wakamsha/oxlint-config/react.json",
-    "./node_modules/@wakamsha/oxlint-config/test-essentials.json",
-    "./node_modules/@wakamsha/oxlint-config/typescript.json"
+    "./node_modules/@wakamsha/oxlint-config/configs/essentials.json",
+    "./node_modules/@wakamsha/oxlint-config/configs/jsdoc.json",
+    "./node_modules/@wakamsha/oxlint-config/configs/node.json",
+    "./node_modules/@wakamsha/oxlint-config/configs/react.json",
+    "./node_modules/@wakamsha/oxlint-config/configs/typescript.json",
+    "./node_modules/@wakamsha/oxlint-config/configs/test/essentials.json"
   ]
 }
 ```
@@ -58,7 +58,7 @@ We also provide various other rule sets that you can configure to suit your proj
 |           `jsdoc` | Contains JSDoc recommended rules.                      |
 |            `node` | Contains Node.js recommended rules.                    |
 |           `react` | Contains React and jsx-a11y recommended rules.         |
-| `test-essentials` | Contains Vitest rules.                                 |
+| `test.essentials` | Contains Vitest and Jest rules.                        |
 |      `typescript` | Contains TypeScript recommended rules.                 |
 
 ## Integration with ESLint

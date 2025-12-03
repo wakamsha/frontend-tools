@@ -123,6 +123,8 @@
     {
       "files": ["**/*.{jsx,tsx}"],
       "rules": {
+        // Disallow anonymous functions and classes as the default export.
+        // This rule conflicts with the `react/function-component-definition` rule.
         "unicorn/no-anonymous-default-export": ["off"]
       }
     }

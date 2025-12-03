@@ -8,8 +8,8 @@
     "node": "^20.19.0 || >=22.12.0"
   },
   "files": [
-    "rules",
-    "*.json"
+    "configs",
+    "rules"
   ],
   "scripts": {
     "release": "semantic-release"
@@ -35,7 +35,8 @@
     "oxlint-tsgolint": "^0.8.3"
   },
   "devDependencies": {
-    "oxlint": "1.30.0"
+    "oxlint": "1.30.0",
+    "semantic-release": "24.2.9"
   },
   "peerDependencies": {
     "oxlint": "^1.30.0"
