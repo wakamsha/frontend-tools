@@ -1,0 +1,18 @@
+{
+  "$schema": "../node_modules/oxlint/configuration_schema.json",
+  "overrides": [
+    {
+      "plugins": ["jest"],
+      "files": ["**/__tests__/**/*", "**/*.{spec,test}.*"],
+      "rules": {
+        // "jest/expect-expect": "error",
+        // "jest/no-identical-title": "error",
+        // "jest/no-commented-out-tests": "error",
+        // "jest/valid-expect": "error",
+        // "jest/valid-describe-callback": "error",
+        "jest/valid-title": "error",
+        "jest/no-duplicate-hooks": ["error"]
+      }
+    }
+  ]
+}
