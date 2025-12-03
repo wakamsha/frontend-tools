@@ -12,5 +12,5 @@ pre-commit:
       run: pnpm cspell {staged_files}
 
     - name: prettier
-      glob: '*.*'
+      glob: '*.{js,cjs,ts,tsx,md,json,css,html,yml,yaml}'
       run: pnpm prettier -c {staged_files}
