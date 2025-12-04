@@ -106,6 +106,9 @@ importers:
       oxlint:
         specifier: 1.30.0
         version: 1.30.0(oxlint-tsgolint@0.8.3)
+      release-config:
+        specifier: workspace:*
+        version: link:../release-config
       semantic-release:
         specifier: 24.2.9
         version: 24.2.9(typescript@5.9.3)
