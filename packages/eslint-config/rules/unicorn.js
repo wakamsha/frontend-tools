@@ -7,7 +7,7 @@ const basic = {
   },
 
   rules: {
-    ...unicorn.configs['flat/recommended'].rules,
+    ...unicorn.configs.recommended.rules,
 
     // Move function definitions to the highest possible scope.
     // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/consistent-function-scoping.md

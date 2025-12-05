@@ -84,7 +84,7 @@ exports[`ESLint Configuration Snapshot Tests > should match ESLint Configuration
     "@",
     "import",
     "promise",
-    "unicorn:eslint-plugin-unicorn@59.0.1",
+    "unicorn:eslint-plugin-unicorn@62.0.0",
     "vitest:vitest@1.1.20",
     "jest-dom",
     "testing-library:eslint-plugin-testing-library@7.1.1",
@@ -2190,6 +2190,18 @@ exports[`ESLint Configuration Snapshot Tests > should match ESLint Configuration
         "allowSimpleOperations": true,
       },
     ],
+    "unicorn/no-array-reverse": [
+      2,
+      {
+        "allowExpressionStatement": true,
+      },
+    ],
+    "unicorn/no-array-sort": [
+      2,
+      {
+        "allowExpressionStatement": true,
+      },
+    ],
     "unicorn/no-await-expression-member": [
       2,
     ],
@@ -2209,6 +2221,9 @@ exports[`ESLint Configuration Snapshot Tests > should match ESLint Configuration
       2,
     ],
     "unicorn/no-hex-escape": [
+      2,
+    ],
+    "unicorn/no-immediate-mutation": [
       2,
     ],
     "unicorn/no-instanceof-builtins": [
@@ -2308,6 +2323,12 @@ exports[`ESLint Configuration Snapshot Tests > should match ESLint Configuration
     "unicorn/no-unused-properties": [
       0,
     ],
+    "unicorn/no-useless-collection-argument": [
+      2,
+    ],
+    "unicorn/no-useless-error-capture-stack-trace": [
+      2,
+    ],
     "unicorn/no-useless-fallback-in-spread": [
       2,
     ],
@@ -2388,7 +2409,16 @@ exports[`ESLint Configuration Snapshot Tests > should match ESLint Configuration
         "getLastElementFunctions": [],
       },
     ],
+    "unicorn/prefer-bigint-literals": [
+      2,
+    ],
     "unicorn/prefer-blob-reading-methods": [
+      2,
+    ],
+    "unicorn/prefer-class-fields": [
+      2,
+    ],
+    "unicorn/prefer-classlist-toggle": [
       2,
     ],
     "unicorn/prefer-code-point": [
@@ -2489,6 +2519,9 @@ exports[`ESLint Configuration Snapshot Tests > should match ESLint Configuration
     "unicorn/prefer-regexp-test": [
       2,
     ],
+    "unicorn/prefer-response-static-json": [
+      2,
+    ],
     "unicorn/prefer-set-has": [
       2,
     ],
@@ -2576,6 +2609,12 @@ exports[`ESLint Configuration Snapshot Tests > should match ESLint Configuration
     "unicorn/require-array-join-separator": [
       2,
     ],
+    "unicorn/require-module-attributes": [
+      2,
+    ],
+    "unicorn/require-module-specifiers": [
+      2,
+    ],
     "unicorn/require-number-to-fixed-digits-argument": [
       2,
     ],
@@ -2596,6 +2635,9 @@ exports[`ESLint Configuration Snapshot Tests > should match ESLint Configuration
     ],
     "unicorn/text-encoding-identifier-case": [
       2,
+      {
+        "withDash": false,
+      },
     ],
     "unicorn/throw-new-error": [
       2,
