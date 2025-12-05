@@ -82,7 +82,7 @@ exports[`should match ESLint Configuration snapshot: node 1`] = `
     "@",
     "import",
     "promise",
-    "unicorn:eslint-plugin-unicorn@59.0.1",
+    "unicorn:eslint-plugin-unicorn@62.0.0",
     "n:eslint-plugin-n@17.15.1",
   ],
   "processor": undefined,
@@ -1782,6 +1782,18 @@ exports[`should match ESLint Configuration snapshot: node 1`] = `
         "allowSimpleOperations": true,
       },
     ],
+    "unicorn/no-array-reverse": [
+      2,
+      {
+        "allowExpressionStatement": true,
+      },
+    ],
+    "unicorn/no-array-sort": [
+      2,
+      {
+        "allowExpressionStatement": true,
+      },
+    ],
     "unicorn/no-await-expression-member": [
       2,
     ],
@@ -1801,6 +1813,9 @@ exports[`should match ESLint Configuration snapshot: node 1`] = `
       2,
     ],
     "unicorn/no-hex-escape": [
+      2,
+    ],
+    "unicorn/no-immediate-mutation": [
       2,
     ],
     "unicorn/no-instanceof-builtins": [
@@ -1900,6 +1915,12 @@ exports[`should match ESLint Configuration snapshot: node 1`] = `
     "unicorn/no-unused-properties": [
       0,
     ],
+    "unicorn/no-useless-collection-argument": [
+      2,
+    ],
+    "unicorn/no-useless-error-capture-stack-trace": [
+      2,
+    ],
     "unicorn/no-useless-fallback-in-spread": [
       2,
     ],
@@ -1980,7 +2001,16 @@ exports[`should match ESLint Configuration snapshot: node 1`] = `
         "getLastElementFunctions": [],
       },
     ],
+    "unicorn/prefer-bigint-literals": [
+      2,
+    ],
     "unicorn/prefer-blob-reading-methods": [
+      2,
+    ],
+    "unicorn/prefer-class-fields": [
+      2,
+    ],
+    "unicorn/prefer-classlist-toggle": [
       2,
     ],
     "unicorn/prefer-code-point": [
@@ -2081,6 +2111,9 @@ exports[`should match ESLint Configuration snapshot: node 1`] = `
     "unicorn/prefer-regexp-test": [
       2,
     ],
+    "unicorn/prefer-response-static-json": [
+      2,
+    ],
     "unicorn/prefer-set-has": [
       2,
     ],
@@ -2168,6 +2201,12 @@ exports[`should match ESLint Configuration snapshot: node 1`] = `
     "unicorn/require-array-join-separator": [
       2,
     ],
+    "unicorn/require-module-attributes": [
+      2,
+    ],
+    "unicorn/require-module-specifiers": [
+      2,
+    ],
     "unicorn/require-number-to-fixed-digits-argument": [
       2,
     ],
@@ -2188,6 +2227,9 @@ exports[`should match ESLint Configuration snapshot: node 1`] = `
     ],
     "unicorn/text-encoding-identifier-case": [
       2,
+      {
+        "withDash": false,
+      },
     ],
     "unicorn/throw-new-error": [
       2,
