@@ -10,7 +10,6 @@
   "patch": {
     "automerge": true
   },
-
   "packageRules": [
     {
       "groupName": "semantic-release family",
@@ -18,7 +17,7 @@
     },
     {
       "groupName": "Prettier families",
-      "matchPackagePatterns": ["^prettier"]
+      "matchPackageNames": ["/^prettier/"]
     }
   ]
 }
