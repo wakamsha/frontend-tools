@@ -10,7 +10,7 @@ wakamsha's oxlint rules as an extensible shared config.
 ### 1. Install dependencies (and peer dependencies)
 
 ```bash
-npm install --save-dev @wakamsha/oxlint-config oxlint
+npm install --save-dev @wakamsha/oxlint-config oxlint oxlint-tsgolint
 ```
 
 ### 2. Configure oxlint
@@ -19,7 +19,6 @@ Within your oxlint config file (`.oxlintrc.json`):
 
 ```json
 {
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
   "extends": ["./node_modules/@wakamsha/oxlint-config/configs/essentials.json"]
 }
 ```
@@ -78,7 +77,7 @@ export default [
 Then, run ESLint after oxlint:
 
 ```bash
-npx oxlint && npx eslint
+npx oxlint --type-aware && npx eslint
 ```
 
 ## Versioning
