@@ -1,3 +1,9 @@
+## [@wakamsha/oxlint-config-v1.0.2](https://github.com/wakamsha/frontend-tools/compare/@wakamsha/oxlint-config-v1.0.1...@wakamsha/oxlint-config-v1.0.2) (2025-12-08)
+
+### Bug Fixes
+
+* **oxlint-config:** specify `eslint` plugin ([#263](https://github.com/wakamsha/frontend-tools/issues/263)) ([5eaffd3](https://github.com/wakamsha/frontend-tools/commit/5eaffd3f8346187689c197f13d6a7f9707901282))
+
 ## [@wakamsha/oxlint-config-v1.0.1](https://github.com/wakamsha/frontend-tools/compare/@wakamsha/oxlint-config-v1.0.0...@wakamsha/oxlint-config-v1.0.1) (2025-12-05)
 
 ### Bug Fixes
