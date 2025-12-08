@@ -1,6 +1,6 @@
 {
   "$schema": "../node_modules/oxlint/configuration_schema.json",
-  "plugins": ["oxc"],
+  "plugins": ["eslint", "oxc"],
   "extends": [
     "../rules/best-practices.json",
     "../rules/errors.json",
