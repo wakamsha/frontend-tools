@@ -5,9 +5,11 @@
   "labels": ["dependencies"],
   "schedule": ["every weekend"],
   "minor": {
+    "minimumReleaseAge": "3 days",
     "automerge": true
   },
   "patch": {
+    "minimumReleaseAge": "2 days",
     "automerge": true
   },
   "packageRules": [
