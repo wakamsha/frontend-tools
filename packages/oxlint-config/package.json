@@ -33,12 +33,12 @@
   "homepage": "https://github.com/wakamsha/frontend-tools/tree/main/packages/oxlint-config#readme",
   "devDependencies": {
     "oxlint": "1.35.0",
-    "oxlint-tsgolint": "0.9.2",
+    "oxlint-tsgolint": "0.10.0",
     "release-config": "workspace:*",
     "semantic-release": "25.0.2"
   },
   "peerDependencies": {
     "oxlint": "^1.31.0",
-    "oxlint-tsgolint": "^0.8.3 || ^0.9.0"
+    "oxlint-tsgolint": "^0.8.3 || ^0.9.0 || ^0.10.0"
   }
 }
