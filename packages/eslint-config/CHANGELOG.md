@@ -1,11 +1,3 @@
-## [@wakamsha/eslint-config-v7.2.1](https://github.com/wakamsha/frontend-tools/compare/@wakamsha/eslint-config-v7.2.0...@wakamsha/eslint-config-v7.2.1) (2026-01-17)
-
-### Bug Fixes
-
-* **deps:** update dependency eslint-plugin-jsdoc to v62 ([#292](https://github.com/wakamsha/frontend-tools/issues/292)) ([c3817d5](https://github.com/wakamsha/frontend-tools/commit/c3817d524d28cf9d32e0e6865edea9bca6a47b3d))
-* **deps:** update dependency globals to v17 ([#287](https://github.com/wakamsha/frontend-tools/issues/287)) ([8ae405d](https://github.com/wakamsha/frontend-tools/commit/8ae405dd1cbc1f12552be590fdc0cf39e655fad1))
-* **deps:** update dependency stylelint-config-standard to v40 ([#302](https://github.com/wakamsha/frontend-tools/issues/302)) ([c36083e](https://github.com/wakamsha/frontend-tools/commit/c36083ecd73ea8d04cee7fb143c08f31bcb0a7da))
-
 ## [@wakamsha/eslint-config-v7.2.0](https://github.com/wakamsha/frontend-tools/compare/@wakamsha/eslint-config-v7.1.2...@wakamsha/eslint-config-v7.2.0) (2025-12-05)
 
 ### Features
