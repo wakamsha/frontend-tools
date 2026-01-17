@@ -1,3 +1,9 @@
+## [@wakamsha/eslint-config-v7.2.2](https://github.com/wakamsha/frontend-tools/compare/@wakamsha/eslint-config-v7.2.1...@wakamsha/eslint-config-v7.2.2) (2026-01-17)
+
+### Reverts
+
+* Revert "chore(release): 7.2.1 [skip ci]" ([4a8fbe8](https://github.com/wakamsha/frontend-tools/commit/4a8fbe83596226af2d48cc25ea8ccfee1468548e))
+
 ## [@wakamsha/eslint-config-v7.2.0](https://github.com/wakamsha/frontend-tools/compare/@wakamsha/eslint-config-v7.1.2...@wakamsha/eslint-config-v7.2.0) (2025-12-05)
 
 ### Features
