@@ -132,3 +132,6 @@ dist
 # Visual Studio Code
 .vscode/*
 !.vscode/settings.recommend.json
+
+# Claude settings
+.claude/settings.local.json
