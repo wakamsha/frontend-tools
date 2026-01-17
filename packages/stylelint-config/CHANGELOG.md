@@ -1,3 +1,9 @@
+## [@wakamsha/stylelint-config-v4.0.5](https://github.com/wakamsha/frontend-tools/compare/@wakamsha/stylelint-config-v4.0.4...@wakamsha/stylelint-config-v4.0.5) (2026-01-17)
+
+### Bug Fixes
+
+* **deps:** update dependency stylelint-config-standard to v40 ([#302](https://github.com/wakamsha/frontend-tools/issues/302)) ([c36083e](https://github.com/wakamsha/frontend-tools/commit/c36083ecd73ea8d04cee7fb143c08f31bcb0a7da))
+
 ## [@wakamsha/stylelint-config-v4.0.4](https://github.com/wakamsha/frontend-tools/compare/@wakamsha/stylelint-config-v4.0.3...@wakamsha/stylelint-config-v4.0.4) (2025-12-01)
 
 ### Bug Fixes
