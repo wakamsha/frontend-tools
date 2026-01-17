@@ -987,6 +987,7 @@ exports[`ESLint Configuration Snapshot Tests > should match ESLint Configuration
     "jsdoc/require-jsdoc": [
       2,
       {
+        "checkAllFunctionExpressions": false,
         "checkConstructors": false,
         "checkGetters": true,
         "checkSetters": true,
