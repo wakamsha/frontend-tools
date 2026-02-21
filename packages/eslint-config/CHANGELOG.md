@@ -1,3 +1,13 @@
+## [@wakamsha/eslint-config-v7.3.0](https://github.com/wakamsha/frontend-tools/compare/@wakamsha/eslint-config-v7.2.2...@wakamsha/eslint-config-v7.3.0) (2026-02-21)
+
+### Features
+
+* **deps:** update dependency eslint to v10 ([#324](https://github.com/wakamsha/frontend-tools/issues/324)) ([8accbec](https://github.com/wakamsha/frontend-tools/commit/8accbec7b66fcfa9d60b9d6c22fcab2d3d55a91d))
+
+### Bug Fixes
+
+* **deps:** update dependency eslint-plugin-unicorn to v63 ([#331](https://github.com/wakamsha/frontend-tools/issues/331)) ([bf1c11e](https://github.com/wakamsha/frontend-tools/commit/bf1c11ef7850f1a5f7ef1762ea0729d344c03de7))
+
 ## [@wakamsha/eslint-config-v7.2.2](https://github.com/wakamsha/frontend-tools/compare/@wakamsha/eslint-config-v7.2.1...@wakamsha/eslint-config-v7.2.2) (2026-01-17)
 
 ### Reverts
