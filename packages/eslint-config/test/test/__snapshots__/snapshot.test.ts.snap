@@ -69,7 +69,7 @@ exports[`ESLint Configuration Snapshot Tests > should match ESLint Configuration
       "undefined": false,
       "unescape": false,
     },
-    "parser": "typescript-eslint/parser@8.24.0",
+    "parser": "typescript-eslint/parser@8.56.0",
     "parserOptions": {
       "ecmaVersion": 2023,
       "projectService": true,
@@ -85,11 +85,11 @@ exports[`ESLint Configuration Snapshot Tests > should match ESLint Configuration
     "@",
     "import",
     "promise",
-    "unicorn:eslint-plugin-unicorn@62.0.0",
+    "unicorn:eslint-plugin-unicorn@63.0.0",
     "vitest:vitest@1.1.20",
     "jest-dom",
-    "testing-library:eslint-plugin-testing-library@7.1.1",
-    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.24.0",
+    "testing-library:eslint-plugin-testing-library@7.16.0",
+    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.56.0",
   ],
   "processor": undefined,
   "rules": {
@@ -296,6 +296,9 @@ exports[`ESLint Configuration Snapshot Tests > should match ESLint Configuration
     "@typescript-eslint/no-unnecessary-type-constraint": [
       2,
     ],
+    "@typescript-eslint/no-unnecessary-type-conversion": [
+      2,
+    ],
     "@typescript-eslint/no-unnecessary-type-parameters": [
       2,
     ],
@@ -341,6 +344,9 @@ exports[`ESLint Configuration Snapshot Tests > should match ESLint Configuration
       0,
     ],
     "@typescript-eslint/no-useless-constructor": [
+      2,
+    ],
+    "@typescript-eslint/no-useless-default-assignment": [
       2,
     ],
     "@typescript-eslint/no-wrapper-object-types": [
@@ -1662,7 +1668,7 @@ exports[`ESLint Configuration Snapshot Tests > should match ESLint Configuration
     "no-shadow-restricted-names": [
       2,
       {
-        "reportGlobalThis": false,
+        "reportGlobalThis": true,
       },
     ],
     "no-sparse-arrays": [
@@ -1837,7 +1843,7 @@ exports[`ESLint Configuration Snapshot Tests > should match ESLint Configuration
       },
     ],
     "no-with": [
-      2,
+      0,
     ],
     "object-shorthand": [
       2,
@@ -1962,7 +1968,6 @@ exports[`ESLint Configuration Snapshot Tests > should match ESLint Configuration
     ],
     "radix": [
       2,
-      "always",
     ],
     "require-atomic-updates": [
       0,
@@ -2099,7 +2104,10 @@ exports[`ESLint Configuration Snapshot Tests > should match ESLint Configuration
     ],
     "unicorn/catch-error-name": [
       2,
-      {},
+      {
+        "ignore": [],
+        "name": "error",
+      },
     ],
     "unicorn/consistent-assert": [
       2,
@@ -2150,6 +2158,9 @@ exports[`ESLint Configuration Snapshot Tests > should match ESLint Configuration
     ],
     "unicorn/explicit-length-check": [
       2,
+      {
+        "non-zero": "greater-than",
+      },
     ],
     "unicorn/filename-case": [
       2,
@@ -2163,6 +2174,19 @@ exports[`ESLint Configuration Snapshot Tests > should match ESLint Configuration
     "unicorn/import-style": [
       2,
       {},
+    ],
+    "unicorn/isolated-functions": [
+      2,
+      {
+        "comments": [
+          "@isolated",
+        ],
+        "functions": [
+          "makeSynchronous",
+        ],
+        "overrideGlobals": {},
+        "selectors": [],
+      },
     ],
     "unicorn/new-for-builtins": [
       0,
@@ -2347,7 +2371,10 @@ exports[`ESLint Configuration Snapshot Tests > should match ESLint Configuration
     ],
     "unicorn/no-useless-undefined": [
       2,
-      {},
+      {
+        "checkArguments": true,
+        "checkArrowFunctionBody": true,
+      },
     ],
     "unicorn/no-zero-fractions": [
       2,
@@ -2382,7 +2409,12 @@ exports[`ESLint Configuration Snapshot Tests > should match ESLint Configuration
     ],
     "unicorn/prefer-add-event-listener": [
       2,
-      {},
+      {
+        "excludedPackages": [
+          "koa",
+          "sax",
+        ],
+      },
     ],
     "unicorn/prefer-array-find": [
       2,
@@ -2392,7 +2424,9 @@ exports[`ESLint Configuration Snapshot Tests > should match ESLint Configuration
     ],
     "unicorn/prefer-array-flat": [
       2,
-      {},
+      {
+        "functions": [],
+      },
     ],
     "unicorn/prefer-array-flat-map": [
       2,
@@ -2503,7 +2537,9 @@ exports[`ESLint Configuration Snapshot Tests > should match ESLint Configuration
     ],
     "unicorn/prefer-object-from-entries": [
       2,
-      {},
+      {
+        "functions": [],
+      },
     ],
     "unicorn/prefer-optional-catch-binding": [
       2,
@@ -2531,7 +2567,9 @@ exports[`ESLint Configuration Snapshot Tests > should match ESLint Configuration
     ],
     "unicorn/prefer-single-call": [
       2,
-      {},
+      {
+        "ignore": [],
+      },
     ],
     "unicorn/prefer-spread": [
       2,
@@ -2553,7 +2591,9 @@ exports[`ESLint Configuration Snapshot Tests > should match ESLint Configuration
     ],
     "unicorn/prefer-structured-clone": [
       2,
-      {},
+      {
+        "functions": [],
+      },
     ],
     "unicorn/prefer-switch": [
       2,
@@ -2624,7 +2664,9 @@ exports[`ESLint Configuration Snapshot Tests > should match ESLint Configuration
     ],
     "unicorn/string-content": [
       0,
-      {},
+      {
+        "patterns": {},
+      },
     ],
     "unicorn/switch-case-braces": [
       2,
@@ -2632,7 +2674,25 @@ exports[`ESLint Configuration Snapshot Tests > should match ESLint Configuration
     ],
     "unicorn/template-indent": [
       2,
-      {},
+      {
+        "comments": [
+          "HTML",
+          "indent",
+        ],
+        "functions": [
+          "dedent",
+          "stripIndent",
+        ],
+        "selectors": [],
+        "tags": [
+          "outdent",
+          "dedent",
+          "gql",
+          "sql",
+          "html",
+          "styled",
+        ],
+      },
     ],
     "unicorn/text-encoding-identifier-case": [
       2,

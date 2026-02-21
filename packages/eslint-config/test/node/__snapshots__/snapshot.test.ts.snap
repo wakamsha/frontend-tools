@@ -69,7 +69,7 @@ exports[`should match ESLint Configuration snapshot: node 1`] = `
       "undefined": false,
       "unescape": false,
     },
-    "parser": "espree@10.4.0",
+    "parser": "espree@11.1.1",
     "parserOptions": {
       "ecmaVersion": 2023,
       "sourceType": "module",
@@ -83,7 +83,7 @@ exports[`should match ESLint Configuration snapshot: node 1`] = `
     "@",
     "import",
     "promise",
-    "unicorn:eslint-plugin-unicorn@62.0.0",
+    "unicorn:eslint-plugin-unicorn@63.0.0",
     "n:eslint-plugin-n@17.15.1",
   ],
   "processor": undefined,
@@ -1329,7 +1329,7 @@ exports[`should match ESLint Configuration snapshot: node 1`] = `
     "no-shadow-restricted-names": [
       2,
       {
-        "reportGlobalThis": false,
+        "reportGlobalThis": true,
       },
     ],
     "no-sparse-arrays": [
@@ -1629,7 +1629,6 @@ exports[`should match ESLint Configuration snapshot: node 1`] = `
     ],
     "radix": [
       2,
-      "always",
     ],
     "require-atomic-updates": [
       0,
@@ -1691,7 +1690,10 @@ exports[`should match ESLint Configuration snapshot: node 1`] = `
     ],
     "unicorn/catch-error-name": [
       2,
-      {},
+      {
+        "ignore": [],
+        "name": "error",
+      },
     ],
     "unicorn/consistent-assert": [
       2,
@@ -1742,6 +1744,9 @@ exports[`should match ESLint Configuration snapshot: node 1`] = `
     ],
     "unicorn/explicit-length-check": [
       2,
+      {
+        "non-zero": "greater-than",
+      },
     ],
     "unicorn/filename-case": [
       2,
@@ -1755,6 +1760,19 @@ exports[`should match ESLint Configuration snapshot: node 1`] = `
     "unicorn/import-style": [
       2,
       {},
+    ],
+    "unicorn/isolated-functions": [
+      2,
+      {
+        "comments": [
+          "@isolated",
+        ],
+        "functions": [
+          "makeSynchronous",
+        ],
+        "overrideGlobals": {},
+        "selectors": [],
+      },
     ],
     "unicorn/new-for-builtins": [
       0,
@@ -1939,7 +1957,10 @@ exports[`should match ESLint Configuration snapshot: node 1`] = `
     ],
     "unicorn/no-useless-undefined": [
       2,
-      {},
+      {
+        "checkArguments": true,
+        "checkArrowFunctionBody": true,
+      },
     ],
     "unicorn/no-zero-fractions": [
       2,
@@ -1974,7 +1995,12 @@ exports[`should match ESLint Configuration snapshot: node 1`] = `
     ],
     "unicorn/prefer-add-event-listener": [
       2,
-      {},
+      {
+        "excludedPackages": [
+          "koa",
+          "sax",
+        ],
+      },
     ],
     "unicorn/prefer-array-find": [
       2,
@@ -1984,7 +2010,9 @@ exports[`should match ESLint Configuration snapshot: node 1`] = `
     ],
     "unicorn/prefer-array-flat": [
       2,
-      {},
+      {
+        "functions": [],
+      },
     ],
     "unicorn/prefer-array-flat-map": [
       2,
@@ -2095,7 +2123,9 @@ exports[`should match ESLint Configuration snapshot: node 1`] = `
     ],
     "unicorn/prefer-object-from-entries": [
       2,
-      {},
+      {
+        "functions": [],
+      },
     ],
     "unicorn/prefer-optional-catch-binding": [
       2,
@@ -2123,7 +2153,9 @@ exports[`should match ESLint Configuration snapshot: node 1`] = `
     ],
     "unicorn/prefer-single-call": [
       2,
-      {},
+      {
+        "ignore": [],
+      },
     ],
     "unicorn/prefer-spread": [
       2,
@@ -2145,7 +2177,9 @@ exports[`should match ESLint Configuration snapshot: node 1`] = `
     ],
     "unicorn/prefer-structured-clone": [
       2,
-      {},
+      {
+        "functions": [],
+      },
     ],
     "unicorn/prefer-switch": [
       2,
@@ -2216,7 +2250,9 @@ exports[`should match ESLint Configuration snapshot: node 1`] = `
     ],
     "unicorn/string-content": [
       0,
-      {},
+      {
+        "patterns": {},
+      },
     ],
     "unicorn/switch-case-braces": [
       2,
@@ -2224,7 +2260,25 @@ exports[`should match ESLint Configuration snapshot: node 1`] = `
     ],
     "unicorn/template-indent": [
       2,
-      {},
+      {
+        "comments": [
+          "HTML",
+          "indent",
+        ],
+        "functions": [
+          "dedent",
+          "stripIndent",
+        ],
+        "selectors": [],
+        "tags": [
+          "outdent",
+          "dedent",
+          "gql",
+          "sql",
+          "html",
+          "styled",
+        ],
+      },
     ],
     "unicorn/text-encoding-identifier-case": [
       2,
