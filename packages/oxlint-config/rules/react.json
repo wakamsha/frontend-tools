@@ -4,12 +4,7 @@
   "rules": {
     "react/jsx-key": ["error"],
     "react/jsx-no-comment-textnodes": ["error"],
-    "react/jsx-no-duplicate-props": [
-      "error",
-      {
-        "ignoreCase": true
-      }
-    ],
+    "react/jsx-no-duplicate-props": ["error"],
     "react/jsx-no-target-blank": [
       "error",
       {
