@@ -1,3 +1,9 @@
+## [@wakamsha/oxlint-config-v1.0.3](https://github.com/wakamsha/frontend-tools/compare/@wakamsha/oxlint-config-v1.0.2...@wakamsha/oxlint-config-v1.0.3) (2026-02-21)
+
+### Bug Fixes
+
+* **oxlint-config:** remove redundant default options from rule configs ([#342](https://github.com/wakamsha/frontend-tools/issues/342)) ([8d60fed](https://github.com/wakamsha/frontend-tools/commit/8d60fedc3922550dd16a571193be31a8149a0e9b))
+
 ## [@wakamsha/oxlint-config-v1.0.2](https://github.com/wakamsha/frontend-tools/compare/@wakamsha/oxlint-config-v1.0.1...@wakamsha/oxlint-config-v1.0.2) (2025-12-08)
 
 ### Bug Fixes
