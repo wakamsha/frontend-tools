@@ -1,3 +1,17 @@
+## [@wakamsha/eslint-config-v8.0.0](https://github.com/wakamsha/frontend-tools/compare/@wakamsha/eslint-config-v7.3.0...@wakamsha/eslint-config-v8.0.0) (2026-04-17)
+
+### ⚠ BREAKING CHANGES
+
+* **eslint-config:** @wakamsha/eslint-config no longer supports ESLint v10.
+Consumers must use ESLint ^8.56.0 or ^9.0.0.
+
+Co-authored-by: Claude Opus 4.7 (1M context) <noreply@anthropic.com>
+
+### Bug Fixes
+
+* **deps:** update dependency eslint-plugin-unicorn to v64 ([#386](https://github.com/wakamsha/frontend-tools/issues/386)) ([d770b00](https://github.com/wakamsha/frontend-tools/commit/d770b000a5748c05871ad22b898ee2b31a838f4a))
+* **eslint-config:** downgrade eslint to 9.39.4 and drop v10 peer support ([#403](https://github.com/wakamsha/frontend-tools/issues/403)) ([3b97339](https://github.com/wakamsha/frontend-tools/commit/3b97339b0e95e2502c269176ae5e8877ad895a2e))
+
 ## [@wakamsha/eslint-config-v7.3.0](https://github.com/wakamsha/frontend-tools/compare/@wakamsha/eslint-config-v7.2.2...@wakamsha/eslint-config-v7.3.0) (2026-02-21)
 
 ### Features
