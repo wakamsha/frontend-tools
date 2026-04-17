@@ -69,7 +69,7 @@ exports[`should match ESLint Configuration snapshot: node 1`] = `
       "undefined": false,
       "unescape": false,
     },
-    "parser": "espree@11.1.1",
+    "parser": "espree@10.4.0",
     "parserOptions": {
       "ecmaVersion": 2023,
       "sourceType": "module",
@@ -1329,7 +1329,7 @@ exports[`should match ESLint Configuration snapshot: node 1`] = `
     "no-shadow-restricted-names": [
       2,
       {
-        "reportGlobalThis": true,
+        "reportGlobalThis": false,
       },
     ],
     "no-sparse-arrays": [
@@ -1629,6 +1629,7 @@ exports[`should match ESLint Configuration snapshot: node 1`] = `
     ],
     "radix": [
       2,
+      "always",
     ],
     "require-atomic-updates": [
       0,
