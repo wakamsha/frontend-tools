@@ -88,7 +88,7 @@ exports[`ESLint Configuration Snapshot Tests > should match ESLint Configuration
     "@",
     "import",
     "promise",
-    "unicorn:eslint-plugin-unicorn@63.0.0",
+    "unicorn:eslint-plugin-unicorn@64.0.0",
     "react",
     "react-hooks:eslint-plugin-react-hooks@7.0.0",
     "jsx-a11y:eslint-plugin-jsx-a11y@6.10.2",
@@ -2829,6 +2829,9 @@ exports[`ESLint Configuration Snapshot Tests > should match ESLint Configuration
         "checkArrowFunctions": true,
       },
     ],
+    "unicorn/consistent-template-literal-escape": [
+      2,
+    ],
     "unicorn/custom-error-definition": [
       0,
     ],
@@ -2847,6 +2850,7 @@ exports[`ESLint Configuration Snapshot Tests > should match ESLint Configuration
       {
         "allowWarningComments": true,
         "ignore": [],
+        "ignoreDates": false,
         "ignoreDatesOnPullRequests": true,
         "terms": [
           "todo",
@@ -3054,6 +3058,9 @@ exports[`ESLint Configuration Snapshot Tests > should match ESLint Configuration
       2,
     ],
     "unicorn/no-useless-fallback-in-spread": [
+      2,
+    ],
+    "unicorn/no-useless-iterator-to-array": [
       2,
     ],
     "unicorn/no-useless-length-check": [
@@ -3264,6 +3271,9 @@ exports[`ESLint Configuration Snapshot Tests > should match ESLint Configuration
     "unicorn/prefer-set-size": [
       2,
     ],
+    "unicorn/prefer-simple-condition-first": [
+      2,
+    ],
     "unicorn/prefer-single-call": [
       2,
       {
@@ -3370,6 +3380,9 @@ exports[`ESLint Configuration Snapshot Tests > should match ESLint Configuration
     "unicorn/switch-case-braces": [
       2,
       "avoid",
+    ],
+    "unicorn/switch-case-break-position": [
+      2,
     ],
     "unicorn/template-indent": [
       2,
