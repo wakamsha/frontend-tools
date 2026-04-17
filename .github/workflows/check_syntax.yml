@@ -3,13 +3,15 @@ name: Check Syntax
 on:
   pull_request_target:
     branches:
-      - "*"
+      - '*'
 
 jobs:
   lint:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
 
       - name: Initialize
         uses: ./.github/actions/restore-node
