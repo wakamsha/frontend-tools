@@ -22,7 +22,13 @@ export default defineConfig({
     // OSS-related terms
     ...['oxc', 'oxlint', 'oxlintrc', 'tsgolint', 'stylelint'],
     // Lint Rules terms
-    ...['defaultstatus', 'nonconstructor', 'nonoctal', 'textnodes'],
+    ...[
+      'defaultstatus',
+      'nonconstructor',
+      'nonoctal',
+      'polyfillio',
+      'textnodes',
+    ],
     // Other terms
     ...['conventionalcommits', 'flatconfig', 'wakamsha'],
   ],

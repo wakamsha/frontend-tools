@@ -1,15 +1,7 @@
 import { defineConfig } from 'oxlint';
 
 export default defineConfig({
-  // plugins: ['eslint'],
-  categories: {
-    correctness: 'error',
-    suspicious: 'error',
-    pedantic: 'error',
-    perf: 'error',
-    style: 'error',
-    restriction: 'error',
-  },
+  plugins: ['eslint'],
 
   rules: {
     'accessor-pairs': ['off'],
@@ -28,6 +20,7 @@ export default defineConfig({
     ],
     'id-length': ['off'],
     'init-declarations': ['off'],
+    'logical-assignment-operators': ['off'],
     'max-classes-per-file': ['off'],
     'max-depth': ['off'],
     'max-lines': ['off'],
@@ -35,6 +28,19 @@ export default defineConfig({
     'max-nested-callbacks': ['off'],
     'max-params': ['off'],
     'max-statements': ['off'],
+    'new-cap': [
+      'error',
+      {
+        newIsCap: true,
+        newIsCapExceptions: [],
+        capIsNew: false,
+        capIsNewExceptions: [
+          'Immutable.Map',
+          'Immutable.Set',
+          'Immutable.List',
+        ],
+      },
+    ],
     'no-bitwise': ['off'],
     'no-console': [
       'warn',
@@ -58,7 +64,256 @@ export default defineConfig({
     'no-magic-numbers': ['off'],
     'no-negated-condition': ['off'],
     'no-nested-ternary': ['off'],
+    'no-plusplus': [
+      'error',
+      {
+        allowForLoopAfterthoughts: true,
+      },
+    ],
     'no-redeclare': ['off'],
+    'no-restricted-globals': [
+      'error',
+      {
+        name: 'isFinite',
+        message: 'Use Number.isFinite instead.',
+      },
+      {
+        name: 'isNaN',
+        message: 'Use Number.isNaN instead.',
+      },
+      {
+        name: 'addEventListener',
+        message: 'Use window.addEventListener instead.',
+      },
+      {
+        name: 'blur',
+        message: 'Use window.blur instead.',
+      },
+      {
+        name: 'close',
+        message: 'Use window.close instead.',
+      },
+      {
+        name: 'closed',
+        message: 'Use window.closed instead.',
+      },
+      {
+        name: 'confirm',
+        message: 'Use window.confirm instead.',
+      },
+      {
+        name: 'defaultStatus',
+        message: 'Use window.defaultStatus instead.',
+      },
+      {
+        name: 'defaultstatus',
+        message: 'Use window.defaultstatus instead.',
+      },
+      {
+        name: 'event',
+        message: 'Use window.event instead.',
+      },
+      {
+        name: 'external',
+        message: 'Use window.external instead.',
+      },
+      {
+        name: 'find',
+        message: 'Use window.find instead.',
+      },
+      {
+        name: 'focus',
+        message: 'Use window.focus instead.',
+      },
+      {
+        name: 'frameElement',
+        message: 'Use window.frameElement instead.',
+      },
+      {
+        name: 'frames',
+        message: 'Use window.frames instead.',
+      },
+      {
+        name: 'history',
+        message: 'Use window.history instead.',
+      },
+      {
+        name: 'innerHeight',
+        message: 'Use window.innerHeight instead.',
+      },
+      {
+        name: 'innerWidth',
+        message: 'Use window.innerWidth instead.',
+      },
+      {
+        name: 'length',
+        message: 'Use window.length instead.',
+      },
+      {
+        name: 'location',
+        message: 'Use window.location instead.',
+      },
+      {
+        name: 'locationbar',
+        message: 'Use window.locationbar instead.',
+      },
+      {
+        name: 'menubar',
+        message: 'Use window.menubar instead.',
+      },
+      {
+        name: 'moveBy',
+        message: 'Use window.moveBy instead.',
+      },
+      {
+        name: 'moveTo',
+        message: 'Use window.moveTo instead.',
+      },
+      {
+        name: 'name',
+        message: 'Use window.name instead.',
+      },
+      {
+        name: 'onblur',
+        message: 'Use window.onblur instead.',
+      },
+      {
+        name: 'onerror',
+        message: 'Use window.onerror instead.',
+      },
+      {
+        name: 'onfocus',
+        message: 'Use window.onfocus instead.',
+      },
+      {
+        name: 'onload',
+        message: 'Use window.onload instead.',
+      },
+      {
+        name: 'onresize',
+        message: 'Use window.onresize instead.',
+      },
+      {
+        name: 'onunload',
+        message: 'Use window.onunload instead.',
+      },
+      {
+        name: 'open',
+        message: 'Use window.open instead.',
+      },
+      {
+        name: 'opener',
+        message: 'Use window.opener instead.',
+      },
+      {
+        name: 'opera',
+        message: 'Use window.opera instead.',
+      },
+      {
+        name: 'outerHeight',
+        message: 'Use window.outerHeight instead.',
+      },
+      {
+        name: 'outerWidth',
+        message: 'Use window.outerWidth instead.',
+      },
+      {
+        name: 'pageXOffset',
+        message: 'Use window.pageXOffset instead.',
+      },
+      {
+        name: 'pageYOffset',
+        message: 'Use window.pageYOffset instead.',
+      },
+      {
+        name: 'parent',
+        message: 'Use window.parent instead.',
+      },
+      {
+        name: 'print',
+        message: 'Use window.print instead.',
+      },
+      {
+        name: 'removeEventListener',
+        message: 'Use window.removeEventListener instead.',
+      },
+      {
+        name: 'resizeBy',
+        message: 'Use window.resizeBy instead.',
+      },
+      {
+        name: 'resizeTo',
+        message: 'Use window.resizeTo instead.',
+      },
+      {
+        name: 'screen',
+        message: 'Use window.screen instead.',
+      },
+      {
+        name: 'screenLeft',
+        message: 'Use window.screenLeft instead.',
+      },
+      {
+        name: 'screenTop',
+        message: 'Use window.screenTop instead.',
+      },
+      {
+        name: 'screenX',
+        message: 'Use window.screenX instead.',
+      },
+      {
+        name: 'screenY',
+        message: 'Use window.screenY instead.',
+      },
+      {
+        name: 'scroll',
+        message: 'Use window.scroll instead.',
+      },
+      {
+        name: 'scrollbars',
+        message: 'Use window.scrollbars instead.',
+      },
+      {
+        name: 'scrollBy',
+        message: 'Use window.scrollBy instead.',
+      },
+      {
+        name: 'scrollTo',
+        message: 'Use window.scrollTo instead.',
+      },
+      {
+        name: 'scrollX',
+        message: 'Use window.scrollX instead.',
+      },
+      {
+        name: 'scrollY',
+        message: 'Use window.scrollY instead.',
+      },
+      {
+        name: 'self',
+        message: 'Use window.self instead.',
+      },
+      {
+        name: 'status',
+        message: 'Use window.status instead.',
+      },
+      {
+        name: 'statusbar',
+        message: 'Use window.statusbar instead.',
+      },
+      {
+        name: 'stop',
+        message: 'Use window.stop instead.',
+      },
+      {
+        name: 'toolbar',
+        message: 'Use window.toolbar instead.',
+      },
+      {
+        name: 'top',
+        message: 'Use window.top instead.',
+      },
+    ],
     'no-restricted-properties': [
       'error',
       {
@@ -113,8 +368,37 @@ export default defineConfig({
     'no-shadow': ['off'],
     'no-ternary': ['off'],
     'no-undefined': ['off'],
+    'no-underscore-dangle': [
+      'error',
+      {
+        allow: [],
+        allowAfterThis: false,
+        allowAfterSuper: false,
+        enforceInMethodNames: true,
+      },
+    ],
     'no-unmodified-loop-condition': ['off'],
+    'no-unneeded-ternary': [
+      'error',
+      {
+        defaultAssignment: false,
+      },
+    ],
+    'no-unused-expressions': [
+      'error',
+      {
+        allowShortCircuit: true,
+        allowTernary: true,
+        allowTaggedTemplates: true,
+      },
+    ],
     'no-unused-private-class-members': ['off'],
+    'no-unused-vars': [
+      'error',
+      {
+        ignoreRestSiblings: true,
+      },
+    ],
     'no-use-before-define': ['off'],
     'no-useless-call': ['off'],
     'no-warning-comments': ['off'],
@@ -125,6 +409,7 @@ export default defineConfig({
         avoidQuotes: true,
       },
     ],
+    'operator-assignment': ['error', 'always'],
     'prefer-const': [
       'error',
       {
@@ -138,5 +423,6 @@ export default defineConfig({
     'sort-imports': ['off'],
     'sort-keys': ['off'],
     'sort-vars': ['off'],
+    'unicode-bom': ['error', 'never'],
   },
 });
