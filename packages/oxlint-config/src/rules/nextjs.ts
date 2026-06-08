@@ -22,6 +22,7 @@ export default defineConfig({
       files: ['**/{app,pages}/**/*', '**/*.page.{tsx,jsx,js}'],
       rules: {
         'import/no-default-export': ['off'],
+        'react/only-export-components': ['off'],
       },
     },
   ],

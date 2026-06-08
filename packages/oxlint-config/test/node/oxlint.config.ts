@@ -1,6 +1,6 @@
 import { defineConfig } from 'oxlint';
-import essentials from '../../configs/essentials.ts';
-import node from '../../configs/node.ts';
+import essentials from '../../src/configs/essentials.ts';
+import node from '../../src/configs/node.ts';
 
 export default defineConfig({
   extends: [essentials, node],
