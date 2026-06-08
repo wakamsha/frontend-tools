@@ -7,6 +7,9 @@ export default {
   },
 
   rules: {
+    // @ts-ignore
+    ...vitest.configs.all.rules,
+    // @ts-ignore
     ...vitest.configs.recommended.rules,
 
     // Disallow duplicate setup and teardown hooks
