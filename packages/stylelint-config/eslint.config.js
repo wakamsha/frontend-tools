@@ -13,6 +13,7 @@ export default [
   {
     rules: {
       'import/no-default-export': ['off'],
+      'n/no-unsupported-features/node-builtins': ['off'],
       'unicorn/filename-case': ['off'],
     },
   },
@@ -20,7 +21,6 @@ export default [
     files: ['**/*.config.{js,ts}'],
     rules: {
       'no-restricted-exports': ['off'],
-      'n/no-unsupported-features/node-builtins': ['off'],
       'import/no-extraneous-dependencies': ['off'],
     },
   },
