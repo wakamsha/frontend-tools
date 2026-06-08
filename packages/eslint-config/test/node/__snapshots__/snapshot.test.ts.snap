@@ -84,7 +84,7 @@ exports[`should match ESLint Configuration snapshot: node 1`] = `
     "import",
     "promise",
     "unicorn:eslint-plugin-unicorn@64.0.0",
-    "n:eslint-plugin-n@17.15.1",
+    "n:eslint-plugin-n@18.0.1",
   ],
   "processor": undefined,
   "rules": {
@@ -568,9 +568,6 @@ exports[`should match ESLint Configuration snapshot: node 1`] = `
       2,
     ],
     "n/no-process-exit": [
-      2,
-    ],
-    "n/no-unpublished-bin": [
       2,
     ],
     "n/no-unpublished-import": [
