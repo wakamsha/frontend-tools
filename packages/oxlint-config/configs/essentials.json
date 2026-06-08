@@ -1,0 +1,27 @@
+{
+  "categories": {
+    "correctness": "error",
+    "suspicious": "error",
+    "pedantic": "error",
+    "perf": "error",
+    "style": "error",
+    "restriction": "error"
+  },
+  "extends": [
+    "../rules-json/eslint.json",
+    "../rules-json/oxc.json",
+    "../rules-json/import.json",
+    "../rules-json/promise.json",
+    "../rules-json/unicorn.json"
+  ],
+  "env": {
+    "builtin": true
+  },
+  "ignorePatterns": [
+    "**/bin/*",
+    "**/build/*",
+    "**/dist/*",
+    "**/node_modules/*"
+  ],
+  "$schema": "../node_modules/oxlint/configuration_schema.json"
+}

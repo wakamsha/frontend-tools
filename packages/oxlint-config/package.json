@@ -5,7 +5,9 @@
   "exports": {
     ".": {
       "import": "./configs/index.ts"
-    }
+    },
+    "./configs/*.json": "./configs/*.json",
+    "./configs/test/*.json": "./configs/test/*.json"
   },
   "type": "module",
   "engines": {
@@ -13,9 +15,12 @@
   },
   "files": [
     "configs",
-    "rules"
+    "rules-json",
+    "src"
   ],
   "scripts": {
+    "generate:configs-json": "node ./scripts/generateConfigsJson.ts && prettier --write './configs/**/*.json'",
+    "generate:rules-json": "  node ./scripts/generateRulesJson.ts   && prettier --write ./rules-json",
     "release": "semantic-release"
   },
   "repository": {
@@ -36,8 +41,10 @@
   },
   "homepage": "https://github.com/wakamsha/frontend-tools/tree/main/packages/oxlint-config#readme",
   "devDependencies": {
+    "@types/node": "24.12.2",
     "oxlint": "^1.68.0",
-    "oxlint-tsgolint": "0.23.0",
+    "oxlint-tsgolint": "^0.23.0",
+    "prettier": "3.8.3",
     "release-config": "workspace:*",
     "semantic-release": "25.0.3"
   },

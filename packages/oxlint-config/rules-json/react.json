@@ -1,0 +1,42 @@
+{
+  "plugins": ["react"],
+  "rules": {
+    "react/button-has-type": ["off"],
+    "react/display-name": ["off"],
+    "react/forbid-component-props": ["off"],
+    "react/forbid-elements": ["off"],
+    "react/jsx-boolean-value": ["error", "never"],
+    "react/jsx-filename-extension": [
+      "error",
+      {
+        "extensions": [".jsx", ".tsx"]
+      }
+    ],
+    "react/jsx-handler-names": ["off"],
+    "react/jsx-max-depth": ["off"],
+    "react/jsx-no-script-url": [
+      "error",
+      [
+        {
+          "name": "Link",
+          "props": ["to"]
+        }
+      ]
+    ],
+    "react/jsx-pascal-case": [
+      "error",
+      {
+        "allowAllCaps": true
+      }
+    ],
+    "react/no-array-index-key": ["off"],
+    "react/no-danger": ["warn"],
+    "react/no-did-mount-set-state": ["off"],
+    "react/no-object-type-as-default-prop": ["off"],
+    "react/no-redundant-should-component-update": ["off"],
+    "react/no-unsafe": ["off"],
+    "react/only-export-components": ["warn"],
+    "react/react-in-jsx-scope": ["off"]
+  },
+  "$schema": "../node_modules/oxlint/configuration_schema.json"
+}
