@@ -6,6 +6,10 @@ export default [
   },
 
   ...essentials,
+  ...node,
+  ...typescript,
+  ...test.essentials,
+
   {
     rules: {
       'import/no-default-export': ['off'],
@@ -13,16 +17,11 @@ export default [
     },
   },
   {
-    files: ['**/*.config.@(js|ts)'],
+    files: ['**/*.config.{js,ts}'],
     rules: {
       'no-restricted-exports': ['off'],
+      'n/no-unsupported-features/node-builtins': ['off'],
       'import/no-extraneous-dependencies': ['off'],
     },
   },
-
-  ...node,
-
-  ...typescript,
-
-  ...test.essentials,
 ];
