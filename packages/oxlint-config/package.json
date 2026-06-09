@@ -2,16 +2,28 @@
   "name": "@wakamsha/oxlint-config",
   "version": "1.0.3",
   "description": "wakamsha's oxlint rules as an extensible shared config.",
-  "main": "index.js",
+  "exports": {
+    ".": {
+      "import": "./configs/index.ts"
+    },
+    "./configs/*.json": "./configs/*.json",
+    "./configs/test/*.json": "./configs/test/*.json"
+  },
   "type": "module",
   "engines": {
-    "node": "^20.19.0 || >=22.12.0"
+    "node": "^22.18.0 || >=24.0.0"
   },
   "files": [
     "configs",
-    "rules"
+    "rules-json",
+    "src"
   ],
   "scripts": {
+    "lint": "oxlint --type-aware",
+    "test:snapshot": "vitest",
+    "generate:configs-json": "node ./scripts/generateConfigsJson.ts && prettier --write './configs/**/*.json'",
+    "generate:rules-json": "  node ./scripts/generateRulesJson.ts   && prettier --write ./rules-json",
+    "generate:json": "pnpm generate:rules-json && pnpm generate:configs-json",
     "release": "semantic-release"
   },
   "repository": {
@@ -32,13 +44,16 @@
   },
   "homepage": "https://github.com/wakamsha/frontend-tools/tree/main/packages/oxlint-config#readme",
   "devDependencies": {
-    "oxlint": "1.68.0",
-    "oxlint-tsgolint": "0.23.0",
+    "@types/node": "24.12.2",
+    "oxlint": "^1.68.0",
+    "oxlint-tsgolint": "^0.23.0",
+    "prettier": "3.8.3",
     "release-config": "workspace:*",
-    "semantic-release": "25.0.3"
+    "semantic-release": "25.0.3",
+    "vitest": "4.1.8"
   },
   "peerDependencies": {
-    "oxlint": "^1.31.0",
-    "oxlint-tsgolint": "^0.8.3 || ^0.9.0 || ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.14.0 || ^0.15.0 || ^0.16.0 || ^0.17.0 || ^0.19.0 || ^0.20.0 || ^0.21.0 || ^0.22.0 || ^0.23.0"
+    "oxlint": "^1.68.0",
+    "oxlint-tsgolint": "^0.23.0"
   }
 }

@@ -1,4 +1,4 @@
 {
   "$schema": "../node_modules/oxlint/configuration_schema.json",
-  "extends": ["../rules/react.json", "../rules/jsx-a11y.json"]
+  "extends": ["../rules-json/react.json", "../rules-json/jsx-a11y.json"]
 }

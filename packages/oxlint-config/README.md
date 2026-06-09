@@ -15,41 +15,82 @@ npm install --save-dev @wakamsha/oxlint-config oxlint oxlint-tsgolint
 
 ### 2. Configure oxlint
 
-Within your oxlint config file (`.oxlintrc.json`):
+Oxlint supports both `oxlint.config.ts` and `.oxlintrc.json`.
+Use either one in the same directory (not both).
+
+#### Option A: `oxlint.config.ts` (recommended)
+
+```ts
+import { defineConfig } from 'oxlint';
+import { essentials } from '@wakamsha/oxlint-config';
+
+export default defineConfig({
+  extends: [essentials],
+});
+```
+
+If you need TypeScript support:
+
+```ts
+import { defineConfig } from 'oxlint';
+import { essentials, typescript } from '@wakamsha/oxlint-config';
+
+export default defineConfig({
+  extends: [essentials, typescript],
+});
+```
+
+`typescript` must be added after `essentials`.
+
+You can also combine other provided rule sets:
+
+```ts
+import { defineConfig } from 'oxlint';
+import {
+  essentials,
+  jsdoc,
+  nextjs,
+  node,
+  react,
+  test,
+  typescript,
+} from '@wakamsha/oxlint-config';
+
+export default defineConfig({
+  extends: [
+    essentials,
+    typescript,
+    jsdoc,
+    node,
+    react,
+    nextjs,
+    test.essentials,
+  ],
+});
+```
+
+#### Option B: `.oxlintrc.json`
 
 ```json
 {
+  "$schema": "./node_modules/oxlint/configuration_schema.json",
   "extends": ["./node_modules/@wakamsha/oxlint-config/configs/essentials.json"]
 }
 ```
 
-If you need TypeScript Support:
-
-```diff
-{
-  "extends": [
-    "./node_modules/@wakamsha/oxlint-config/configs/essentials.json",
-+   "./node_modules/@wakamsha/oxlint-config/configs/typescript.json",
-  ]
-}
-```
-
-Must be added after `essentials`.
-
-We also provide various other rule sets that you can configure to suit your project.
+If you need TypeScript support:
 
 ```json
 {
+  "$schema": "./node_modules/oxlint/configuration_schema.json",
   "extends": [
     "./node_modules/@wakamsha/oxlint-config/configs/essentials.json",
-    "./node_modules/@wakamsha/oxlint-config/configs/jsdoc.json",
-    "./node_modules/@wakamsha/oxlint-config/configs/node.json",
-    "./node_modules/@wakamsha/oxlint-config/configs/react.json",
-    "./node_modules/@wakamsha/oxlint-config/configs/typescript.json",
-    "./node_modules/@wakamsha/oxlint-config/configs/test/essentials.json"
+    "./node_modules/@wakamsha/oxlint-config/configs/typescript.json"
   ]
 }
 ```
+
+You can combine other JSON presets as well (for example `react.json`, `nextjs.json`, `test/essentials.json`).
 
 |          Rule set | Summary                                                |
 | ----------------: | ------------------------------------------------------ |
@@ -57,6 +98,7 @@ We also provide various other rule sets that you can configure to suit your proj
 |           `jsdoc` | Contains JSDoc recommended rules.                      |
 |            `node` | Contains Node.js recommended rules.                    |
 |           `react` | Contains React and jsx-a11y recommended rules.         |
+|          `nextjs` | Contains Next.js recommended rules.                    |
 | `test.essentials` | Contains Vitest and Jest rules.                        |
 |      `typescript` | Contains TypeScript recommended rules.                 |
 

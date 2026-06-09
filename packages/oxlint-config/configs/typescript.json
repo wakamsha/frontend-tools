@@ -1,4 +1,8 @@
 {
   "$schema": "../node_modules/oxlint/configuration_schema.json",
-  "extends": ["../rules/typescript.json"]
+  "options": {
+    "typeAware": true,
+    "typeCheck": true
+  },
+  "extends": ["../rules-json/typescript.json"]
 }
