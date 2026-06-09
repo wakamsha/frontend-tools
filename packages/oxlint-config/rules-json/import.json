@@ -1,4 +1,5 @@
 {
+  "$schema": "../node_modules/oxlint/configuration_schema.json",
   "plugins": ["import"],
   "rules": {
     "import/consistent-type-specifier-style": ["error", "prefer-inline"],
@@ -25,6 +26,5 @@
         "import/no-default-export": ["off"]
       }
     }
-  ],
-  "$schema": "../node_modules/oxlint/configuration_schema.json"
+  ]
 }

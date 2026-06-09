@@ -1,4 +1,5 @@
 {
+  "$schema": "../node_modules/oxlint/configuration_schema.json",
   "plugins": ["react"],
   "rules": {
     "react/button-has-type": ["off"],
@@ -37,6 +38,5 @@
     "react/no-unsafe": ["off"],
     "react/only-export-components": ["warn"],
     "react/react-in-jsx-scope": ["off"]
-  },
-  "$schema": "../node_modules/oxlint/configuration_schema.json"
+  }
 }

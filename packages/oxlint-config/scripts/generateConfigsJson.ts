@@ -99,8 +99,8 @@ async function generateConfigJsonFile(configFilePath: string) {
     srcConfigsDir,
   );
   const output: Record<string, unknown> = {
-    ...config,
     $schema: resolveSchemaPathForJson(outputPath),
+    ...config,
   };
 
   if ('extends' in config) {

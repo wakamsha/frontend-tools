@@ -18,8 +18,8 @@ async function generateJsonFile(ruleFilePath: string) {
   const outputPath = resolveJsonOutputPath(ruleFilePath, outputDir);
 
   return writeJsonForTsFile(ruleFilePath, outputDir, {
-    ...config,
     $schema: resolveSchemaPathForJson(outputPath),
+    ...config,
   });
 }
 

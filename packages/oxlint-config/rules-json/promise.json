@@ -1,4 +1,5 @@
 {
+  "$schema": "../node_modules/oxlint/configuration_schema.json",
   "plugins": ["promise"],
   "rules": {
     "promise/always-return": ["off"],
@@ -7,6 +8,5 @@
     "promise/no-nesting": ["off"],
     "promise/no-promise-in-callback": ["warn"],
     "promise/valid-params": ["warn"]
-  },
-  "$schema": "../node_modules/oxlint/configuration_schema.json"
+  }
 }

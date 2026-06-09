@@ -1,4 +1,4 @@
 {
-  "extends": ["../rules-json/nextjs.json"],
-  "$schema": "../node_modules/oxlint/configuration_schema.json"
+  "$schema": "../node_modules/oxlint/configuration_schema.json",
+  "extends": ["../rules-json/nextjs.json"]
 }

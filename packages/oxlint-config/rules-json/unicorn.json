@@ -1,4 +1,5 @@
 {
+  "$schema": "../node_modules/oxlint/configuration_schema.json",
   "plugins": ["unicorn"],
   "rules": {
     "unicorn/consistent-function-scoping": ["off"],
@@ -30,6 +31,5 @@
         "unicorn/no-anonymous-default-export": ["off"]
       }
     }
-  ],
-  "$schema": "../node_modules/oxlint/configuration_schema.json"
+  ]
 }

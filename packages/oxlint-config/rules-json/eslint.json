@@ -1,4 +1,5 @@
 {
+  "$schema": "../node_modules/oxlint/configuration_schema.json",
   "plugins": ["eslint"],
   "rules": {
     "accessor-pairs": ["off"],
@@ -421,6 +422,5 @@
     "sort-keys": ["off"],
     "sort-vars": ["off"],
     "unicode-bom": ["error", "never"]
-  },
-  "$schema": "../node_modules/oxlint/configuration_schema.json"
+  }
 }

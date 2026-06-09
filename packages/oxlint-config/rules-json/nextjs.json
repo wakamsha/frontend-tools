@@ -1,4 +1,5 @@
 {
+  "$schema": "../node_modules/oxlint/configuration_schema.json",
   "plugins": ["nextjs"],
   "rules": {
     "nextjs/google-font-display": ["warn"],
@@ -23,6 +24,5 @@
         "react/only-export-components": ["off"]
       }
     }
-  ],
-  "$schema": "../node_modules/oxlint/configuration_schema.json"
+  ]
 }

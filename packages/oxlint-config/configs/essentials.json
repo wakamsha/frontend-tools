@@ -1,4 +1,5 @@
 {
+  "$schema": "../node_modules/oxlint/configuration_schema.json",
   "categories": {
     "correctness": "error",
     "suspicious": "error",
@@ -17,11 +18,5 @@
   "env": {
     "builtin": true
   },
-  "ignorePatterns": [
-    "**/bin/*",
-    "**/build/*",
-    "**/dist/*",
-    "**/node_modules/*"
-  ],
-  "$schema": "../node_modules/oxlint/configuration_schema.json"
+  "ignorePatterns": ["**/bin/*", "**/build/*", "**/dist/*", "**/node_modules/*"]
 }
