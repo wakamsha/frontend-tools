@@ -23,6 +23,7 @@
     "test:snapshot": "vitest",
     "generate:configs-json": "node ./scripts/generateConfigsJson.ts && prettier --write './configs/**/*.json'",
     "generate:rules-json": "  node ./scripts/generateRulesJson.ts   && prettier --write ./rules-json",
+    "generate:json": "pnpm generate:rules-json && pnpm generate:configs-json",
     "release": "semantic-release"
   },
   "repository": {

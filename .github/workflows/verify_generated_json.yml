@@ -1,0 +1,25 @@
+name: Verify Generated JSON
+
+on:
+  pull_request_target:
+    branches:
+      - '*'
+    paths:
+      - 'packages/oxlint-config/**'
+
+jobs:
+  verify-generated-json:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+
+      - name: Initialize
+        uses: ./.github/actions/restore-node
+
+      - name: Regenerate JSON presets from TypeScript sources
+        run: pnpm -F @wakamsha/oxlint-config generate:json
+
+      - name: Verify generated JSON is in sync with sources
+        run: git diff --exit-code -- packages/oxlint-config/rules-json packages/oxlint-config/configs
