@@ -26,11 +26,6 @@
     "url": "https://github.com/wakamsha/frontend-tools/issues"
   },
   "homepage": "https://github.com/wakamsha/frontend-tools#readme",
-  "pnpm": {
-    "overrides": {
-      "@typescript-eslint/utils": ">=8.46.0"
-    }
-  },
   "devDependencies": {
     "@commitlint/cli": "21.0.2",
     "@commitlint/config-conventional": "21.0.2",
