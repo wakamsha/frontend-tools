@@ -28,15 +28,15 @@ When changing files under `src/`, regenerate artifacts before committing.
 
 1. Generate rule JSON:
 
-```bash
-pnpm -F @wakamsha/oxlint-config generate:rules-json
-```
+   ```bash
+   pnpm -F @wakamsha/oxlint-config generate:rules-json
+   ```
 
-1. Generate config JSON:
+2. Generate config JSON:
 
-```bash
-pnpm -F @wakamsha/oxlint-config generate:configs-json
-```
+   ```bash
+   pnpm -F @wakamsha/oxlint-config generate:configs-json
+   ```
 
 These scripts also run Prettier for generated files.
 
