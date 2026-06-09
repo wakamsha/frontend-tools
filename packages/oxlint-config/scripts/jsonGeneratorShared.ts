@@ -10,9 +10,24 @@ const scriptDir = path.dirname(fileURLToPath(import.meta.url));
 export const packageRoot = path.resolve(scriptDir, '..');
 
 /**
- * JSON schema path embedded into generated config files.
+ * Source directory for internal rule-set implementations.
  */
-export const schemaPath = '../node_modules/oxlint/configuration_schema.json';
+export const srcRulesDir = path.resolve(packageRoot, 'src/rules');
+
+/**
+ * Output directory for generated rule JSON presets.
+ */
+export const rulesOutputDir = path.resolve(packageRoot, 'rules-json');
+
+/**
+ * Source directory for internal config implementations.
+ */
+export const srcConfigsDir = path.resolve(packageRoot, 'src/configs');
+
+/**
+ * Output directory for generated config JSON presets.
+ */
+export const configsOutputDir = path.resolve(packageRoot, 'configs');
 
 const schemaAbsolutePath = path.resolve(
   packageRoot,
@@ -140,37 +155,71 @@ export function resolveJsonOutputPath(
  *
  * @param outputPath Absolute path to the generated JSON file.
  *
- * @returns Relative path from JSON location to oxlint schema.
+ * @returns Relative path from the JSON location to the oxlint schema.
  */
-export function resolveSchemaPathForJson(outputPath: string): string {
+function resolveSchemaPathForJson(outputPath: string): string {
   return path.relative(path.dirname(outputPath), schemaAbsolutePath);
 }
 
 /**
- * Writes a JSON file that shares the basename with the source TypeScript file.
+ * Writes a generated JSON preset, injecting `$schema` as the first key.
  *
- * @param sourceFilePath Source TypeScript file path used to derive the JSON filename.
+ * @param outputPath Absolute path the JSON file is written to.
  *
- * @param outputDir Directory where the JSON file is written.
+ * @param config Config object serialized after the `$schema` key.
  *
- * @param output Serializable object written to the JSON file.
- *
- * @returns Relative path from package root to the generated JSON file.
+ * @returns Relative path from the package root to the generated JSON file.
  */
-export async function writeJsonForTsFile(
-  sourceFilePath: string,
-  outputDir: string,
-  output: Record<string, unknown>,
-  sourceBaseDir?: string,
+export async function writeJsonFile(
+  outputPath: string,
+  config: Record<string, unknown>,
 ): Promise<string> {
-  const outputPath = resolveJsonOutputPath(
-    sourceFilePath,
-    outputDir,
-    sourceBaseDir,
-  );
+  const output = {
+    $schema: resolveSchemaPathForJson(outputPath),
+    ...config,
+  };
 
   await mkdir(path.dirname(outputPath), { recursive: true });
   await writeFile(outputPath, `${JSON.stringify(output, null, 2)}\n`, 'utf8');
 
   return path.relative(packageRoot, outputPath);
+}
+
+/**
+ * Runs a JSON generator: resolves target files (optionally narrowed by CLI
+ * args), generates each, logs the results, and reports failures via the
+ * process exit code.
+ *
+ * @param sourceDir Directory scanned for source TypeScript files.
+ *
+ * @param generate Produces a generated JSON file from a source path and
+ * returns its package-relative path for logging.
+ *
+ * @param options Forwarded to {@link resolveTargetTsFiles}.
+ */
+export async function runGenerator(
+  sourceDir: string,
+  generate: (sourceFilePath: string) => Promise<string>,
+  options: ResolveTargetOptions = {},
+): Promise<void> {
+  try {
+    const targetArgs = process.argv.slice(2);
+    const sourceFiles = await resolveTargetTsFiles(
+      sourceDir,
+      targetArgs,
+      options,
+    );
+
+    if (sourceFiles.length === 0) {
+      throw new Error(`No source files were found in ${sourceDir}`);
+    }
+
+    const generatedFiles = await Promise.all(sourceFiles.map(generate));
+    generatedFiles.forEach((file) => {
+      console.info(`Generated: ${file}`);
+    });
+  } catch (error) {
+    console.error(error);
+    process.exitCode = 1;
+  }
 }

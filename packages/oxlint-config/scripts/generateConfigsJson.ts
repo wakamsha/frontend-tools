@@ -1,73 +1,50 @@
 #!/usr/bin/env node
 
-import { readFile } from 'node:fs/promises';
 import path from 'node:path';
-import { pathToFileURL } from 'node:url';
 import {
+  configsOutputDir,
   importConfigFromTsFile,
   packageRoot,
   resolveJsonOutputPath,
-  resolveSchemaPathForJson,
   resolveTargetTsFiles,
-  writeJsonForTsFile,
+  rulesOutputDir,
+  runGenerator,
+  srcConfigsDir,
+  srcRulesDir,
+  writeJsonFile,
 } from './jsonGeneratorShared.ts';
 
-const srcConfigsDir = path.resolve(packageRoot, 'src/configs');
-const outputConfigsDir = path.resolve(packageRoot, 'configs');
+/**
+ * Maps each rule-set's default export to the absolute path of its generated
+ * JSON preset.
+ *
+ * ESM module caching guarantees that the rule-set objects referenced in a
+ * config's `extends` array are the same instances imported here, so the map
+ * can be keyed by object identity.
+ */
+async function buildRuleSetOutputMap(): Promise<Map<unknown, string>> {
+  const ruleFiles = await resolveTargetTsFiles(srcRulesDir, []);
+  const entries = await Promise.all(
+    ruleFiles.map(async (ruleFilePath) => {
+      const ruleSet = await importConfigFromTsFile(ruleFilePath);
+      const outputPath = resolveJsonOutputPath(ruleFilePath, rulesOutputDir);
 
-function isRuleImportPath(importPath: string): boolean {
-  return /^\.\.\/(?:.+\/)?rules\/.+\.ts$/.test(importPath);
-}
-
-function toRulesJsonPath(importPath: string): string {
-  return importPath
-    .replace('/rules/', '/rules-json/')
-    .replace(/\.ts$/, '.json');
-}
-
-function isRecord(value: unknown): value is Record<string, unknown> {
-  return typeof value === 'object' && value !== null;
-}
-
-async function createRuleExtendsMap(configFilePath: string) {
-  const sourceText = await readFile(configFilePath, 'utf8');
-
-  const importMatches = sourceText.matchAll(
-    /import\s+[A-Za-z_$][\w$]*\s+from\s+['"](?<source>[^'"]+)['"];/g,
-  );
-
-  const ruleImportPaths = [...importMatches]
-    .map(([, importPath]) => importPath)
-    .filter((importPath) => isRuleImportPath(importPath));
-
-  const mapEntries = await Promise.all(
-    ruleImportPaths.map(async (importPath) => {
-      const absoluteImportPath = path.resolve(
-        path.dirname(configFilePath),
-        importPath,
-      );
-      const importedModule = (await import(
-        pathToFileURL(absoluteImportPath).href
-      )) as { default?: unknown };
-      const importedConfig = importedModule.default;
-
-      if (!isRecord(importedConfig)) {
-        throw new TypeError(
-          `Default export is not a config object: ${absoluteImportPath}`,
-        );
-      }
-
-      return [importedConfig, toRulesJsonPath(importPath)] as const;
+      return [ruleSet, outputPath] as const;
     }),
   );
 
-  return new Map<unknown, string>(mapEntries);
+  return new Map(entries);
 }
 
+/**
+ * Rewrites a config's `extends` entries: string entries pass through, while
+ * rule-set objects are replaced with the relative path to their generated JSON
+ * preset.
+ */
 function normalizeExtends(
   extendsValue: unknown,
-  extendsMap: Map<unknown, string>,
-  configFilePath: string,
+  ruleSetOutputMap: Map<unknown, string>,
+  configOutputPath: string,
 ): unknown {
   if (!Array.isArray(extendsValue)) {
     return extendsValue;
@@ -78,69 +55,45 @@ function normalizeExtends(
       return entry;
     }
 
-    const mappedPath = extendsMap.get(entry);
+    const ruleOutputPath = ruleSetOutputMap.get(entry);
 
-    if (mappedPath === undefined) {
+    if (ruleOutputPath === undefined) {
       throw new Error(
-        `Unable to map extends entry to JSON path in ${path.relative(packageRoot, configFilePath)}`,
+        `Unable to map an extends entry to a generated rule preset in ${path.relative(packageRoot, configOutputPath)}`,
       );
     }
 
-    return mappedPath;
+    return path.relative(path.dirname(configOutputPath), ruleOutputPath);
   });
 }
 
-async function generateConfigJsonFile(configFilePath: string) {
-  const config = await importConfigFromTsFile(configFilePath);
-  const extendsMap = await createRuleExtendsMap(configFilePath);
-  const outputPath = resolveJsonOutputPath(
-    configFilePath,
-    outputConfigsDir,
-    srcConfigsDir,
-  );
-  const output: Record<string, unknown> = {
-    $schema: resolveSchemaPathForJson(outputPath),
-    ...config,
-  };
+const ruleSetOutputMap = await buildRuleSetOutputMap();
 
-  if ('extends' in config) {
-    output.extends = normalizeExtends(
-      config.extends,
-      extendsMap,
+await runGenerator(
+  srcConfigsDir,
+  async (configFilePath) => {
+    const config = await importConfigFromTsFile(configFilePath);
+    const outputPath = resolveJsonOutputPath(
       configFilePath,
+      configsOutputDir,
+      srcConfigsDir,
     );
-  }
+    const normalizedConfig =
+      'extends' in config
+        ? {
+            ...config,
+            extends: normalizeExtends(
+              config.extends,
+              ruleSetOutputMap,
+              outputPath,
+            ),
+          }
+        : config;
 
-  return writeJsonForTsFile(
-    configFilePath,
-    outputConfigsDir,
-    output,
-    srcConfigsDir,
-  );
-}
-
-async function main() {
-  const targetArgs = process.argv.slice(2);
-  const configFiles = await resolveTargetTsFiles(srcConfigsDir, targetArgs, {
+    return writeJsonFile(outputPath, normalizedConfig);
+  },
+  {
     excludeBaseNames: ['index'],
     recursive: true,
-  });
-
-  if (configFiles.length === 0) {
-    throw new Error(`No config files were found in ${srcConfigsDir}`);
-  }
-
-  const generatedFiles = await Promise.all(
-    configFiles.map(generateConfigJsonFile),
-  );
-  generatedFiles.forEach((file) => {
-    console.info(`Generated: ${file}`);
-  });
-}
-
-try {
-  await main();
-} catch (error) {
-  console.error(error);
-  process.exitCode = 1;
-}
+  },
+);
