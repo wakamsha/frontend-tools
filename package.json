@@ -5,10 +5,10 @@
   "type": "module",
   "engines": {
     "node": "24.16.0",
-    "pnpm": "10.34.1",
+    "pnpm": "11.5.2",
     "npm": "please use pnpm instead"
   },
-  "packageManager": "pnpm@10.34.1",
+  "packageManager": "pnpm@11.5.2",
   "scripts": {
     "prepare": "lefthook install",
     "format": "pnpm prettier -w './**/*.{js,ts,json,md,css,html}'",
@@ -26,11 +26,6 @@
     "url": "https://github.com/wakamsha/frontend-tools/issues"
   },
   "homepage": "https://github.com/wakamsha/frontend-tools#readme",
-  "pnpm": {
-    "overrides": {
-      "@typescript-eslint/utils": ">=8.46.0"
-    }
-  },
   "devDependencies": {
     "@commitlint/cli": "21.0.2",
     "@commitlint/config-conventional": "21.0.2",

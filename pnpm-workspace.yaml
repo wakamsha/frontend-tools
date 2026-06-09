@@ -1,2 +1,9 @@
 packages:
   - 'packages/*'
+
+allowBuilds:
+  esbuild: true
+  lefthook: true
+
+overrides:
+  '@typescript-eslint/utils': '>=8.46.0'
