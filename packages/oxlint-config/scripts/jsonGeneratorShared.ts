@@ -66,14 +66,15 @@ export async function resolveTargetTsFiles(
   const excludeSet = new Set(options.excludeBaseNames);
 
   if (inputArgs.length === 0) {
-    const targets = options.recursive
-      ? await collectTsFilesRecursively(sourceDir)
-      : await (async () => {
-          const entries = await readdir(sourceDir);
-          return entries
-            .filter((entry) => entry.endsWith('.ts'))
-            .map((entry) => path.resolve(sourceDir, entry));
-        })();
+    const targets =
+      options.recursive === true
+        ? await collectTsFilesRecursively(sourceDir)
+        : await (async () => {
+            const entries = await readdir(sourceDir);
+            return entries
+              .filter((entry) => entry.endsWith('.ts'))
+              .map((entry) => path.resolve(sourceDir, entry));
+          })();
 
     return targets.filter(
       (target) => !excludeSet.has(path.basename(target, '.ts')),
@@ -99,10 +100,10 @@ export async function importConfigFromTsFile(
   filePath: string,
 ): Promise<Record<string, unknown>> {
   const moduleUrl = pathToFileURL(filePath).href;
-  const loadedModule = await import(moduleUrl);
+  const loadedModule = (await import(moduleUrl)) as { default?: unknown };
   const config = loadedModule.default;
 
-  if (!config || typeof config !== 'object') {
+  if (config === null || typeof config !== 'object') {
     throw new TypeError(`Default export is not a config object: ${filePath}`);
   }
 
@@ -125,9 +126,10 @@ export function resolveJsonOutputPath(
   outputDir: string,
   sourceBaseDir?: string,
 ): string {
-  const relativeSourcePath = sourceBaseDir
-    ? path.relative(sourceBaseDir, sourceFilePath)
-    : path.basename(sourceFilePath);
+  const relativeSourcePath =
+    sourceBaseDir !== undefined
+      ? path.relative(sourceBaseDir, sourceFilePath)
+      : path.basename(sourceFilePath);
   const outputRelativePath = relativeSourcePath.replace(/\.ts$/, '.json');
 
   return path.resolve(outputDir, outputRelativePath);

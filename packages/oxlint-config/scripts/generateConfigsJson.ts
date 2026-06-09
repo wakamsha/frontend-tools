@@ -33,7 +33,7 @@ async function createRuleExtendsMap(configFilePath: string) {
   const sourceText = await readFile(configFilePath, 'utf8');
 
   const importMatches = sourceText.matchAll(
-    /import\s+[A-Za-z_$][\w$]*\s+from\s+['"]([^'"]+)['"];/g,
+    /import\s+[A-Za-z_$][\w$]*\s+from\s+['"](?<source>[^'"]+)['"];/g,
   );
 
   const ruleImportPaths = [...importMatches]
@@ -46,9 +46,9 @@ async function createRuleExtendsMap(configFilePath: string) {
         path.dirname(configFilePath),
         importPath,
       );
-      const importedModule = await import(
+      const importedModule = (await import(
         pathToFileURL(absoluteImportPath).href
-      );
+      )) as { default?: unknown };
       const importedConfig = importedModule.default;
 
       if (!isRecord(importedConfig)) {
@@ -80,7 +80,7 @@ function normalizeExtends(
 
     const mappedPath = extendsMap.get(entry);
 
-    if (!mappedPath) {
+    if (mappedPath === undefined) {
       throw new Error(
         `Unable to map extends entry to JSON path in ${path.relative(packageRoot, configFilePath)}`,
       );
