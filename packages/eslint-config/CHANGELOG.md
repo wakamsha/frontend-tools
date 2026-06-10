@@ -1,3 +1,18 @@
+## [@wakamsha/eslint-config-v9.0.0](https://github.com/wakamsha/frontend-tools/compare/@wakamsha/eslint-config-v8.0.0...@wakamsha/eslint-config-v9.0.0) (2026-06-10)
+
+### ⚠ BREAKING CHANGES
+
+* **eslint-config:** include vitest all rules in test config (#458)
+
+### Features
+
+* **eslint-config:** include vitest all rules in test config ([#458](https://github.com/wakamsha/frontend-tools/issues/458)) ([f1b16f3](https://github.com/wakamsha/frontend-tools/commit/f1b16f372151bcaeca5ed8d754f42e7aa4e448d7))
+
+### Bug Fixes
+
+* **deps:** update dependency eslint-plugin-jsdoc to v63 ([#445](https://github.com/wakamsha/frontend-tools/issues/445)) ([f9d24cc](https://github.com/wakamsha/frontend-tools/commit/f9d24cc70b9165eba4e827fbedfda3924b59939a))
+* **deps:** update dependency eslint-plugin-n to v18 ([#434](https://github.com/wakamsha/frontend-tools/issues/434)) ([12c1e01](https://github.com/wakamsha/frontend-tools/commit/12c1e0178b7223b3031b21c2e7b5273fc2256607))
+
 ## [@wakamsha/eslint-config-v8.0.0](https://github.com/wakamsha/frontend-tools/compare/@wakamsha/eslint-config-v7.3.0...@wakamsha/eslint-config-v8.0.0) (2026-04-17)
 
 ### ⚠ BREAKING CHANGES
