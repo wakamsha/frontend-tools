@@ -1,3 +1,10 @@
+## [@wakamsha/stylelint-config-v4.1.1](https://github.com/wakamsha/frontend-tools/compare/@wakamsha/stylelint-config-v4.1.0...@wakamsha/stylelint-config-v4.1.1) (2026-06-10)
+
+### Bug Fixes
+
+* **deps:** update dependency eslint-plugin-n to v18 ([#434](https://github.com/wakamsha/frontend-tools/issues/434)) ([12c1e01](https://github.com/wakamsha/frontend-tools/commit/12c1e0178b7223b3031b21c2e7b5273fc2256607))
+* **stylelint-config:** align node engine with stylelint v17 requirements ([#459](https://github.com/wakamsha/frontend-tools/issues/459)) ([0242f02](https://github.com/wakamsha/frontend-tools/commit/0242f02a2b05f1a40b3847615369c0953ae6c448))
+
 ## [@wakamsha/stylelint-config-v4.1.0](https://github.com/wakamsha/frontend-tools/compare/@wakamsha/stylelint-config-v4.0.5...@wakamsha/stylelint-config-v4.1.0) (2026-02-21)
 
 ### Features
