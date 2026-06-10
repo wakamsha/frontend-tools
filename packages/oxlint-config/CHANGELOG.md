@@ -1,3 +1,15 @@
+## [@wakamsha/oxlint-config-v2.0.0](https://github.com/wakamsha/frontend-tools/compare/@wakamsha/oxlint-config-v1.0.3...@wakamsha/oxlint-config-v2.0.0) (2026-06-10)
+
+### ⚠ BREAKING CHANGES
+
+* **oxlint-config:** add missing eslint compatibility rules (#460)
+* **oxlint-config:** reimplement config architecture with generated JSON presets (#456)
+
+### Features
+
+* **oxlint-config:** add missing eslint compatibility rules ([#460](https://github.com/wakamsha/frontend-tools/issues/460)) ([0cb02c0](https://github.com/wakamsha/frontend-tools/commit/0cb02c040aeb05dddd3259b38b8691876b889f06))
+* **oxlint-config:** reimplement config architecture with generated JSON presets ([#456](https://github.com/wakamsha/frontend-tools/issues/456)) ([2ab1381](https://github.com/wakamsha/frontend-tools/commit/2ab13817fda4ba354ee34cc75fe51154c8cad3b2))
+
 ## [@wakamsha/oxlint-config-v1.0.3](https://github.com/wakamsha/frontend-tools/compare/@wakamsha/oxlint-config-v1.0.2...@wakamsha/oxlint-config-v1.0.3) (2026-02-21)
 
 ### Bug Fixes
