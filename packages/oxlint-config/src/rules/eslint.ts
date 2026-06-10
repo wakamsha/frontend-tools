@@ -19,6 +19,7 @@ export default defineConfig({
       },
     ],
     'id-length': ['off'],
+    'id-match': ['off'],
     'init-declarations': ['off'],
     'logical-assignment-operators': ['off'],
     'max-classes-per-file': ['off'],
@@ -50,6 +51,18 @@ export default defineConfig({
     ],
     'no-div-regex': ['off'],
     'no-duplicate-imports': ['off'],
+    'no-empty-function': [
+      'error',
+      {
+        allow: [
+          'arrowFunctions',
+          'functions',
+          'methods',
+          // An empty constructor method must be available in order to use TypeScript's Parameter Properties.
+          'constructors',
+        ],
+      },
+    ],
     'no-eq-null': ['off'],
     'no-implicit-coercion': [
       'error',
@@ -64,6 +77,24 @@ export default defineConfig({
     'no-magic-numbers': ['off'],
     'no-negated-condition': ['off'],
     'no-nested-ternary': ['off'],
+    'no-param-reassign': [
+      'error',
+      {
+        props: true,
+        ignorePropertyModificationsFor: [
+          'acc', // for reduce accumulators
+          'accumulator', // for reduce accumulators
+          'e', // for e.returnvalue
+          'ctx', // for Koa routing
+          'context', // for Koa routing
+          'req', // for Express requests
+          'request', // for Express requests
+          'res', // for Express responses
+          'response', // for Express responses
+          'staticContext', // for ReactRouter context
+        ],
+      },
+    ],
     'no-plusplus': [
       'error',
       {
@@ -71,6 +102,15 @@ export default defineConfig({
       },
     ],
     'no-redeclare': ['off'],
+    'no-restricted-exports': [
+      'error',
+      {
+        restrictedNamedExports: [
+          'default', // use `export default` to provide a default export
+          'then', // this will cause tons of confusion when your module is dynamically `import()`ed, and will break in most node ESM versions
+        ],
+      },
+    ],
     'no-restricted-globals': [
       'error',
       {

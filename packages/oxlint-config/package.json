@@ -45,7 +45,7 @@
   "homepage": "https://github.com/wakamsha/frontend-tools/tree/main/packages/oxlint-config#readme",
   "devDependencies": {
     "@types/node": "24.12.2",
-    "oxlint": "^1.68.0",
+    "oxlint": "^1.69.0",
     "oxlint-tsgolint": "^0.23.0",
     "prettier": "3.8.3",
     "release-config": "workspace:*",
@@ -53,7 +53,7 @@
     "vitest": "4.1.8"
   },
   "peerDependencies": {
-    "oxlint": "^1.68.0",
+    "oxlint": "^1.69.0",
     "oxlint-tsgolint": "^0.23.0"
   }
 }

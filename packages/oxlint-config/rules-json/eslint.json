@@ -17,6 +17,7 @@
       }
     ],
     "id-length": ["off"],
+    "id-match": ["off"],
     "init-declarations": ["off"],
     "logical-assignment-operators": ["off"],
     "max-classes-per-file": ["off"],
@@ -48,6 +49,12 @@
     ],
     "no-div-regex": ["off"],
     "no-duplicate-imports": ["off"],
+    "no-empty-function": [
+      "error",
+      {
+        "allow": ["arrowFunctions", "functions", "methods", "constructors"]
+      }
+    ],
     "no-eq-null": ["off"],
     "no-implicit-coercion": [
       "error",
@@ -62,6 +69,24 @@
     "no-magic-numbers": ["off"],
     "no-negated-condition": ["off"],
     "no-nested-ternary": ["off"],
+    "no-param-reassign": [
+      "error",
+      {
+        "props": true,
+        "ignorePropertyModificationsFor": [
+          "acc",
+          "accumulator",
+          "e",
+          "ctx",
+          "context",
+          "req",
+          "request",
+          "res",
+          "response",
+          "staticContext"
+        ]
+      }
+    ],
     "no-plusplus": [
       "error",
       {
@@ -69,6 +94,12 @@
       }
     ],
     "no-redeclare": ["off"],
+    "no-restricted-exports": [
+      "error",
+      {
+        "restrictedNamedExports": ["default", "then"]
+      }
+    ],
     "no-restricted-globals": [
       "error",
       {
