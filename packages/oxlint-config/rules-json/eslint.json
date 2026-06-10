@@ -69,6 +69,12 @@
       }
     ],
     "no-redeclare": ["off"],
+    "no-restricted-exports": [
+      "error",
+      {
+        "restrictedNamedExports": ["default", "then"]
+      }
+    ],
     "no-restricted-globals": [
       "error",
       {
