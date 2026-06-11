@@ -14,7 +14,8 @@
     "format": "pnpm prettier -w './**/*.{js,ts,json,md,css,html}'",
     "eslint-config": "   pnpm -F '@wakamsha/eslint-config'",
     "oxlint-config": "   pnpm -F '@wakamsha/oxlint-config'",
-    "stylelint-config": "pnpm -F '@wakamsha/stylelint-config'"
+    "stylelint-config": "pnpm -F '@wakamsha/stylelint-config'",
+    "comparison": "      pnpm -F '@wakamsha/comparison'"
   },
   "repository": {
     "type": "git",
