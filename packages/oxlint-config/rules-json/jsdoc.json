@@ -2,6 +2,12 @@
   "$schema": "../node_modules/oxlint/configuration_schema.json",
   "plugins": ["jsdoc"],
   "rules": {
+    "jsdoc/check-tag-names": [
+      "error",
+      {
+        "definedTags": ["remarks", "typeParam"]
+      }
+    ],
     "jsdoc/require-param": [
       "error",
       {
