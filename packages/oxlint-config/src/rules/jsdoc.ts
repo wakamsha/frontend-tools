@@ -3,6 +3,12 @@ import { defineConfig } from 'oxlint';
 export default defineConfig({
   plugins: ['jsdoc'],
   rules: {
+    'jsdoc/check-tag-names': [
+      'error',
+      {
+        definedTags: ['remarks', 'typeParam'],
+      },
+    ],
     'jsdoc/require-param': [
       'error',
       {
