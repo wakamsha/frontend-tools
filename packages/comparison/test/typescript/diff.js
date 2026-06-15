@@ -232,14 +232,16 @@ const eslintRules = [
 const diff = eslintRules.filter((x) => !oxlintRules.has(x));
 console.info(diff, diff.length);
 
+// ✅ が付いているルールは、eslint-config 内で `error` or `warn` に設定されていることを示す。
+
 // [
-//   '@typescript-eslint/naming-convention',
-//   '@typescript-eslint/no-array-constructor',
-//   '@typescript-eslint/no-empty-function',
-//   '@typescript-eslint/no-unnecessary-condition',
-//   '@typescript-eslint/no-unused-expressions',
-//   '@typescript-eslint/no-unused-vars',
+//   ✅'@typescript-eslint/naming-convention',
+//   ✅'@typescript-eslint/no-array-constructor',
+//   ✅'@typescript-eslint/no-empty-function',
+//   ✅'@typescript-eslint/no-unnecessary-condition',
+//   ✅'@typescript-eslint/no-unused-expressions',
+//   ✅'@typescript-eslint/no-unused-vars',
 //   '@typescript-eslint/no-use-before-define',
-//   '@typescript-eslint/no-useless-constructor',
-//   '@typescript-eslint/prefer-optional-chain'
+//   ✅'@typescript-eslint/no-useless-constructor',
+//   ✅'@typescript-eslint/prefer-optional-chain'
 // ] 9
