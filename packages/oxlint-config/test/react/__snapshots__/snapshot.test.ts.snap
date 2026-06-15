@@ -110,6 +110,22 @@ exports[`react > should match oxlint config snapshot 1`] = `
     {
       "env": null,
       "files": [
+        "**/*.{js,cjs,mjs,jsx}",
+      ],
+      "globals": null,
+      "plugins": null,
+      "rules": {
+        "typescript/no-unsafe-argument": "allow",
+        "typescript/no-unsafe-assignment": "allow",
+        "typescript/no-unsafe-call": "allow",
+        "typescript/no-unsafe-member-access": "allow",
+        "typescript/no-unsafe-return": "allow",
+        "typescript/no-unsafe-unary-minus": "allow",
+      },
+    },
+    {
+      "env": null,
+      "files": [
         "**/*.{js,cjs,mjs}",
       ],
       "globals": null,
