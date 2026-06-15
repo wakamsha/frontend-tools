@@ -50,5 +50,25 @@ export default defineConfig({
         'typescript/return-await': ['error', 'error-handling-correctness-only'],
       },
     },
+    {
+      // for JavaScript
+      // The `typescript` plugin enabled in the override above is loaded
+      // globally by oxlint, so `essentials`' top-level `categories` activate
+      // type-aware rules on every file — including `.js`. The `no-unsafe-*`
+      // family fires purely because a value is `any`, which is unavoidable in
+      // untyped JavaScript without JSDoc type annotations, so disable just that
+      // family for JS. Other type-aware rules (e.g. strict-boolean-expressions,
+      // restrict-plus-operands) are satisfiable with idiomatic JS and are
+      // intentionally left on.
+      files: ['**/*.{js,cjs,mjs,jsx}'],
+      rules: {
+        'typescript/no-unsafe-argument': ['off'],
+        'typescript/no-unsafe-assignment': ['off'],
+        'typescript/no-unsafe-call': ['off'],
+        'typescript/no-unsafe-member-access': ['off'],
+        'typescript/no-unsafe-return': ['off'],
+        'typescript/no-unsafe-unary-minus': ['off'],
+      },
+    },
   ],
 });
