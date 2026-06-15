@@ -1,3 +1,13 @@
+## [@wakamsha/oxlint-config-v2.1.0](https://github.com/wakamsha/frontend-tools/compare/@wakamsha/oxlint-config-v2.0.0...@wakamsha/oxlint-config-v2.1.0) (2026-06-15)
+
+### Features
+
+* **oxlint-config:** enable jsdoc tags; `remarks` and `typeParam` ([#470](https://github.com/wakamsha/frontend-tools/issues/470)) ([d05c832](https://github.com/wakamsha/frontend-tools/commit/d05c832fe1a322400d8b1265d7b22f0500a000d8))
+
+### Bug Fixes
+
+* **oxlint-config:** disable type-aware no-unsafe rules on JavaScript files ([#469](https://github.com/wakamsha/frontend-tools/issues/469)) ([8c94fd7](https://github.com/wakamsha/frontend-tools/commit/8c94fd783e75f12c238fdb3598555426590f1062))
+
 ## [@wakamsha/oxlint-config-v2.0.0](https://github.com/wakamsha/frontend-tools/compare/@wakamsha/oxlint-config-v1.0.3...@wakamsha/oxlint-config-v2.0.0) (2026-06-10)
 
 ### ⚠ BREAKING CHANGES
