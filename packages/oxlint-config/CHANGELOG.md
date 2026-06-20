@@ -1,3 +1,9 @@
+## [@wakamsha/oxlint-config-v2.2.0](https://github.com/wakamsha/frontend-tools/compare/@wakamsha/oxlint-config-v2.1.1...@wakamsha/oxlint-config-v2.2.0) (2026-06-20)
+
+### Features
+
+* **oxlint-config:** update rules ([#481](https://github.com/wakamsha/frontend-tools/issues/481)) ([781621d](https://github.com/wakamsha/frontend-tools/commit/781621d8b4c094d550f9d9d3774addf7693cbb3a))
+
 ## [@wakamsha/oxlint-config-v2.1.1](https://github.com/wakamsha/frontend-tools/compare/@wakamsha/oxlint-config-v2.1.0...@wakamsha/oxlint-config-v2.1.1) (2026-06-20)
 
 ### Bug Fixes
