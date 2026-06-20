@@ -16,6 +16,7 @@ export default defineConfig({
     ],
     'react/jsx-handler-names': ['off'],
     'react/jsx-max-depth': ['off'],
+    'react/jsx-no-literals': ['off'],
     'react/jsx-no-script-url': [
       'error',
       [
