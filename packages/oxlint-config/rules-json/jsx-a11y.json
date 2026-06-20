@@ -2,6 +2,16 @@
   "$schema": "../node_modules/oxlint/configuration_schema.json",
   "plugins": ["jsx-a11y"],
   "rules": {
+    "jsx-a11y/alt-text": [
+      "error",
+      {
+        "elements": ["img", "object", "area", "input[type=\"image\"]"],
+        "img": [],
+        "object": [],
+        "area": [],
+        "input[type=\"image\"]": []
+      }
+    ],
     "jsx-a11y/anchor-ambiguous-text": ["off"],
     "jsx-a11y/anchor-is-valid": [
       "error",
@@ -31,6 +41,38 @@
       "error",
       {
         "elements": ["marquee", "blink"]
+      }
+    ],
+    "jsx-a11y/no-interactive-element-to-noninteractive-role": [
+      "error",
+      {
+        "tr": ["none", "presentation"]
+      }
+    ],
+    "jsx-a11y/no-noninteractive-element-to-interactive-role": [
+      "error",
+      {
+        "ul": [
+          "listbox",
+          "menu",
+          "menubar",
+          "radiogroup",
+          "tablist",
+          "tree",
+          "treegrid"
+        ],
+        "ol": [
+          "listbox",
+          "menu",
+          "menubar",
+          "radiogroup",
+          "tablist",
+          "tree",
+          "treegrid"
+        ],
+        "li": ["menuitem", "option", "row", "tab", "treeitem"],
+        "table": ["grid"],
+        "td": ["gridcell"]
       }
     ],
     "jsx-a11y/no-static-element-interactions": ["off"]

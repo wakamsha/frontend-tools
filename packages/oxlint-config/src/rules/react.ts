@@ -32,6 +32,12 @@ export default defineConfig({
         allowAllCaps: true,
       },
     ],
+    'react/jsx-props-no-spreading': [
+      2,
+      {
+        explicitSpread: 'ignore',
+      },
+    ],
     'react/no-array-index-key': ['off'],
     'react/no-danger': ['warn'],
     'react/no-did-mount-set-state': ['off'],

@@ -134,10 +134,15 @@ exports[`test > should match oxlint config snapshot 1`] = `
         "vitest",
       ],
       "rules": {
+        "vitest/consistent-test-filename": "warn",
+        "vitest/no-large-snapshots": "warn",
+        "vitest/no-standalone-expect": "warn",
         "vitest/prefer-expect-assertions": "allow",
         "vitest/prefer-importing-vitest-globals": "allow",
+        "vitest/prefer-snapshot-hint": "warn",
         "vitest/require-hook": "allow",
         "vitest/require-test-timeout": "allow",
+        "vitest/require-top-level-describe": "warn",
         "vitest/valid-title": [
           "deny",
           [
