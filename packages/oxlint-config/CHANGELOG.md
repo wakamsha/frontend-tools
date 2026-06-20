@@ -1,3 +1,9 @@
+## [@wakamsha/oxlint-config-v2.1.1](https://github.com/wakamsha/frontend-tools/compare/@wakamsha/oxlint-config-v2.1.0...@wakamsha/oxlint-config-v2.1.1) (2026-06-20)
+
+### Bug Fixes
+
+* **oxlint:** add `unicorn/{no-array-fill-with-reference-type,prefer-export-from,prefer-single-call}` ([#479](https://github.com/wakamsha/frontend-tools/issues/479)) ([0a8a88e](https://github.com/wakamsha/frontend-tools/commit/0a8a88e60b1a0d8a9617249160087fb90447e373))
+
 ## [@wakamsha/oxlint-config-v2.1.0](https://github.com/wakamsha/frontend-tools/compare/@wakamsha/oxlint-config-v2.0.0...@wakamsha/oxlint-config-v2.1.0) (2026-06-15)
 
 ### Features
