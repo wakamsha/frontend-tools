@@ -3,6 +3,17 @@ import { defineConfig } from 'oxlint';
 export default defineConfig({
   plugins: ['jsx-a11y'],
   rules: {
+    // Enforce that all elements that require alternative text have meaningful information
+    'jsx-a11y/alt-text': [
+      'error',
+      {
+        elements: ['img', 'object', 'area', 'input[type="image"]'],
+        img: [],
+        object: [],
+        area: [],
+        'input[type="image"]': [],
+      },
+    ],
     'jsx-a11y/anchor-ambiguous-text': ['off'],
     'jsx-a11y/anchor-is-valid': [
       'error',
@@ -32,6 +43,13 @@ export default defineConfig({
       'error',
       {
         elements: ['marquee', 'blink'],
+      },
+    ],
+    // WAI-ARIA roles should not be used to convert an interactive element to non-interactive
+    'jsx-a11y/no-interactive-element-to-noninteractive-role': [
+      'error',
+      {
+        tr: ['none', 'presentation'],
       },
     ],
     'jsx-a11y/no-static-element-interactions': ['off'],
