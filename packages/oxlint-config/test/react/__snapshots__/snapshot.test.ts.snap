@@ -133,6 +133,8 @@ exports[`react > should match oxlint config snapshot 1`] = `
         "typescript/no-unsafe-member-access": "allow",
         "typescript/no-unsafe-return": "allow",
         "typescript/no-unsafe-unary-minus": "allow",
+        "typescript/prefer-readonly-parameter-types": "allow",
+        "typescript/strict-boolean-expressions": "allow",
       },
     },
     {
@@ -498,7 +500,7 @@ exports[`react > should match oxlint config snapshot 1`] = `
     "react/no-direct-mutation-state": "deny",
     "react/no-find-dom-node": "deny",
     "react/no-is-mounted": "deny",
-    "react/no-multi-comp": "deny",
+    "react/no-multi-comp": "allow",
     "react/no-namespace": "deny",
     "react/no-object-type-as-default-prop": "allow",
     "react/no-react-children": "deny",
