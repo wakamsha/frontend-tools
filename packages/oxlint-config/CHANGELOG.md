@@ -1,3 +1,9 @@
+## [@wakamsha/oxlint-config-v2.2.1](https://github.com/wakamsha/frontend-tools/compare/@wakamsha/oxlint-config-v2.2.0...@wakamsha/oxlint-config-v2.2.1) (2026-06-21)
+
+### Bug Fixes
+
+* **oxlint-config:** disable `typescript/strict-void-return` and `unicorn/no-nested-ternary` ([#482](https://github.com/wakamsha/frontend-tools/issues/482)) ([9a9af28](https://github.com/wakamsha/frontend-tools/commit/9a9af282b37170957616e06fa558acbe0b0593dd))
+
 ## [@wakamsha/oxlint-config-v2.2.0](https://github.com/wakamsha/frontend-tools/compare/@wakamsha/oxlint-config-v2.1.1...@wakamsha/oxlint-config-v2.2.0) (2026-06-20)
 
 ### Features
