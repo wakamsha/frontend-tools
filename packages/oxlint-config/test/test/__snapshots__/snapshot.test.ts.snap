@@ -141,6 +141,8 @@ exports[`test > should match oxlint config snapshot 1`] = `
         "vitest/prefer-expect-assertions": "allow",
         "vitest/prefer-importing-vitest-globals": "allow",
         "vitest/prefer-snapshot-hint": "warn",
+        "vitest/prefer-strict-boolean-matchers": "allow",
+        "vitest/prefer-to-be-truthy": "warn",
         "vitest/require-hook": "allow",
         "vitest/require-test-timeout": "allow",
         "vitest/require-top-level-describe": "warn",

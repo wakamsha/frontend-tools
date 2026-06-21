@@ -12,8 +12,10 @@ export default defineConfig({
         'vitest/require-hook': ['off'],
         'vitest/require-top-level-describe': ['warn'],
         'vitest/prefer-expect-assertions': ['off'],
-        'vitest/prefer-snapshot-hint': ['warn'],
         'vitest/prefer-importing-vitest-globals': ['off'],
+        'vitest/prefer-snapshot-hint': ['warn'],
+        'vitest/prefer-strict-boolean-matchers': ['off'],
+        'vitest/prefer-to-be-truthy': ['warn'],
         'vitest/require-test-timeout': ['off'],
         'vitest/valid-title': [
           'error',
