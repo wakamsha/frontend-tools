@@ -79,6 +79,8 @@ export default defineConfig({
         'typescript/no-unsafe-member-access': ['off'],
         'typescript/no-unsafe-return': ['off'],
         'typescript/no-unsafe-unary-minus': ['off'],
+        'typescript/prefer-readonly-parameter-types': ['off'],
+        'typescript/strict-boolean-expressions': ['off'],
       },
     },
   ],
