@@ -47,6 +47,7 @@ export default defineConfig({
             allowRegExp: false,
           },
         ],
+        'typescript/strict-void-return': ['off'],
         'typescript/return-await': ['error', 'error-handling-correctness-only'],
       },
     },

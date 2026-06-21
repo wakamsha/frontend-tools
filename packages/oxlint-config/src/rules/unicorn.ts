@@ -19,6 +19,7 @@ export default defineConfig({
     'unicorn/no-array-for-each': ['off'],
     'unicorn/no-array-reduce': ['off'],
     'unicorn/no-negated-condition': ['off'],
+    'unicorn/no-nested-ternary': ['off'],
     'unicorn/no-null': ['off'],
     'unicorn/prefer-global-this': ['off'],
     'unicorn/prefer-import-meta-properties': ['off'],
