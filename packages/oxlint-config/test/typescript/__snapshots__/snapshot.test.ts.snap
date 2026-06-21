@@ -81,11 +81,22 @@ exports[`typescript > should match oxlint config snapshot 1`] = `
           ],
         ],
         "typescript/no-import-type-side-effects": "allow",
+        "typescript/no-misused-promises": [
+          "deny",
+          [
+            {
+              "checksVoidReturn": false,
+            },
+          ],
+        ],
+        "typescript/no-unsafe-argument": "warn",
         "typescript/no-unsafe-type-assertion": "allow",
         "typescript/non-nullable-type-assertion-style": "allow",
+        "typescript/only-throw-error": "warn",
         "typescript/parameter-properties": "allow",
         "typescript/prefer-promise-reject-errors": "allow",
         "typescript/prefer-readonly-parameter-types": "allow",
+        "typescript/promise-function-async": "allow",
         "typescript/restrict-plus-operands": [
           "deny",
           [

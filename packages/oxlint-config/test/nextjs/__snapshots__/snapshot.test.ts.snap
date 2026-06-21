@@ -81,11 +81,22 @@ exports[`nextjs > should match oxlint config snapshot 1`] = `
           ],
         ],
         "typescript/no-import-type-side-effects": "allow",
+        "typescript/no-misused-promises": [
+          "deny",
+          [
+            {
+              "checksVoidReturn": false,
+            },
+          ],
+        ],
+        "typescript/no-unsafe-argument": "warn",
         "typescript/no-unsafe-type-assertion": "allow",
         "typescript/non-nullable-type-assertion-style": "allow",
+        "typescript/only-throw-error": "warn",
         "typescript/parameter-properties": "allow",
         "typescript/prefer-promise-reject-errors": "allow",
         "typescript/prefer-readonly-parameter-types": "allow",
+        "typescript/promise-function-async": "allow",
         "typescript/restrict-plus-operands": [
           "deny",
           [
@@ -270,7 +281,7 @@ exports[`nextjs > should match oxlint config snapshot 1`] = `
     "jsx_a11y/no-noninteractive-tabindex": "deny",
     "jsx_a11y/no-redundant-roles": "deny",
     "jsx_a11y/no-static-element-interactions": "allow",
-    "jsx_a11y/prefer-tag-over-role": "deny",
+    "jsx_a11y/prefer-tag-over-role": "allow",
     "jsx_a11y/role-has-required-aria-props": "deny",
     "jsx_a11y/role-supports-aria-props": "deny",
     "jsx_a11y/scope": "deny",
