@@ -447,7 +447,7 @@ exports[`node > should match oxlint config snapshot 1`] = `
     "unicorn/no-magic-array-flat-depth": "deny",
     "unicorn/no-negated-condition": "allow",
     "unicorn/no-negation-in-equality-check": "deny",
-    "unicorn/no-nested-ternary": "deny",
+    "unicorn/no-nested-ternary": "allow",
     "unicorn/no-new-array": "deny",
     "unicorn/no-new-buffer": "deny",
     "unicorn/no-null": "allow",
