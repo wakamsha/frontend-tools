@@ -31,11 +31,21 @@ export default defineConfig({
           },
         ],
         'typescript/no-import-type-side-effects': ['off'],
+        'typescript/no-misused-promises': [
+          'error',
+          {
+            // Strict checks on promises with no return value are excessive. It's' extremely rare for this to cause a bug.
+            checksVoidReturn: false,
+          },
+        ],
+        'typescript/no-unsafe-argument': ['warn'],
         'typescript/no-unsafe-type-assertion': ['off'],
         'typescript/non-nullable-type-assertion-style': ['off'],
+        'typescript/only-throw-error': ['warn'],
         'typescript/parameter-properties': ['off'],
         'typescript/prefer-promise-reject-errors': ['off'],
         'typescript/prefer-readonly-parameter-types': ['off'],
+        'typescript/promise-function-async': ['off'],
         'typescript/strict-boolean-expressions': ['warn'],
         'typescript/restrict-plus-operands': [
           'error',
@@ -69,6 +79,8 @@ export default defineConfig({
         'typescript/no-unsafe-member-access': ['off'],
         'typescript/no-unsafe-return': ['off'],
         'typescript/no-unsafe-unary-minus': ['off'],
+        'typescript/prefer-readonly-parameter-types': ['off'],
+        'typescript/strict-boolean-expressions': ['off'],
       },
     },
   ],

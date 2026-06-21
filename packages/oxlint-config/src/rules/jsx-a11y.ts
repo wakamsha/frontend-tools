@@ -53,5 +53,6 @@ export default defineConfig({
       },
     ],
     'jsx-a11y/no-static-element-interactions': ['off'],
+    'jsx-a11y/prefer-tag-over-role': ['off'],
   },
 });

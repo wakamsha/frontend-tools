@@ -41,6 +41,7 @@ export default defineConfig({
     'react/no-array-index-key': ['off'],
     'react/no-danger': ['warn'],
     'react/no-did-mount-set-state': ['off'],
+    'react/no-multi-comp': ['off'],
     'react/no-object-type-as-default-prop': ['off'],
     'react/no-redundant-should-component-update': ['off'],
     'react/no-unsafe': ['off'],
