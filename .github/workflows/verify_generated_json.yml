@@ -3,9 +3,9 @@ name: Verify Generated JSON
 on:
   pull_request_target:
     branches:
-      - '*'
+      - "*"
     paths:
-      - 'packages/oxlint-config/**'
+      - "packages/oxlint-config/**"
 
 jobs:
   verify-generated-json:
@@ -19,7 +19,7 @@ jobs:
         uses: ./.github/actions/restore-node
 
       - name: Regenerate JSON presets from TypeScript sources
-        run: pnpm -F @wakamsha/oxlint-config generate:json
+        run: pnpm -F @wakamsha/oxlint-config generate
 
       - name: Verify generated JSON is in sync with sources
         run: git diff --exit-code -- packages/oxlint-config/rules-json packages/oxlint-config/configs
