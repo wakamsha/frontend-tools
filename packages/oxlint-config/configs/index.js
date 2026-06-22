@@ -1,5 +1,17 @@
+/**
+ * @typedef {Object} OxlintConfigObject
+ */
+
+/**
+ * @typedef {Object} TestConfigs
+ * @property {OxlintConfigObject} essentials
+ */
+
 import testEssentials from '../src/configs/test/essentials.js';
 
+/**
+ * @type {TestConfigs}
+ */
 const test = {
   essentials: testEssentials,
 };
