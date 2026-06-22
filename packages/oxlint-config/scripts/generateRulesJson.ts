@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 import {
-  importConfigFromTsFile,
+  importConfigFromJsFile,
   resolveJsonOutputPath,
   rulesOutputDir,
   runGenerator,
@@ -10,7 +10,7 @@ import {
 } from './jsonGeneratorShared.ts';
 
 await runGenerator(srcRulesDir, async (ruleFilePath) => {
-  const config = await importConfigFromTsFile(ruleFilePath);
+  const config = await importConfigFromJsFile(ruleFilePath);
   const outputPath = resolveJsonOutputPath(ruleFilePath, rulesOutputDir);
 
   return writeJsonFile(outputPath, config);

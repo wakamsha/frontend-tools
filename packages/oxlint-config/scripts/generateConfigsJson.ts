@@ -3,7 +3,7 @@
 import path from 'node:path';
 import {
   configsOutputDir,
-  importConfigFromTsFile,
+  importConfigFromJsFile,
   packageRoot,
   resolveJsonOutputPath,
   resolveTargetJsFiles,
@@ -26,7 +26,7 @@ async function buildRuleSetOutputMap(): Promise<Map<unknown, string>> {
   const ruleFiles = await resolveTargetJsFiles(srcRulesDir, []);
   const entries = await Promise.all(
     ruleFiles.map(async (ruleFilePath) => {
-      const ruleSet = await importConfigFromTsFile(ruleFilePath);
+      const ruleSet = await importConfigFromJsFile(ruleFilePath);
       const outputPath = resolveJsonOutputPath(ruleFilePath, rulesOutputDir);
 
       return [ruleSet, outputPath] as const;
@@ -72,7 +72,7 @@ const ruleSetOutputMap = await buildRuleSetOutputMap();
 await runGenerator(
   srcConfigsDir,
   async (configFilePath) => {
-    const config = await importConfigFromTsFile(configFilePath);
+    const config = await importConfigFromJsFile(configFilePath);
     const outputPath = resolveJsonOutputPath(
       configFilePath,
       configsOutputDir,
