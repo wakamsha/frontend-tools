@@ -1,3 +1,9 @@
+## [@wakamsha/oxlint-config-v2.2.4](https://github.com/wakamsha/frontend-tools/compare/@wakamsha/oxlint-config-v2.2.3...@wakamsha/oxlint-config-v2.2.4) (2026-06-22)
+
+### Bug Fixes
+
+* **oxlint-config:** Provide JS instead of TS for node_modules compatibility ([#487](https://github.com/wakamsha/frontend-tools/issues/487)) ([2b0e9f2](https://github.com/wakamsha/frontend-tools/commit/2b0e9f2f4fe6554d8f8dd7fb3b0312fcce5f4828))
+
 ## [@wakamsha/oxlint-config-v2.2.3](https://github.com/wakamsha/frontend-tools/compare/@wakamsha/oxlint-config-v2.2.2...@wakamsha/oxlint-config-v2.2.3) (2026-06-22)
 
 ### Bug Fixes
