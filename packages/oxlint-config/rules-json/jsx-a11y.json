@@ -43,6 +43,19 @@
         "elements": ["marquee", "blink"]
       }
     ],
+    "jsx-a11y/no-noninteractive-element-interactions": [
+      "warn",
+      {
+        "handlers": [
+          "onClick",
+          "onMouseDown",
+          "onMouseUp",
+          "onKeyPress",
+          "onKeyDown",
+          "onKeyUp"
+        ]
+      }
+    ],
     "jsx-a11y/no-interactive-element-to-noninteractive-role": [
       "error",
       {
