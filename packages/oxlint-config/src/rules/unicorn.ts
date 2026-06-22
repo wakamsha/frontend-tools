@@ -21,6 +21,7 @@ export default defineConfig({
     'unicorn/no-negated-condition': ['off'],
     'unicorn/no-nested-ternary': ['off'],
     'unicorn/no-null': ['off'],
+    'unicorn/number-literal-case': ['off'],
     'unicorn/prefer-global-this': ['off'],
     'unicorn/prefer-import-meta-properties': ['off'],
     'unicorn/relative-url-style': ['error', 'never'],
