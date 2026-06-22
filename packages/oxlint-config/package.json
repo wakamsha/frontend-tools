@@ -4,7 +4,7 @@
   "description": "wakamsha's oxlint rules as an extensible shared config.",
   "exports": {
     ".": {
-      "import": "./configs/index.ts"
+      "import": "./configs/index.js"
     },
     "./configs/*.json": "./configs/*.json",
     "./configs/test/*.json": "./configs/test/*.json"

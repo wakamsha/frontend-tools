@@ -1,9 +1,9 @@
 import { defineConfig } from 'oxlint';
-import eslintRuleSet from '../rules/eslint.ts';
-import importRuleSet from '../rules/import.ts';
-import oxcRuleSet from '../rules/oxc.ts';
-import promiseRuleSet from '../rules/promise.ts';
-import unicornRuleSet from '../rules/unicorn.ts';
+import eslintRuleSet from '../rules/eslint.js';
+import importRuleSet from '../rules/import.js';
+import oxcRuleSet from '../rules/oxc.js';
+import promiseRuleSet from '../rules/promise.js';
+import unicornRuleSet from '../rules/unicorn.js';
 
 export default defineConfig({
   categories: {

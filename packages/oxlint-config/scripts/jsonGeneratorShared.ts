@@ -39,17 +39,17 @@ type ResolveTargetOptions = {
   recursive?: boolean;
 };
 
-async function collectTsFilesRecursively(dirPath: string): Promise<string[]> {
+async function collectJsFilesRecursively(dirPath: string): Promise<string[]> {
   const entries = await readdir(dirPath, { withFileTypes: true });
   const nested = await Promise.all(
     entries.map(async (entry) => {
       const absolutePath = path.resolve(dirPath, entry.name);
 
       if (entry.isDirectory()) {
-        return collectTsFilesRecursively(absolutePath);
+        return collectJsFilesRecursively(absolutePath);
       }
 
-      if (entry.isFile() && entry.name.endsWith('.ts')) {
+      if (entry.isFile() && entry.name.endsWith('.js')) {
         return [absolutePath];
       }
 
@@ -61,9 +61,9 @@ async function collectTsFilesRecursively(dirPath: string): Promise<string[]> {
 }
 
 /**
- * Resolves target TypeScript files from CLI args or by scanning a source directory.
+ * Resolves target JavaScript files from CLI args or by scanning a source directory.
  *
- * @param sourceDir Directory that contains source TypeScript files.
+ * @param sourceDir Directory that contains source JavaScript files.
  *
  * @param inputArgs CLI arguments used to narrow generation targets.
  *
@@ -71,9 +71,9 @@ async function collectTsFilesRecursively(dirPath: string): Promise<string[]> {
  *
  * `options.recursive` scans child directories as well.
  *
- * @returns Absolute paths of target TypeScript files.
+ * @returns Absolute paths of target JavaScript files.
  */
-export async function resolveTargetTsFiles(
+export async function resolveTargetJsFiles(
   sourceDir: string,
   inputArgs: string[],
   options: ResolveTargetOptions = {},
@@ -83,35 +83,35 @@ export async function resolveTargetTsFiles(
   if (inputArgs.length === 0) {
     const targets =
       options.recursive === true
-        ? await collectTsFilesRecursively(sourceDir)
+        ? await collectJsFilesRecursively(sourceDir)
         : await (async () => {
             const entries = await readdir(sourceDir);
             return entries
-              .filter((entry) => entry.endsWith('.ts'))
+              .filter((entry) => entry.endsWith('.js'))
               .map((entry) => path.resolve(sourceDir, entry));
           })();
 
     return targets.filter(
-      (target) => !excludeSet.has(path.basename(target, '.ts')),
+      (target) => !excludeSet.has(path.basename(target, '.js')),
     );
   }
 
   return inputArgs
-    .map((target) => (target.endsWith('.ts') ? target : `${target}.ts`))
+    .map((target) => (target.endsWith('.js') ? target : `${target}.js`))
     .map((target) =>
       path.isAbsolute(target) ? target : path.resolve(sourceDir, target),
     )
-    .filter((target) => !excludeSet.has(path.basename(target, '.ts')));
+    .filter((target) => !excludeSet.has(path.basename(target, '.js')));
 }
 
 /**
- * Imports a TypeScript config file and returns its default export.
+ * Imports a JavaScript config file and returns its default export.
  *
- * @param filePath Absolute path to a TypeScript module.
+ * @param filePath Absolute path to a JavaScript module.
  *
  * @returns Default-exported config object from the module.
  */
-export async function importConfigFromTsFile(
+export async function importConfigFromJsFile(
   filePath: string,
 ): Promise<Record<string, unknown>> {
   const moduleUrl = pathToFileURL(filePath).href;
@@ -126,9 +126,9 @@ export async function importConfigFromTsFile(
 }
 
 /**
- * Resolves the output JSON path for a source TypeScript file.
+ * Resolves the output JSON path for a source JavaScript file.
  *
- * @param sourceFilePath Source TypeScript file path.
+ * @param sourceFilePath Source JavaScript file path.
  *
  * @param outputDir Directory where the JSON file is written.
  *
@@ -145,7 +145,7 @@ export function resolveJsonOutputPath(
     sourceBaseDir !== undefined
       ? path.relative(sourceBaseDir, sourceFilePath)
       : path.basename(sourceFilePath);
-  const outputRelativePath = relativeSourcePath.replace(/\.ts$/, '.json');
+  const outputRelativePath = relativeSourcePath.replace(/\.js$/, '.json');
 
   return path.resolve(outputDir, outputRelativePath);
 }
@@ -190,12 +190,12 @@ export async function writeJsonFile(
  * args), generates each, logs the results, and reports failures via the
  * process exit code.
  *
- * @param sourceDir Directory scanned for source TypeScript files.
+ * @param sourceDir Directory scanned for source JavaScript files.
  *
  * @param generate Produces a generated JSON file from a source path and
  * returns its package-relative path for logging.
  *
- * @param options Forwarded to {@link resolveTargetTsFiles}.
+ * @param options Forwarded to {@link resolveTargetJsFiles}.
  */
 export async function runGenerator(
   sourceDir: string,
@@ -204,7 +204,7 @@ export async function runGenerator(
 ): Promise<void> {
   try {
     const targetArgs = process.argv.slice(2);
-    const sourceFiles = await resolveTargetTsFiles(
+    const sourceFiles = await resolveTargetJsFiles(
       sourceDir,
       targetArgs,
       options,
