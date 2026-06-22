@@ -741,7 +741,7 @@ exports[`nextjs > should match oxlint config snapshot 1`] = `
     "unicorn/no-useless-switch-case": "deny",
     "unicorn/no-useless-undefined": "deny",
     "unicorn/no-zero-fractions": "deny",
-    "unicorn/number-literal-case": "deny",
+    "unicorn/number-literal-case": "allow",
     "unicorn/numeric-separators-style": "deny",
     "unicorn/prefer-add-event-listener": "deny",
     "unicorn/prefer-array-find": "deny",
