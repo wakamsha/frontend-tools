@@ -45,6 +45,19 @@ export default defineConfig({
         elements: ['marquee', 'blink'],
       },
     ],
+    'jsx-a11y/no-noninteractive-element-interactions': [
+      'warn',
+      {
+        handlers: [
+          'onClick',
+          'onMouseDown',
+          'onMouseUp',
+          'onKeyPress',
+          'onKeyDown',
+          'onKeyUp',
+        ],
+      },
+    ],
     // WAI-ARIA roles should not be used to convert an interactive element to non-interactive
     'jsx-a11y/no-interactive-element-to-noninteractive-role': [
       'error',

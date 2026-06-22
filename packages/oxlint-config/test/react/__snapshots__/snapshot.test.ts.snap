@@ -264,7 +264,7 @@ exports[`react > should match oxlint config snapshot 1`] = `
     "jsx_a11y/no-autofocus": "deny",
     "jsx_a11y/no-distracting-elements": "deny",
     "jsx_a11y/no-interactive-element-to-noninteractive-role": "deny",
-    "jsx_a11y/no-noninteractive-element-interactions": "deny",
+    "jsx_a11y/no-noninteractive-element-interactions": "warn",
     "jsx_a11y/no-noninteractive-element-to-interactive-role": "deny",
     "jsx_a11y/no-noninteractive-tabindex": "deny",
     "jsx_a11y/no-redundant-roles": "deny",
