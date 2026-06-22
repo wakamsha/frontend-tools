@@ -1,5 +1,5 @@
 import { defineConfig } from 'oxlint';
-import typescriptRuleSet from '../rules/typescript.ts';
+import typescriptRuleSet from '../rules/typescript.js';
 
 export default defineConfig({
   options: {

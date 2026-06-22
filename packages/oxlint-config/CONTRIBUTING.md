@@ -8,7 +8,7 @@ This guide applies only to the `@wakamsha/oxlint-config` workspace.
 
 ## Source of truth
 
-- TypeScript sources in `src/` are the source of truth.
+- JavaScript sources in `src/` are the source of truth.
 - Generated JSON files are build artifacts:
   - `configs/**/*.json`
   - `rules-json/**/*.json`

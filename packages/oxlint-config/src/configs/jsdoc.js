@@ -1,6 +1,6 @@
 import { defineConfig } from 'oxlint';
-import nodeRuleSet from '../rules/node.ts';
+import jsdocRuleSet from '../rules/jsdoc.js';
 
 export default defineConfig({
-  extends: [nodeRuleSet],
+  extends: [jsdocRuleSet],
 });

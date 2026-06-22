@@ -6,7 +6,7 @@ import {
   importConfigFromTsFile,
   packageRoot,
   resolveJsonOutputPath,
-  resolveTargetTsFiles,
+  resolveTargetJsFiles,
   rulesOutputDir,
   runGenerator,
   srcConfigsDir,
@@ -23,7 +23,7 @@ import {
  * can be keyed by object identity.
  */
 async function buildRuleSetOutputMap(): Promise<Map<unknown, string>> {
-  const ruleFiles = await resolveTargetTsFiles(srcRulesDir, []);
+  const ruleFiles = await resolveTargetJsFiles(srcRulesDir, []);
   const entries = await Promise.all(
     ruleFiles.map(async (ruleFilePath) => {
       const ruleSet = await importConfigFromTsFile(ruleFilePath);
