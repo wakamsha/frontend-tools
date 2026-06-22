@@ -1,3 +1,9 @@
+## [@wakamsha/oxlint-config-v2.2.5](https://github.com/wakamsha/frontend-tools/compare/@wakamsha/oxlint-config-v2.2.4...@wakamsha/oxlint-config-v2.2.5) (2026-06-22)
+
+### Bug Fixes
+
+* **oxlint-config:** add script and configuration to generate index.d.ts ([#488](https://github.com/wakamsha/frontend-tools/issues/488)) ([7ebe60f](https://github.com/wakamsha/frontend-tools/commit/7ebe60fd4faddb0d7056375332625233585b7c33))
+
 ## [@wakamsha/oxlint-config-v2.2.4](https://github.com/wakamsha/frontend-tools/compare/@wakamsha/oxlint-config-v2.2.3...@wakamsha/oxlint-config-v2.2.4) (2026-06-22)
 
 ### Bug Fixes
