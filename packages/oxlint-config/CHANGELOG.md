@@ -1,3 +1,10 @@
+## [@wakamsha/oxlint-config-v2.2.3](https://github.com/wakamsha/frontend-tools/compare/@wakamsha/oxlint-config-v2.2.2...@wakamsha/oxlint-config-v2.2.3) (2026-06-22)
+
+### Bug Fixes
+
+* **oxlint-config:** mute `number-literal-case` ([#485](https://github.com/wakamsha/frontend-tools/issues/485)) ([2644858](https://github.com/wakamsha/frontend-tools/commit/2644858d19052dccbc85f3c90218199f95b4d49c))
+* **oxlint-config:** optimize `jsx-a11y/no-noninteractive-element-interactions` ([#486](https://github.com/wakamsha/frontend-tools/issues/486)) ([67ac7b3](https://github.com/wakamsha/frontend-tools/commit/67ac7b3733cbb3cb4f5ea95a102e0db21ed81f59))
+
 ## [@wakamsha/oxlint-config-v2.2.2](https://github.com/wakamsha/frontend-tools/compare/@wakamsha/oxlint-config-v2.2.1...@wakamsha/oxlint-config-v2.2.2) (2026-06-21)
 
 ### Bug Fixes
