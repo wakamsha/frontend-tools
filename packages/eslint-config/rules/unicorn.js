@@ -66,10 +66,9 @@ const basic = {
     // So, it's not that important.
     'unicorn/prefer-global-this': ['off'],
 
-    // Prevent abbreviations.
-    // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prevent-abbreviations.md
-    // Use of widely recognized abbreviations is acceptable.
-    'unicorn/prevent-abbreviations': [
+    // Enforce replacements for variable, property, and filenames.
+    // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/name-replacements.md
+    'unicorn/name-replacements': [
       'error',
       {
         allowList: {
