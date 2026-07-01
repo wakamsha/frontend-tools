@@ -7,10 +7,12 @@ export default defineConfig({
       plugins: ['vitest'],
       rules: {
         'vitest/consistent-test-filename': ['warn'],
+        'vitest/no-hooks': ['warn'],
         'vitest/no-large-snapshots': ['warn'],
         'vitest/no-standalone-expect': ['warn'],
         'vitest/require-hook': ['off'],
         'vitest/require-top-level-describe': ['warn'],
+        'vitest/prefer-called-times': ['off'],
         'vitest/prefer-expect-assertions': ['off'],
         'vitest/prefer-importing-vitest-globals': ['off'],
         'vitest/prefer-snapshot-hint': ['warn'],
