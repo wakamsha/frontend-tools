@@ -11,6 +11,7 @@ export default defineConfig({
         'vitest/no-standalone-expect': ['warn'],
         'vitest/require-hook': ['off'],
         'vitest/require-top-level-describe': ['warn'],
+        'vitest/prefer-called-times': ['off'],
         'vitest/prefer-expect-assertions': ['off'],
         'vitest/prefer-importing-vitest-globals': ['off'],
         'vitest/prefer-snapshot-hint': ['warn'],
