@@ -1,6 +1,6 @@
 {
   "name": "@wakamsha/oxlint-config",
-  "version": "2.2.5",
+  "version": "2.2.6",
   "description": "wakamsha's oxlint rules as an extensible shared config.",
   "exports": {
     ".": {

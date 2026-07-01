@@ -1,3 +1,9 @@
+## [@wakamsha/oxlint-config-v2.2.6](https://github.com/wakamsha/frontend-tools/compare/@wakamsha/oxlint-config-v2.2.5...@wakamsha/oxlint-config-v2.2.6) (2026-07-01)
+
+### Bug Fixes
+
+* **oxlint-config:** adjust vitest/jest test rule configurations ([#495](https://github.com/wakamsha/frontend-tools/issues/495)) ([5fecc86](https://github.com/wakamsha/frontend-tools/commit/5fecc86beca02331ca272e1cd53891ad1c72e66a))
+
 ## [@wakamsha/oxlint-config-v2.2.5](https://github.com/wakamsha/frontend-tools/compare/@wakamsha/oxlint-config-v2.2.4...@wakamsha/oxlint-config-v2.2.5) (2026-06-22)
 
 ### Bug Fixes
