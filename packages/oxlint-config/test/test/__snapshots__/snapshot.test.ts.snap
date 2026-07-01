@@ -149,6 +149,7 @@ exports[`test > should match oxlint config snapshot 1`] = `
       ],
       "rules": {
         "vitest/consistent-test-filename": "warn",
+        "vitest/no-hooks": "warn",
         "vitest/no-large-snapshots": "warn",
         "vitest/no-standalone-expect": "warn",
         "vitest/prefer-called-times": "allow",

@@ -7,6 +7,7 @@ export default defineConfig({
       plugins: ['vitest'],
       rules: {
         'vitest/consistent-test-filename': ['warn'],
+        'vitest/no-hooks': ['warn'],
         'vitest/no-large-snapshots': ['warn'],
         'vitest/no-standalone-expect': ['warn'],
         'vitest/require-hook': ['off'],
