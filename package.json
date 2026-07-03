@@ -27,8 +27,8 @@
   },
   "homepage": "https://github.com/wakamsha/frontend-tools#readme",
   "devDependencies": {
-    "@commitlint/cli": "21.1.0",
-    "@commitlint/config-conventional": "21.1.0",
+    "@commitlint/cli": "21.2.0",
+    "@commitlint/config-conventional": "21.2.0",
     "cspell": "10.0.1",
     "lefthook": "2.1.9",
     "prettier": "3.8.5",
