@@ -48,7 +48,7 @@
   "devDependencies": {
     "@types/node": "24.13.2",
     "oxlint": "1.72.0",
-    "oxlint-tsgolint": "0.23.0",
+    "oxlint-tsgolint": "0.24.0",
     "prettier": "3.8.5",
     "release-config": "workspace:*",
     "semantic-release": "25.0.5",
@@ -56,6 +56,6 @@
   },
   "peerDependencies": {
     "oxlint": "^1.70.0",
-    "oxlint-tsgolint": "^0.23.0"
+    "oxlint-tsgolint": "^0.23.0 || ^0.24.0"
   }
 }
