@@ -49,7 +49,7 @@
     "@types/node": "24.13.2",
     "oxlint": "1.72.0",
     "oxlint-tsgolint": "0.24.0",
-    "prettier": "3.8.5",
+    "prettier": "3.9.4",
     "release-config": "workspace:*",
     "semantic-release": "25.0.5",
     "vitest": "4.1.9"
