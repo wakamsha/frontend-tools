@@ -52,7 +52,7 @@
     "prettier": "3.9.4",
     "release-config": "workspace:*",
     "semantic-release": "25.0.5",
-    "vitest": "4.1.9"
+    "vitest": "4.1.10"
   },
   "peerDependencies": {
     "oxlint": "^1.70.0",
