@@ -43,7 +43,7 @@
   "devDependencies": {
     "@types/node": "24.13.2",
     "@wakamsha/eslint-config": "workspace:^",
-    "eslint": "9.39.5",
+    "eslint": "10.7.0",
     "release-config": "workspace:*",
     "semantic-release": "25.0.7",
     "stylelint": "17.14.0",
