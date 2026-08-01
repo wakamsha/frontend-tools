@@ -1,3 +1,5 @@
+## [@wakamsha/oxlint-config-v2.3.0](https://github.com/wakamsha/frontend-tools/compare/%40wakamsha%2Foxlint-config-v2.2.6...%40wakamsha%2Foxlint-config-v2.3.0) (2026-08-01)
+
 ## [@wakamsha/oxlint-config-v2.2.6](https://github.com/wakamsha/frontend-tools/compare/@wakamsha/oxlint-config-v2.2.5...@wakamsha/oxlint-config-v2.2.6) (2026-07-01)
 
 ### Bug Fixes
