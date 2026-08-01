@@ -7,6 +7,7 @@ export default defineConfig({
     'react/display-name': ['off'],
     'react/forbid-component-props': ['off'],
     'react/forbid-elements': ['off'],
+    'react/function-component-definition': ['off'],
     'react/jsx-boolean-value': ['error', 'never'],
     'react/jsx-filename-extension': [
       'error',

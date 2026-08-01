@@ -18,6 +18,7 @@ export default defineConfig({
         allowImplicit: true,
       },
     ],
+    'id-denylist': ['warn'],
     'id-length': ['off'],
     'id-match': ['off'],
     'init-declarations': ['off'],
