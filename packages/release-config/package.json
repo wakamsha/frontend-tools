@@ -6,8 +6,8 @@
   "type": "module",
   "main": "index.js",
   "dependencies": {
-    "@semantic-release/changelog": "6.0.3",
-    "@semantic-release/git": "10.0.1",
+    "@semantic-release/changelog": "7.0.0",
+    "@semantic-release/git": "11.0.1",
     "conventional-changelog-conventionalcommits": "10.2.1",
     "semantic-release-monorepo": "8.0.2"
   },
