@@ -62,7 +62,7 @@
     "@types/node": "24.13.3",
     "eslint": "9.39.5",
     "release-config": "workspace:*",
-    "semantic-release": "25.0.8",
+    "semantic-release": "25.0.9",
     "typescript": "6.0.3",
     "vitest": "4.1.10"
   },
