@@ -1,12 +1,12 @@
 import { defineConfig } from 'oxlint';
-import essentials from './src/configs/essentials.js';
-import typescript from './src/configs/typescript.js';
+import essentials from './src/configs/essentials/index.ts';
+import typescript from './src/configs/typescript/index.ts';
 
 export default defineConfig({
   extends: [essentials, typescript],
   overrides: [
     {
-      files: ['./src/{configs,rules}/**/*.js'],
+      files: ['./src/**/*/*.ts'],
       rules: {
         'import/no-default-export': ['off'],
         'unicorn/filename-case': ['off'],
