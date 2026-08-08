@@ -6,9 +6,7 @@
     ".": {
       "types": "./dist/configs/index.d.ts",
       "import": "./dist/configs/index.js"
-    },
-    "./configs/*.json": "./dist/configs/*.json",
-    "./configs/test/*.json": "./dist/configs/test/*.json"
+    }
   },
   "type": "module",
   "engines": {
