@@ -74,7 +74,9 @@ export default defineConfig({
 ```json
 {
   "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "extends": ["./node_modules/@wakamsha/oxlint-config/configs/essentials.json"]
+  "extends": [
+    "./node_modules/@wakamsha/oxlint-config/dist/configs/essentials.json"
+  ]
 }
 ```
 
@@ -84,8 +86,8 @@ If you need TypeScript support:
 {
   "$schema": "./node_modules/oxlint/configuration_schema.json",
   "extends": [
-    "./node_modules/@wakamsha/oxlint-config/configs/essentials.json",
-    "./node_modules/@wakamsha/oxlint-config/configs/typescript.json"
+    "./node_modules/@wakamsha/oxlint-config/dist/configs/essentials.json",
+    "./node_modules/@wakamsha/oxlint-config/dist/configs/typescript.json"
   ]
 }
 ```
