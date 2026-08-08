@@ -3,10 +3,10 @@
     "strict": true,
     "module": "NodeNext",
     "moduleResolution": "NodeNext",
+    "rootDir": "src",
     "types": ["node", "vitest/globals"],
     "noEmit": true,
-    "allowImportingTsExtensions": true,
-    "allowJs": true
+    "allowImportingTsExtensions": true
   },
-  "include": ["./**/*.ts", "configs/index.js"]
+  "include": ["src/**/*.ts"]
 }

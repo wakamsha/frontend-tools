@@ -11,7 +11,7 @@
   "packageManager": "pnpm@11.20.0",
   "scripts": {
     "prepare": "lefthook install",
-    "format": "pnpm prettier -w './**/*.{js,ts,json,md,css,html}'",
+    "format": "pnpm prettier -w './**/*.{js,ts,json,md,css,html,yml,yaml}'",
     "eslint-config": "   pnpm -F '@wakamsha/eslint-config'",
     "oxlint-config": "   pnpm -F '@wakamsha/oxlint-config'",
     "stylelint-config": "pnpm -F '@wakamsha/stylelint-config'"

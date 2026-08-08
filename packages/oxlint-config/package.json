@@ -4,29 +4,27 @@
   "description": "wakamsha's oxlint rules as an extensible shared config.",
   "exports": {
     ".": {
-      "types": "./configs/index.d.ts",
-      "import": "./configs/index.js"
+      "types": "./dist/configs/index.d.ts",
+      "import": "./dist/configs/index.js"
     },
-    "./configs/*.json": "./configs/*.json",
-    "./configs/test/*.json": "./configs/test/*.json"
+    "./configs/*.json": "./dist/configs/*.json",
+    "./configs/test/*.json": "./dist/configs/test/*.json"
   },
   "type": "module",
   "engines": {
     "node": "^22.18.0 || >=24.0.0"
   },
   "files": [
-    "configs",
-    "rules-json",
-    "src"
+    "dist"
   ],
   "scripts": {
     "lint": "oxlint --type-aware",
     "test:snapshot": "vitest",
-    "generate:configs-json": "node ./scripts/generateConfigsJson.ts && prettier --write './configs/**/*.json'",
-    "generate:rules-json": "  node ./scripts/generateRulesJson.ts   && prettier --write ./rules-json",
-    "generate:types": "node ./scripts/generateIndexDts.ts",
-    "generate": "pnpm generate:rules-json && pnpm generate:configs-json && pnpm generate:types",
-    "release": "semantic-release"
+    "build:js": "tsc -p tsconfig.build.json",
+    "build:configs-json": "node ./scripts/generateConfigsJson.js && prettier --write './dist/configs/**/*.json'",
+    "build:rules-json": "  node ./scripts/generateRulesJson.js   && prettier --write ./dist/rules/**/*.json",
+    "build": "pnpm build:js && pnpm build:rules-json && pnpm build:configs-json",
+    "release": "pnpm build && semantic-release"
   },
   "repository": {
     "type": "git",
