@@ -1,3 +1,5 @@
+## [@wakamsha/eslint-config-v9.0.1](https://github.com/wakamsha/frontend-tools/compare/%40wakamsha%2Feslint-config-v9.0.0...%40wakamsha%2Feslint-config-v9.0.1) (2026-08-15)
+
 ## [@wakamsha/eslint-config-v9.0.0](https://github.com/wakamsha/frontend-tools/compare/@wakamsha/eslint-config-v8.0.0...@wakamsha/eslint-config-v9.0.0) (2026-06-10)
 
 ### ⚠ BREAKING CHANGES
