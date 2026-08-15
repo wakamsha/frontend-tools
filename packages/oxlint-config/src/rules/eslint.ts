@@ -450,6 +450,7 @@ export default defineConfig({
         avoidQuotes: true,
       },
     ],
+    'one-var': ['off'],
     'operator-assignment': ['error', 'always'],
     'prefer-const': [
       'error',
