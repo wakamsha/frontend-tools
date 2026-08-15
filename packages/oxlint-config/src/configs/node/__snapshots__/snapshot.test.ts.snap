@@ -238,6 +238,7 @@ exports[`node > should match oxlint config snapshot 1`] = `
     "node/no-sync": "deny",
     "node/no-top-level-await": "deny",
     "object-shorthand": "deny",
+    "one-var": "allow",
     "operator-assignment": "deny",
     "oxc/approx-constant": "deny",
     "oxc/bad-array-method-on-arguments": "deny",

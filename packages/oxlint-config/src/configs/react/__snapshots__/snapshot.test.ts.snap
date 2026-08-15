@@ -264,6 +264,7 @@ exports[`react > should match oxlint config snapshot 1`] = `
     "no-warning-comments": "allow",
     "no-with": "deny",
     "object-shorthand": "deny",
+    "one-var": "allow",
     "operator-assignment": "deny",
     "oxc/approx-constant": "deny",
     "oxc/bad-array-method-on-arguments": "deny",
