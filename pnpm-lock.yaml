@@ -24,11 +24,11 @@ importers:
         specifier: 2.1.14
         version: 2.1.14
       prettier:
-        specifier: 3.9.6
-        version: 3.9.6
+        specifier: 3.9.7
+        version: 3.9.7
       prettier-plugin-organize-imports:
         specifier: 4.3.0
-        version: 4.3.0(prettier@3.9.6)(typescript@6.0.3)
+        version: 4.3.0(prettier@3.9.7)(typescript@6.0.3)
 
   packages/eslint-config:
     dependencies:
@@ -67,7 +67,7 @@ importers:
         version: 7.0.1(eslint@9.39.5(jiti@2.6.1)(supports-color@10.2.2))(supports-color@10.2.2)
       eslint-plugin-storybook:
         specifier: ^10.2.0
-        version: 10.2.10(eslint@9.39.5(jiti@2.6.1)(supports-color@10.2.2))(storybook@10.5.3(prettier@3.9.6)(react@19.2.8))(supports-color@10.2.2)(typescript@6.0.3)
+        version: 10.2.10(eslint@9.39.5(jiti@2.6.1)(supports-color@10.2.2))(storybook@10.5.3(prettier@3.9.7)(react@19.2.8))(supports-color@10.2.2)(typescript@6.0.3)
       eslint-plugin-testing-library:
         specifier: ^7.15.0
         version: 7.16.0(eslint@9.39.5(jiti@2.6.1)(supports-color@10.2.2))(supports-color@10.2.2)(typescript@6.0.3)
@@ -112,8 +112,8 @@ importers:
         specifier: 7.0.2001
         version: 7.0.2001
       prettier:
-        specifier: 3.9.6
-        version: 3.9.6
+        specifier: 3.9.7
+        version: 3.9.7
       release-config:
         specifier: workspace:*
         version: link:../release-config
@@ -4145,8 +4145,8 @@ packages:
       vue-tsc:
         optional: true
 
-  prettier@3.9.6:
-    resolution: {integrity: sha512-OpN0zzVdiaiAhxpuuj5efpIS4sY9j7bY6uR5mnj5yPzGkdkjNKSJeUThPb60Jw29QuAZgA4o+/iB49kFiaBX6g==}
+  prettier@3.9.7:
+    resolution: {integrity: sha512-T3mF5P7HFzZVLDQuCUNtJj6WK1pcpLMweMNUVwGb01bLNkH9AkKxtZvmInw8K6bnn2O3d6/5RHl6zSHiBAD0Og==}
     engines: {node: '>=14'}
     hasBin: true
 
@@ -7673,11 +7673,11 @@ snapshots:
       string.prototype.matchall: 4.0.12
       string.prototype.repeat: 1.0.0
 
-  eslint-plugin-storybook@10.2.10(eslint@9.39.5(jiti@2.6.1)(supports-color@10.2.2))(storybook@10.5.3(prettier@3.9.6)(react@19.2.8))(supports-color@10.2.2)(typescript@6.0.3):
+  eslint-plugin-storybook@10.2.10(eslint@9.39.5(jiti@2.6.1)(supports-color@10.2.2))(storybook@10.5.3(prettier@3.9.7)(react@19.2.8))(supports-color@10.2.2)(typescript@6.0.3):
     dependencies:
       '@typescript-eslint/utils': 8.56.0(eslint@9.39.5(jiti@2.6.1)(supports-color@10.2.2))(supports-color@10.2.2)(typescript@6.0.3)
       eslint: 9.39.5(jiti@2.6.1)(supports-color@10.2.2)
-      storybook: 10.5.3(prettier@3.9.6)(react@19.2.8)
+      storybook: 10.5.3(prettier@3.9.7)(react@19.2.8)
     transitivePeerDependencies:
       - supports-color
       - typescript
@@ -9112,12 +9112,12 @@ snapshots:
 
   prelude-ls@1.2.1: {}
 
-  prettier-plugin-organize-imports@4.3.0(prettier@3.9.6)(typescript@6.0.3):
+  prettier-plugin-organize-imports@4.3.0(prettier@3.9.7)(typescript@6.0.3):
     dependencies:
-      prettier: 3.9.6
+      prettier: 3.9.7
       typescript: 6.0.3
 
-  prettier@3.9.6: {}
+  prettier@3.9.7: {}
 
   pretty-format@27.5.1:
     dependencies:
@@ -9527,7 +9527,7 @@ snapshots:
 
   std-env@4.0.0: {}
 
-  storybook@10.5.3(prettier@3.9.6)(react@19.2.8):
+  storybook@10.5.3(prettier@3.9.7)(react@19.2.8):
     dependencies:
       '@storybook/global': 5.0.0
       '@storybook/icons': 2.1.0(react@19.2.8)
@@ -9547,7 +9547,7 @@ snapshots:
       use-sync-external-store: 1.6.0(react@19.2.8)
       ws: 8.18.2
     optionalDependencies:
-      prettier: 3.9.6
+      prettier: 3.9.7
     transitivePeerDependencies:
       - bufferutil
       - react
