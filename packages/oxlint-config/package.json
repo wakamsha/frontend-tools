@@ -42,7 +42,7 @@
   },
   "homepage": "https://github.com/wakamsha/frontend-tools/tree/main/packages/oxlint-config#readme",
   "devDependencies": {
-    "@types/node": "24.13.5",
+    "@types/node": "24.13.6",
     "oxlint": "1.83.0",
     "oxlint-tsgolint": "7.0.2002",
     "prettier": "3.9.8",
