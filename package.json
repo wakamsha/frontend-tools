@@ -5,10 +5,10 @@
   "type": "module",
   "engines": {
     "node": "24.22.2",
-    "pnpm": "11.28.9",
+    "pnpm": "12.16.1",
     "npm": "please use pnpm instead"
   },
-  "packageManager": "pnpm@11.28.9",
+  "packageManager": "pnpm@12.16.1",
   "scripts": {
     "prepare": "lefthook install",
     "format": "pnpm prettier -w './**/*.{js,ts,json,md,css,html,yml,yaml}'",
