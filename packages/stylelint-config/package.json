@@ -46,11 +46,11 @@
     "eslint": "9.39.5",
     "release-config": "workspace:*",
     "semantic-release": "25.0.9",
-    "stylelint": "17.16.0",
+    "stylelint": "18.0.0",
     "typescript": "6.0.3",
     "vitest": "4.1.12"
   },
   "peerDependencies": {
-    "stylelint": "^16.13.0 || ^17.0.0"
+    "stylelint": "^16.13.0 || ^17.0.0 || ^18.0.0"
   }
 }
