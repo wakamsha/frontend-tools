@@ -44,7 +44,7 @@
   "devDependencies": {
     "@types/node": "24.19.2",
     "oxlint": "1.93.0",
-    "oxlint-tsgolint": "7.0.2006",
+    "oxlint-tsgolint": "7.0.2007",
     "prettier": "3.10.0",
     "release-config": "workspace:*",
     "semantic-release": "25.0.9",
